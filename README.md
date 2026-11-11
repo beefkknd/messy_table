@@ -1,11 +1,15 @@
 # MessyTable · cross-view object re-identification
 
+**View the reports as web pages: https://beefkknd.github.io/messy_table/**
+
+> Clicking an `.html` file in this repository shows its source code. Use the links above and below to open the rendered pages.
+
 Studies of how to tell that an object in one photo is the same physical object in another, using the
 [MessyTable](https://github.com/caizhongang/MessyTable) multi-camera dataset.
 
 | Part | Topic | Status |
 |---|---|---|
-| [Part One](part1/) | Matching the same object across photos, given human object boxes | Published: [report](part1/site/index.html) |
+| [Part One](part1/) | Matching the same object across photos, given human object boxes | Published: **[read the report](https://beefkknd.github.io/messy_table/part1/site/)** |
 | [Part Two](part2/) | Image processing and object detection | Built; under review |
 | [Part Three](part3/) | Next stage | Planned |
 

@@ -6,9 +6,10 @@ pairs, 78,335 true object links. It reproduces two published matchers (ASNet, Vi
 compares 45 configurations. The best, a 75/25 blend of RoMa + SAM foreground correspondence with
 ViT-P3DE appearance, reaches 90.63% AP against 81.29% for ViT-P3DE alone.
 
-**Read the report:** open [`site/index.html`](site/index.html). It is a static page with its data
-embedded, so it needs no server. With GitHub Pages enabled it is served at
-`https://beefkknd.github.io/messy_table/part1/site/`.
+**Read the report:** https://beefkknd.github.io/messy_table/part1/site/
+
+The source is [`site/index.html`](site/index.html); GitHub shows that file as code. It is a static page with its data
+embedded, so it needs no server.
 
 ## Layout
 
