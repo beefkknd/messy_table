@@ -1,0 +1,27 @@
+OFFICIAL MESSYTABLE PROTOCOL — FIXED100-SCENE SAMPLE
+
+100 scenes from 100 distinct camera setups, 900 photos, 3,600 image pairs.
+21,706 annotated appearances, 2,484,124 object-pair candidates, 78,335 true object pairs.
+Difficulty mix 30 easy / 50 medium / 20 hard. Selection fixed by SHA256 order before predictions.
+
+Metric values in percent
+Model | population | AP | FPR95 (lower is better) | IPAA100
+asnet | published full test | 52.40 | 20.90 | 17.00
+asnet | our 100-scene sample | 50.61 | 22.50 | 16.89
+vit | published full test | 82.80 | 4.90 | 43.50
+vit | our 100-scene sample | 81.29 | 5.46 | 40.31
+
+AP measures how well true object pairs rank above false pairs across thresholds.
+FPR95 measures the fraction of negative object pairs accepted at 95% true-pair recall.
+IPAA100 measures the fraction of camera-view pairs for which every object association and absence decision is correct under the authors matching procedure.
+
+Original author metric functions and shipped Linux KMSolver ran in Python 3.7 Docker.
+Original authored crop/dataset and model definitions ran on modern Mac PyTorch/MPS. CPU and batch-size checks passed. Native released weights loaded strictly. No training.
+
+This sample supports the ranking and approximate scale of the papers results. Exact published full-test numbers remain unverified.
+The prior 100-pair fixed-budget recall experiment measures a different population and metric.
+Full official test includes 1,861 scenes and 66,996 image pairs. The full run was paused in favor of this requested sample.
+
+Sources
+https://arxiv.org/html/2007.14878
+https://ijcai.org/proceedings/2023/149

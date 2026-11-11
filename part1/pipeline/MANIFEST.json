@@ -1,0 +1,205 @@
+[
+  {
+    "repo_path": "part1/pipeline/0-shared/common.py",
+    "original_path": "evaluation/messytable-official-reproduction/common.py",
+    "sha256": "47ae56b191adaf58e171efc661eb1b2b0a15067e3397097de0c43fae4a1e6010",
+    "bytes": 2267,
+    "stage": "0-shared"
+  },
+  {
+    "repo_path": "part1/pipeline/1-sample/sample.py",
+    "original_path": "evaluation/messytable-official-reproduction/sample.py",
+    "sha256": "082079d7f384bc04950ce2ef010395f07a516d3bdfe92534333d771c67e3841f",
+    "bytes": 3331,
+    "stage": "1-sample"
+  },
+  {
+    "repo_path": "part1/pipeline/1-sample/variant_common.py",
+    "original_path": "evaluation/messytable-official-reproduction/variant_common.py",
+    "sha256": "9e2f082bce6c2e1f4398e9fe14ac0aa5b7830c9a9766a70a0bebe08d805414ad",
+    "bytes": 4960,
+    "stage": "1-sample"
+  },
+  {
+    "repo_path": "part1/pipeline/2-encode/encode.py",
+    "original_path": "evaluation/messytable-official-reproduction/encode.py",
+    "sha256": "0127ccc5048d3b4094862c7ef53f33c943e575a50ffdfc9f055ba25b85116442",
+    "bytes": 10410,
+    "stage": "2-encode"
+  },
+  {
+    "repo_path": "part1/pipeline/2-encode/variant_views.py",
+    "original_path": "evaluation/messytable-official-reproduction/variant_views.py",
+    "sha256": "b02b79b16064a1c677d3ff03a79592c210bbe38992399b8ddc12d96d40bedc7b",
+    "bytes": 8172,
+    "stage": "2-encode"
+  },
+  {
+    "repo_path": "part1/pipeline/2-encode/variant_dense.py",
+    "original_path": "evaluation/messytable-official-reproduction/variant_dense.py",
+    "sha256": "a908782d5da69fe7cadee6c52023e25300ebfe62767a7db4970ad66b9844c840",
+    "bytes": 7610,
+    "stage": "2-encode"
+  },
+  {
+    "repo_path": "part1/pipeline/2-encode/variant_perspective.py",
+    "original_path": "evaluation/messytable-official-reproduction/variant_perspective.py",
+    "sha256": "803fb43f23f25a517303c5c12a1e83efb3872ea81e5bd6579ccadf6b8e9656d7",
+    "bytes": 7293,
+    "stage": "2-encode"
+  },
+  {
+    "repo_path": "part1/pipeline/3-score/distances.py",
+    "original_path": "evaluation/messytable-official-reproduction/distances.py",
+    "sha256": "198f9e193bdd17dc47db9d22c9669c84ca2e786e0a30aa15f21cab451d18076b",
+    "bytes": 5279,
+    "stage": "3-score"
+  },
+  {
+    "repo_path": "part1/pipeline/3-score/variant_scores.py",
+    "original_path": "evaluation/messytable-official-reproduction/variant_scores.py",
+    "sha256": "56cb3e5617654759a2c05da0db9951980394e26f28d52cc5a3616c473c2b441a",
+    "bytes": 9543,
+    "stage": "3-score"
+  },
+  {
+    "repo_path": "part1/pipeline/4-evaluate/finish_sample.py",
+    "original_path": "evaluation/messytable-official-reproduction/finish_sample.py",
+    "sha256": "b4593cbb8dac34390a456e340ef73db98b294d12635f3ff51f8a587f2e9e2294",
+    "bytes": 6144,
+    "stage": "4-evaluate"
+  },
+  {
+    "repo_path": "part1/pipeline/4-evaluate/variant_evaluate.py",
+    "original_path": "evaluation/messytable-official-reproduction/variant_evaluate.py",
+    "sha256": "82ad53072e3efecf783f6d3042ce9c877c2e467e90f8b94963d29a23d0b3de8b",
+    "bytes": 3809,
+    "stage": "4-evaluate"
+  },
+  {
+    "repo_path": "part1/pipeline/4-evaluate/runtime/Dockerfile",
+    "original_path": "evaluation/messytable-official-reproduction/runtime/Dockerfile",
+    "sha256": "a2ed787ed13ce1e5ccaa170e084b03a4a697a9a3652c8f4df260740dd0c25582",
+    "bytes": 145,
+    "stage": "4-evaluate"
+  },
+  {
+    "repo_path": "part1/pipeline/4-evaluate/runtime/score_native.py",
+    "original_path": "evaluation/messytable-official-reproduction/runtime/score_native.py",
+    "sha256": "e8d6e6709ed13e4684e98f966ea1438f0c8c7e8b6df36140d3ef4bfcb79f9ac2",
+    "bytes": 3762,
+    "stage": "4-evaluate"
+  },
+  {
+    "repo_path": "part1/pipeline/4-evaluate/runtime/score_variant_native.py",
+    "original_path": "evaluation/messytable-official-reproduction/runtime/score_variant_native.py",
+    "sha256": "f0ef2ad1803a2a5727bec25dc2525c3a4ee18e68ec1a7dc9aa24736e2b2d047b",
+    "bytes": 4082,
+    "stage": "4-evaluate"
+  },
+  {
+    "repo_path": "part1/pipeline/5-sweep-report/build_variants_report.py",
+    "original_path": "evaluation/messytable-official-reproduction/build_variants_report.py",
+    "sha256": "17c83eaedb57e07ca18cc434af04ac39fb7fccd0a8e567135eeb8cac1d95feaf",
+    "bytes": 13542,
+    "stage": "5-sweep-report"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/messytable-roma-100/roma_adapter.py",
+    "original_path": "evaluation/messytable-roma-100/roma_adapter.py",
+    "sha256": "646ce9b37eb18632eb3900d795f32f86af336c2035e348da9ce681e57a551f72",
+    "bytes": 3802,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/messytable-roma-100/run_dense.py",
+    "original_path": "evaluation/messytable-roma-100/run_dense.py",
+    "sha256": "5be0f87d77c4f5573cb02e63ff88e2b0c7fe350a9e764ab098b7dc4883f04e48",
+    "bytes": 9623,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/messytable-vit-p3de-100/run.py",
+    "original_path": "evaluation/messytable-vit-p3de-100/run.py",
+    "sha256": "90510fa8c0f90db408a15f725d333121dbe5429c0c7084d4c480c81ab49755c3",
+    "bytes": 10628,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/run_full_scene.py",
+    "original_path": "evaluation/run_full_scene.py",
+    "sha256": "ae110e3c94af5e1876519f6fb67f3d343dd982605072cb58330995d2f7fd126d",
+    "bytes": 5750,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/run_messytable_dino_crops.py",
+    "original_path": "evaluation/run_messytable_dino_crops.py",
+    "sha256": "319984e64be05c235553d2478d0580958e48d01d6923a4ea2c636f51dbb38d8a",
+    "bytes": 9144,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/run_box_context.py",
+    "original_path": "evaluation/run_box_context.py",
+    "sha256": "fdc9857788e611492aec11d5ee3ee49612716412520d4e76c7daf88046037642",
+    "bytes": 6531,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/run_epipolar.py",
+    "original_path": "evaluation/run_epipolar.py",
+    "sha256": "15f0eb81c69b433de7ceff5f5abb114671a3b947415b9e06582ed15b2ead7dc9",
+    "bytes": 5311,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/score_foundyou_native_retrieval.py",
+    "original_path": "evaluation/score_foundyou_native_retrieval.py",
+    "sha256": "a049b8f60eef4068ff1451d6e408323c8ad0b30c2a55b57200aad2cc4c28802c",
+    "bytes": 25449,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/messytable-foundyou-native-retrieval-100/score_extension.py",
+    "original_path": "evaluation/messytable-foundyou-native-retrieval-100/score_extension.py",
+    "sha256": "5453a327e9a4e5e8e3a07838c05f5c3780f605e1c4a334d29d26ba83b7589daa",
+    "bytes": 11063,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/everyday-identity/scripts/runtime_assets.py",
+    "original_path": "everyday-identity/scripts/runtime_assets.py",
+    "sha256": "a14062ad6fc63b769efddf8b4b834d3989d12fecbf3f7a6822545fdf22fe0360",
+    "bytes": 1700,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/research/self-learning-program/tile-validation/edge-mask-study/engineering/transform_crops.py",
+    "original_path": "research/self-learning-program/tile-validation/edge-mask-study/engineering/transform_crops.py",
+    "sha256": "3823ce098511066b90c47d522a6c082e5bcd73b3114ff278d747f996eb0e72e1",
+    "bytes": 6323,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/research/self-learning-program/tile-validation/staged-verifier/engineering/local_correspondence.py",
+    "original_path": "research/self-learning-program/tile-validation/staged-verifier/engineering/local_correspondence.py",
+    "sha256": "5efbe8b40224989dc0a4a4c5b10b0c047ca00852d6472a904bef1000a8d63351",
+    "bytes": 10179,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/research/self-learning-program/tile-validation/viewpoint-study/run_study.py",
+    "original_path": "research/self-learning-program/tile-validation/viewpoint-study/run_study.py",
+    "sha256": "b8e5346774166a91b1aedb563962e63ad9b0742f5fb72069e917f92ccbc5edb4",
+    "bytes": 21685,
+    "stage": "borrowed"
+  },
+  {
+    "repo_path": "part1/pipeline/borrowed/evaluation/messytable-annotated-step2/compare.py",
+    "original_path": "evaluation/messytable-annotated-step2/compare.py",
+    "sha256": "e464c8fefa70f160a8eef849fe3d26baa758b7bfed6f30d82172f99142776d9f",
+    "bytes": 16468,
+    "stage": "borrowed"
+  }
+]

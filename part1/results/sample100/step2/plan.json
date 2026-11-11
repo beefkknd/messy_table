@@ -1,0 +1,33 @@
+{
+  "training": false,
+  "selection_sha256": "35fc135826c641d68134336e361b88f924450486f43455a4c58b93388eb19189",
+  "scenes": 100,
+  "setups": 100,
+  "images": 900,
+  "image_pairs": 3600,
+  "candidate_object_pairs": 2484124,
+  "positive_object_pairs": 78335,
+  "box_source": "Same native human annotation boxes and endpoint order as cached ASNet/ViT sample baselines.",
+  "rank_primary": "AP descending, then FPR95 ascending, then IPAA100 descending.",
+  "methods": [
+    "Frozen ASNet and ViT-P3DE controls",
+    "DINO tight,1.25x,1.5x,2x crops; mean,max,second-highest crop scores",
+    "DINO SAM foreground,GrabCut foreground,grayscale,Canny",
+    "DINO RGB/SAM quarter-turns,per-edge max and shared-view rotation selected by appearance/anchors",
+    "DINO calibrated epipolar soft penalty and padded-box feasibility gate",
+    "Foreground SIFT with held-out homography validation, native-patch control and rectified-patch DINO rescoring",
+    "RoMa v2 full-scene box/SAM coverage,minimum and symmetric-mean evidence",
+    "Previously used50/50 and75/25 dense/appearance percentile blends with DINO context,SAM and ASNet",
+    "Fixed50/50 and75/25 RoMa/ViT percentile blends"
+  ],
+  "native_scoring": "Original AP,FPR95,IPAA functions and shipped KMSolver in the pinned Python3.7 Docker runtime.",
+  "distance_maps": "DINO1-cosine,RoMa1-coverage,rank fusion1-combined percentile. Native ASNet/ViT distances unchanged.",
+  "IPAA_interpretation": "Same author p95 normalization and0.70 threshold for all arms. New score distances have no fitted threshold calibration, so AP/FPR are the primary ranking evidence.",
+  "geometry": "Use native camera calibration, no instance identities. Reuse fixed soft penalty0.10,free residual0.25 and prior padded-box rule.",
+  "perspective": "Reuse prior foreground SIFT, reciprocal ratio,holdout homography and common-surface checks. Shortlist top2 per lane and direction from RGB,gray,Canny,GrabCut,SAM. Keep all Cartesian edges in final AP population.",
+  "gate_distance": "Incompatible box geometry receives DINO distance2.0. Every candidate stays in the metric population.",
+  "dense_compute": "3600 RoMa pairs; reuse each source-view SAM mask across the8 paired views. Save object-level evidence, no full warp archive.",
+  "policy_freeze": "No training or label-dependent choice of weights,geometry settings,methods or sample membership. Select top3 after full sweep.",
+  "interpretation": "Top3 are exploratory winners on this reused sample. Future generalization evaluation needs data outside this selection.",
+  "script_sha256": "9e2f082bce6c2e1f4398e9fe14ac0aa5b7830c9a9766a70a0bebe08d805414ad"
+}

@@ -1,0 +1,261 @@
+{
+  "axes": {
+    "x": "FPR95 percent",
+    "y": "AP percent"
+  },
+  "plotted": [
+    {
+      "method": "dino_tight_1x",
+      "x": 64.69058591588872,
+      "y": 24.732199846068614,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_125",
+      "x": 71.75521211544321,
+      "y": 21.162647161845918,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_150",
+      "x": 75.0829353696438,
+      "y": 18.507745919657665,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_200",
+      "x": 79.997539268822,
+      "y": 14.444321194095542,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_mean",
+      "x": 71.34399567044325,
+      "y": 23.410307198296486,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_max",
+      "x": 73.62324792406982,
+      "y": 20.20679438572094,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_two_support",
+      "x": 72.09281445712821,
+      "y": 21.850459068881182,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_gray",
+      "x": 65.64087706777278,
+      "y": 24.16085985204032,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_canny",
+      "x": 82.72907557562196,
+      "y": 9.682691294722552,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_grabcut",
+      "x": 64.35921853495881,
+      "y": 30.106677642987773,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam",
+      "x": 47.67832923003638,
+      "y": 32.87542380707424,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_rotation_90",
+      "x": 66.05716461418686,
+      "y": 21.733612336145562,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_rotation_180",
+      "x": 66.89917528095772,
+      "y": 21.414758194409544,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_rotation_270",
+      "x": 66.04203444275454,
+      "y": 21.545986618353375,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_rotation_max",
+      "x": 62.61463494928275,
+      "y": 25.622010856923726,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_rotation_scene_appearance",
+      "x": 64.53816190862955,
+      "y": 25.028621115815014,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_rotation_scene_anchor",
+      "x": 64.67961238495978,
+      "y": 24.9135763816601,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_rotation_90",
+      "x": 50.04324984443773,
+      "y": 29.57191079313312,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_rotation_180",
+      "x": 50.900681647476155,
+      "y": 29.376849572797443,
+      "fpr95_status": "minor_cutoff_tie"
+    },
+    {
+      "method": "dino_sam_rotation_270",
+      "x": 49.94797964410013,
+      "y": 29.202647074100728,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_rotation_max",
+      "x": 47.304855080807165,
+      "y": 33.01697519995984,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_rotation_scene_appearance",
+      "x": 47.84509364703222,
+      "y": 33.17496257526006,
+      "fpr95_status": "minor_cutoff_tie"
+    },
+    {
+      "method": "dino_sam_rotation_scene_anchor",
+      "x": 47.82360381562972,
+      "y": 33.21298997785918,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_anchor_context",
+      "x": 64.69058591588872,
+      "y": 25.964694442542953,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_anchor_reject_only",
+      "x": 64.69058591588872,
+      "y": 25.096578709432492,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_epipolar_soft",
+      "x": 54.415079626683806,
+      "y": 35.82466453949119,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_tight_1x_geometry_gate",
+      "x": 36.75068761225527,
+      "y": 29.07391264112695,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_geometry_gate",
+      "x": 26.296695179834973,
+      "y": 41.04508587175768,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_context_mean_geometry_gate",
+      "x": 40.8965624167373,
+      "y": 26.29645249336238,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_geometry_unwarped",
+      "x": 26.296819879050076,
+      "y": 41.24315493610188,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "dino_sam_geometry_warped",
+      "x": 26.296819879050076,
+      "y": 41.17497159528653,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "asnet_reference",
+      "x": 22.500518540902796,
+      "y": 50.6080406419682,
+      "fpr95_status": "minor_cutoff_tie"
+    },
+    {
+      "method": "vit_reference",
+      "x": 5.464319605750961,
+      "y": 81.28831361551116,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_dino_context_mean_equal",
+      "x": 42.31838286732544,
+      "y": 66.6993145075717,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_dino_context_mean_dense_first",
+      "x": 36.50232834217797,
+      "y": 74.14410124221479,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_dino_sam_equal",
+      "x": 23.59899392673256,
+      "y": 81.44049805082096,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_dino_sam_dense_first",
+      "x": 18.945302351951895,
+      "y": 84.07651421638727,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_asnet_reference_equal",
+      "x": 6.591018580598715,
+      "y": 83.14188398803363,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_asnet_reference_dense_first",
+      "x": 6.234586657433383,
+      "y": 85.46538320944833,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_vit_reference_equal",
+      "x": 2.8506656236270094,
+      "y": 90.57214171245892,
+      "fpr95_status": "valid"
+    },
+    {
+      "method": "blend_roma_vit_reference_dense_first",
+      "x": 3.0376313134693027,
+      "y": 90.62940074071192,
+      "fpr95_status": "valid"
+    }
+  ],
+  "omitted": [
+    "roma_box",
+    "roma_mask",
+    "roma_box_mean",
+    "roma_mask_mean"
+  ],
+  "audit": "../../results/part-one/fpr95-tie-audit.json"
+}

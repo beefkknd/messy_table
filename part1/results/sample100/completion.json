@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "training": false,
+  "scope": "100-scene sample only",
+  "sha256": {
+    "selection.json": "35fc135826c641d68134336e361b88f924450486f43455a4c58b93388eb19189",
+    "comparison.json": "4b21ba8923206317a9561ecded8107c0387ccc38bdc4bd7f931d3b96b8dfe17a",
+    "RESULTS.txt": "01a59e7ce8e2802570f77783594104ab43d5d77bd38ab31df1361be8d29970a6",
+    "vit/plan.json": "61b2fd278867a24af6b3888660956a9d7d40d3f577b8eace015ad9c3a30fae4c",
+    "vit/inference-freeze.json": "24c5fc64478ff42f23934b86cfefd7c1b82df1336958739fd827bc49f864c1ab",
+    "vit/distance-freeze.json": "11a7528cfeb2641ea1067dcc6bfaa4126629c7aef07a2a4c6a1c26db0c3a017d",
+    "vit/native-metrics.json": "95a078833df32c08a597007dae3c588578a8cc8b0f8870d1ac229da87d838c5f",
+    "asnet/plan.json": "5407c2b0227bbb83375ead480fe7ab1f50960f0f6d174dfc8ae7f69aa9e13e03",
+    "asnet/inference-freeze.json": "ff17141a74d4676770b29aaf997db37b59e4fd70c60dddfc7f137cbc578e71fa",
+    "asnet/distance-freeze.json": "2ac16f8542a272b5f67573bfa44e7b47b04ec0f4bc9e7cfd77ac5699049dac9b",
+    "asnet/native-metrics.json": "83171dcae3b395bc130e506ad36dfacf522fdd4b15c781c530de9e73ec373cae"
+  }
+}

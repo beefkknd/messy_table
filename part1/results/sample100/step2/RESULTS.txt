@@ -1,0 +1,17 @@
+MESSYTABLE FIXED 100-SCENE STEP 2 SWEEP
+
+100 scenes, 100 setups, 900 photos, 3,600 image pairs, 78,335 true object pairs. Human boxes. No training.
+Select top 3 by AP descending, then lower FPR95,then higher IPAA100.
+
+RoMa + SAM / ViT-P3DE Tiny reference (75/25)
+AP 90.63% | FPR95 3.04% | IPAA100 53.06%
+
+RoMa + SAM / ViT-P3DE Tiny reference (50/50)
+AP 90.57% | FPR95 2.85% | IPAA100 49.31%
+
+RoMa + SAM / ASNet reference (75/25)
+AP 85.47% | FPR95 6.23% | IPAA100 44.00%
+
+The same ASNet and ViT sample controls reproduced exactly.
+Final assignment uses the author p95 distance normalization and 0.70 cutoff. New distances have no per-method calibration fitting.
+Winners were selected on this sample. Full published-test reproduction and generalization outside this sample remain unmeasured.

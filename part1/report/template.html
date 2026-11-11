@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Part One · Matching the same object across photos</title>
+<style>
+:root{--ink:#193039;--muted:#526970;--line:#d8e3e6;--pale:#f3f7f8;--blue:#42679a;--teal:#107d71}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font:16px/1.58 Inter,system-ui,sans-serif}
+main,header,nav{max-width:1180px;margin:auto;padding:0 24px}header{padding-top:42px}h1{font-size:clamp(30px,4.8vw,49px);line-height:1.13;letter-spacing:-.025em;max-width:950px;margin:12px 0 22px}h2{font-size:clamp(25px,3.1vw,32px);line-height:1.2;margin:0 0 17px}h3{font-size:20px;line-height:1.3;margin:0 0 10px}
+p{margin:10px 0 17px;max-width:1000px}a{color:#146b7e;text-underline-offset:.16em}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #7cbfb4;outline-offset:3px}
+.part{font-size:14px;font-weight:700;color:var(--teal);margin:0}.lead{font-size:19px;max-width:920px}nav{display:flex;flex-wrap:wrap;gap:10px 22px;padding-top:22px;padding-bottom:22px;border-bottom:1px solid var(--line);font-size:15px}
+section{padding:38px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}section:last-child{border-bottom:0;padding-bottom:55px}.muted{font-size:14px;color:var(--muted)}.note{padding:14px 18px;background:var(--pale);border-left:4px solid var(--blue);margin:20px 0}.note p{margin:0}.positive{border-color:var(--teal);background:#eff8f4}
+.example{margin:25px 0 33px;padding-bottom:25px;border-bottom:1px solid var(--line)}.example:last-child{border-bottom:0;padding-bottom:0}.scene-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+figure{margin:0}.scene{position:relative;display:block;line-height:0;border-radius:6px;overflow:hidden;background:#e8edf0}.scene img{width:100%;display:block;height:auto}
+.identity-box{position:absolute;border:3px solid var(--object-color);pointer-events:none}.identity-box b{position:absolute;left:-3px;top:-24px;min-width:23px;padding:2px 5px;background:var(--object-color);color:#fff;font-size:14px;font-weight:700;line-height:19px}
+figcaption{font-size:14px;color:var(--muted);padding:8px 0}.identity-legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:9px;font-size:14px}.identity-legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:7px}.example-note{margin-top:12px;font-size:15px}
+.switch{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:650}.switch input{width:17px;height:17px}.hide-labels .identity-box{display:none}
+.table-wrap,.plot-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:7px;margin:18px 0 12px;background:#fff}table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}th,td{padding:11px 13px;text-align:right;border-bottom:1px solid #e3ebee;white-space:nowrap}th{background:#edf3f5}th:first-child,td:first-child{text-align:left}tbody tr:last-child>*{border-bottom:0}.wide-label{white-space:normal;min-width:240px}.reference-row{background:#f4f7fb}
+.plot-scroll img{width:100%;min-width:720px;height:auto;display:block}.plot-scroll.metrics img{min-width:1080px}.scroll-note{display:none}
+.metric-definitions{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:24px 0}.definition{padding:16px;background:var(--pale);border-radius:6px}.definition h3{font-size:16px}.definition p{font-size:14px;margin:0}
+.method-start,.method-end{padding:15px 20px;border:1px solid #bdcfd5;border-radius:6px;text-align:center;background:#f7fafb;font-weight:650}
+.branches{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0}.branch{padding:22px;border:1px solid var(--line);border-top:4px solid var(--teal);border-radius:6px}.branch.appearance{border-top-color:var(--blue)}.branch ol{padding-left:21px;margin:12px 0 0}.branch li{margin:10px 0}.branch p{font-size:15px}
+.merge{text-align:center;margin:18px auto}.merge .formula{display:inline-block;padding:15px 22px;background:#e9f5f0;border:1px solid #a9cfc0;border-radius:6px;font-size:18px;font-weight:700}.down{display:block;color:var(--muted);font-size:25px;line-height:1.5}
+details{margin:20px 0;padding:13px 16px;border:1px solid var(--line);border-radius:6px}summary{font-weight:650;cursor:pointer}details p,details li{font-size:14px}details ul{padding-left:21px}
+.result-summary{font-size:19px}.result-summary strong{color:var(--teal)}.controls{display:flex;flex-wrap:wrap;gap:14px;margin:18px 0}.controls label{display:flex;flex-direction:column;min-width:0;max-width:100%;gap:4px;font-size:14px;font-weight:650}.controls input,.controls select{font:inherit;min-width:0;max-width:100%;padding:8px;border:1px solid #afc2cb;border-radius:5px;background:#fff}
+footer{color:var(--muted);font-size:14px;margin-top:24px}
+.lead-in{font-size:18px;max-width:900px}
+.story{margin:26px 0 8px}
+.glance{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 30px;counter-reset:none}
+.glance li{display:flex;align-items:center;gap:8px;padding:7px 14px 7px 7px;background:var(--pale);border:1px solid var(--line);border-radius:999px;font-size:14px;font-weight:650}
+.glance li span{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;font-size:12px}
+.glance li:not(:last-child)::after{content:"→";margin-left:6px;color:var(--muted);font-weight:400}
+.story-steps{list-style:none;padding:0;margin:0}
+.story-step{position:relative;display:grid;grid-template-columns:52px 1fr;gap:18px;padding-bottom:34px}
+.story-step:not(:last-child)::before{content:"";position:absolute;left:25px;top:52px;bottom:4px;border-left:2px dashed #bacace}
+.step-no{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--ink);color:#fff;font-size:22px;font-weight:750}
+.story-step.final .step-no{background:var(--teal)}
+.step-body{min-width:0}.step-body h3{font-size:22px;margin:11px 0 6px}.step-body>p{max-width:820px}
+.step-aside{font-size:15px;color:var(--muted);border-left:3px solid var(--line);padding-left:12px}
+.story-figure{display:block;margin:14px 0 6px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;line-height:0}
+.story-figure img{width:100%;height:auto;display:block}.story-figure.wide{max-width:980px}
+.witnesses{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:14px}
+.witness{padding:18px 20px;border-radius:10px;border:1px solid var(--line);border-top:6px solid var(--teal);background:#f6fbf9}
+.witness.look{border-top-color:var(--blue);background:#f5f8fc}
+.witness h4{font-size:19px;margin:0 0 8px;color:var(--teal)}.witness.look h4{color:var(--blue)}
+.witness p{font-size:15px}.witness .story-figure{margin:12px 0}
+.facts{list-style:none;padding:0;margin:10px 0;font-size:15px}.facts li{padding:7px 0;border-bottom:1px solid var(--line)}.facts li:last-child{border-bottom:0}
+.facts b{display:inline-block;min-width:54px;font-size:20px;color:var(--ink)}
+.tech{font-size:13px!important;color:var(--muted);margin:8px 0 0}
+.vote-cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:16px 0}
+.vote-card{padding:16px 18px;border:1px solid var(--line);border-left:6px solid var(--pair);border-radius:10px}
+.vote-card h4{font-size:16px;margin:0 0 12px}
+.vote{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) 36px;align-items:center;gap:10px;margin:9px 0;font-size:14px}
+.vote-label small{display:block;color:var(--muted);font-size:12px}
+.vote-track{height:14px;background:#edf2f4;border-radius:7px;overflow:hidden}.vote-fill{display:block;height:100%;border-radius:7px}
+.vote.pixel .vote-fill{background:var(--teal)}.vote.look .vote-fill{background:var(--blue)}.vote.total .vote-fill{background:var(--pair)}
+.vote b{text-align:right;font-variant-numeric:tabular-nums}.vote.total{padding-top:9px;border-top:1px solid var(--line);font-weight:700}.vote.total b{font-size:19px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0}
+.tile{padding:16px;border-radius:10px;background:#eff8f4;border:1px solid #cfe5dc}.tile b{display:block;font-size:28px;line-height:1.2;color:var(--teal)}.tile span{font-size:14px;color:var(--muted)}
+@media(max-width:700px){.witnesses,.vote-cards,.tiles{grid-template-columns:1fr}.story-step{grid-template-columns:38px 1fr;gap:12px}.step-no{width:38px;height:38px;font-size:17px}.story-step:not(:last-child)::before{left:18px;top:40px}.step-body h3{font-size:19px;margin-top:6px}.glance li{font-size:13px}.witness{padding:15px}}
+@media(max-width:700px){main,header,nav{padding-left:16px;padding-right:16px}header{padding-top:28px}.lead{font-size:17px}.scene-pair,.branches,.metric-definitions{grid-template-columns:1fr}.scene-pair{gap:12px}.identity-box{border-width:2px}.identity-box b{font-size:12px;min-width:20px;top:-22px}.scroll-note{display:block;font-size:13px;color:var(--muted)}.merge .formula{font-size:15px;padding:13px}.branch{padding:18px}section{padding:29px 0}}
+@media print{nav,.controls,.switch{display:none}header{padding-top:0}main,header{max-width:none;padding-left:0;padding-right:0}section{break-inside:auto}.example,.plot-scroll,.branches,.table-wrap,.story-step{break-inside:avoid}.plot-scroll{overflow:visible}.plot-scroll img,.plot-scroll.metrics img{min-width:0}a{color:inherit}.note{print-color-adjust:exact}}
+.legend-line{font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.legend-line .key{display:inline-block;width:22px;height:4px;border-radius:2px}.key.ok{background:#1b8a5a}.key.bad{background:#c0392b}
+</style>
+</head>
+<body>
+<header>
+<p class="part">Part One · Visual object re-identification</p>
+<h1>Matching the same object across photos</h1>
+<p class="lead">Given several photos, which objects show up again? We start with MessyTable, a labeled collection of everyday objects seen by multiple cameras, and compare existing matching methods with our own combinations.</p>
+</header>
+<nav aria-label="Part One sections">
+<a href="#problem">The problem in pictures</a>
+<a href="#benchmark">Our benchmark</a>
+<a href="#targets">Reference targets</a>
+<a href="#solution">The new approach</a>
+<a href="#results">Results and charts</a>
+</nav>
+<main>
+<section id="problem">
+<h2>Identity has to survive a change of view</h2>
+<p>A mug can look upright from one camera and tilted from another. Its handle may disappear behind another object. Two mugs can also share the same color and shape. The task is to preserve the physical identity across those views and allow an item to remain unmatched when its counterpart is not visible.</p>
+<p class="muted">These are full-scene photos from our fixed benchmark. Colored rectangles and numbers show the publisher’s human identity annotations. The examples explain the task and were chosen after scoring. Click a photo to open the original at full resolution.</p>
+<label class="switch"><input id="show-labels" type="checkbox" checked>Show human identity annotations</label>
+%%EXAMPLES%%
+</section>
+
+<section id="benchmark">
+<h2>The dataset and the exact population we tested</h2>
+<p>We kept <strong>100 scenes from 100 camera setups</strong> as our common benchmark. A scene is one arrangement of objects photographed by nine cameras. All 36 pairs among those nine views are tested.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>What we count</th><th>Population</th></tr></thead>
+<tbody>
+<tr><td>Scene arrangements / camera setups</td><td>100 / 100</td></tr>
+<tr><td>Full-scene photos</td><td>900</td></tr>
+<tr><td>Camera-view pairs</td><td>3,600</td></tr>
+<tr><td>Human-annotated object appearances</td><td>21,706</td></tr>
+<tr><td>Possible object pairs to score</td><td>2,484,124</td></tr>
+<tr><td>True same-object pairs</td><td>78,335</td></tr>
+<tr><td>Easy / medium / hard scenes</td><td>30 / 50 / 20</td></tr>
+</tbody></table></div>
+<div class="note"><p><strong>Human boxes define the objects in Part One.</strong> Every method gets the same object locations, the same view pairs and the same identity labels for evaluation. This lets us measure the matching stage directly. This fixed 100-scene sample is the population behind every new comparison below.</p></div>
+<p>The photos come from the official MessyTable test split. Selection used a fixed hash rule, and each selected scene has a different camera setup. The scenes show the same object arrangement from different cameras. This is our proxy for cross-view identity matching.</p>
+<p class="muted">A “true same-object pair” is one physical item visible in two camera views. The same item can contribute to several camera-view comparisons. The count of 78,335 therefore counts view-to-view identity links.</p>
+<p><a href="../results/sample100/selection.json">Fixed scene manifest</a> · <a href="../results/sample100/BENCHMARK.txt">Benchmark definition</a></p>
+</section>
+
+<section id="targets">
+<h2>What results are we trying to beat?</h2>
+<p><strong>ASNet</strong> is the original appearance-and-surroundings reference for MessyTable. It compares an object’s appearance together with neighboring context. <strong>ViT-P3DE Tiny</strong> is our stronger released reference checkpoint. It combines transformer image features with learned camera-ID and object-position information.</p>
+<p>The papers report results on the complete official test set. We first ran the released checkpoints on our fixed sample using the authors’ metrics and original matching solver.</p>
+<div class="plot-scroll"><a href="assets/reference-ap.svg"><img src="assets/reference-ap.png" alt="X/y reference comparison. X is published full-test AP; Y is our sample AP. ASNet is at52.40%,50.61%; ViT-P3DE Tiny is at82.80%,81.29%. The diagonal marks equal scores."></a></div>
+<p class="muted">Each point is one released reference. The diagonal marks agreement between published full-test AP and our sampled run. The populations differ. Click any chart to open its scalable SVG.</p>
+<p class="scroll-note">Swipe horizontally to read the chart at full size.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Reference</th><th>Published full-test AP</th><th>AP on our fixed sample</th></tr></thead>
+<tbody><tr><td>ASNet</td><td>52.40%</td><td>50.61%</td></tr><tr><td>ViT-P3DE Tiny</td><td>82.80%</td><td><strong>81.29%</strong></td></tr></tbody>
+</table></div>
+<p><strong>The matching target for our variations is ViT’s 81.29% AP on this same sample.</strong> The sample runs are close to the published figures. Exact reproduction of the full-test claims remains pending.</p>
+<p class="muted">Published sources are the <a href="https://arxiv.org/html/2007.14878">MessyTable / ASNet paper</a> and <a href="https://ijcai.org/proceedings/2023/149">ViT-P3DE paper</a>. <a href="../results/sample100/comparison.json">Our reference measurements</a> record both populations.</p>
+<div class="metric-definitions">
+<div class="definition"><h3>Average precision · higher is better</h3><p>AP measures how consistently true matches rank above wrong candidates across score thresholds.</p></div>
+<div class="definition"><h3>FPR95 · lower is better</h3><p>The fraction of wrong candidate pairs accepted at a threshold that retains 95% of true pairs. A large cutoff tie is marked n/a when the author’s row ordering cannot define a meaningful threshold result.</p></div>
+<div class="definition"><h3>Fully correct view pairs · higher is better</h3><p>IPAA100 is the fraction of view pairs with every identity association and unmatched-object decision correct.</p></div>
+</div>
+</section>
+
+<section id="solution">
+<h2>What exactly is the new solution?</h2>
+<p class="lead-in">In one sentence: <strong>two independent “witnesses” each judge whether two boxes show the same object, their votes are combined, and every object is then given at most one partner.</strong> Here is that process, followed step by step through one real example from the benchmark.</p>
+%%FLOW%%
+<details><summary>The same steps in technical terms</summary>
+<div class="method-start">Two full-scene views + the human boxes + camera information</div>
+<div class="branches">
+<article class="branch">
+<h3>Foreground correspondence branch</h3>
+<ol>
+<li><strong>SAM</strong> takes each human box as a prompt and estimates the visible object pixels inside it.</li>
+<li><strong>RoMa v2</strong> computes pixel correspondences across the two full scenes, in both directions.</li>
+<li>For each proposed object pair, we measure how much confident correspondence falls inside its foreground masks. A round-trip check and minimum pixel support define the score.</li>
+</ol>
+<p class="muted">This branch answers how well the visible object regions correspond across the views.</p>
+</article>
+<article class="branch appearance">
+<h3>Appearance and position branch</h3>
+<ol>
+<li><strong>ViT-P3DE Tiny</strong> receives a crop expanded to twice the human box’s width and height, together with the camera ID and box position.</li>
+<li>The pretrained model produces a feature vector for each object appearance.</li>
+<li>The distance between two feature vectors supplies the appearance match score.</li>
+</ol>
+<p class="muted">This branch supplies another source of evidence when the views reveal different object surfaces.</p>
+</article>
+</div>
+<div class="merge"><span class="down" aria-hidden="true">↓</span><div class="formula">75% RoMa + SAM rank + 25% ViT rank</div><span class="down" aria-hidden="true">↓</span></div>
+<div class="method-end">One-to-one assignment within each view pair, with unmatched items allowed</div>
+</details>
+<p>The percentages blend the two scores after converting them to percentile ranks over the common candidate population. The pretrained model weights stay frozen.</p>
+<p>This was the strongest of 45 configurations we tested, including the two reference controls. The sweep covered crop size and context, DINOv2, foreground masks, grayscale and edges, rotation, calibrated geometry, perspective correction, dense correspondence and fixed score blends, including a 50/50 blend and blends with ASNet and DINOv2.</p>
+<details><summary>How the tested directions changed the scores</summary>
+<div class="table-wrap"><table>
+<thead><tr><th>Change</th><th>Control AP</th><th>Modified AP</th></tr></thead>
+<tbody id="changes-body"></tbody>
+</table></div>
+<p>Perspective correction used foreground keypoints, a homography fitted to part of the evidence and a check on held-out correspondences. The unwarped control uses the same visible surface patch. Its AP was 41.24%, compared with 41.17% after rectification.</p>
+<p>The mask, geometry and crop settings were fixed for the sweep. The two fusion weights came from previously explored settings and received no fitting on the new labels.</p>
+</details>
+</section>
+
+<section id="results">
+<h2>Results on the same 100-scene benchmark</h2>
+<p class="result-summary">The best blend reached <strong>90.63% AP</strong>, compared with <strong>81.29%</strong> for ViT alone. It also reduced FPR95 and increased the fraction of fully correct view pairs.</p>
+<div class="plot-scroll"><a href="assets/matching-comparison.svg"><img src="assets/matching-comparison.png" alt="X/y scatter of41 configurations with usable FPR95. Four RoMa-only scorers are omitted because the95% recall cutoff falls inside a massive zero-score tie. X is FPR95, lower is better. Y is AP, higher is better. The upper left is better. An inset separates the leading75/25 and50/50 blends."></a></div>
+<p><strong>Read the map.</strong> Each point is one configuration. Move left to accept fewer wrong candidates at 95% recall, and up for better average precision. The upper left is better. Colors mark the references and three leading blends; gray points show the other 36 plotted variations. The inset enlarges the two nearly tied leaders. Fully correct view-pair accuracy remains in the table.</p>
+<div class="note" id="fpr95-tie-note"><p><strong>Four RoMa-only FPR95 values are n/a because of tied scores.</strong> For <code>roma_box</code>, <code>roma_mask</code>, <code>roma_box_mean</code> and <code>roma_mask_mean</code>, the 95%-recall cutoff falls inside a group of more than two million zero-coverage scores. The author code splits this group by array sort order, which does not correspond to a score threshold. These four configurations stay in the 45-row table, with FPR95 marked “n/a — tied scores”, and are omitted from this AP/FPR95 chart. Their AP and actual assignment results remain available.</p></div>
+<details id="fpr95-audit-details"><summary>Why reproducing the author’s FPR95 value was not sufficient</summary>
+<p>The exact pinned author code reproduces the original 17.37%, 46.44%, 18.29% and 46.37% scalars. They are preserved in the audit. The code sorts individual rows and stops partway through the equal-score block, so a different tie ordering can change the answer without changing the scores.</p>
+<p>For <code>roma_mask</code>, the 2,357,583-way zero-score block makes the row-based number range from 2.27% to 100%. A real score threshold cannot select an arbitrary part of that block. Before accepting it, recall is 91.73% and FPR is 2.27%; accepting it gives 100% recall and 100% FPR. The 2.27% endpoint is not an operating point at 95% recall.</p>
+<p>All 45 configurations were audited. ASNet and two DINO variants have two-candidate ties, each affecting one negative out of 2,405,789. Their values are unchanged at the displayed two decimal places and are annotated in the audit. The four large RoMa ties are the only ones whose displayed FPR95 depends on tie ordering.</p>
+<p>The headline blends have no cutoff ties. The leading 75/25 blend retains 3.04% FPR95. All 45 AP values are distinct, so guarding FPR95 as a secondary ranking key leaves the original order and top three unchanged. AP uses the author’s <code>average_precision_score</code> calculation, which handles tied score groups.</p>
+<p><a href="../results/part-one/fpr95-tie-audit.json">All-method cutoff audit and original scalars</a> · <a href="../tools/audit_fpr95.py">Reproducible audit script</a></p>
+</details>
+<p class="scroll-note">Swipe horizontally to inspect the chart.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Configuration</th><th>AP ↑</th><th>FPR95 ↓</th><th>Fully correct view pairs ↑</th></tr></thead>
+<tbody id="top-results"></tbody>
+</table></div>
+<p>The top three configurations are selected by AP, then usable lower FPR95 and higher IPAA100. All AP values are distinct, so the guarded FPR95 tie-break does not change the ranking. The two RoMa+SAM/ViT blends are close in AP. The 50/50 blend has the lower FPR95, while the 75/25 blend has the higher whole-pair association accuracy.</p>
+
+<h3>How many actual identity links did we recover?</h3>
+<p>There are <strong>78,335 true object pairs</strong> in this benchmark. Under the authors’ assignment rule, the best blend recovered <strong>74,159</strong> of them, giving <strong>94.67% link recall</strong>. It also proposed <strong>6,147 wrong links</strong>.</p>
+<div class="plot-scroll"><a href="assets/correct-and-wrong.svg"><img src="assets/correct-and-wrong.png" alt="Two x/y views of actual identity assignments. Left: recall versus precision, better toward the upper right. Right: wrong identity links versus correct links, better toward the upper left, with78,335 true links marked. ViT and the leading blend are highlighted; the other43 configurations appear in gray."></a></div>
+<p>The left plot shows <strong>identity-link recall versus precision</strong>. Its upper right is better. The right plot shows <strong>wrong links versus correct links</strong>, with the full target marked by a dotted line. Its upper left is better. The dashed line joins the best observed recall/precision tradeoffs; it does not represent a new model or a threshold sweep.</p>
+<p class="muted">All 45 configurations remain on these assignment charts, including the four RoMa scorers: their actual assignment counts do not use the ambiguous FPR95 cutoff. These ratios describe Step 2 identity links on 100 scenes. Part Two uses the same layout for Step 1 detection on a different population.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Matcher</th><th>Correct links</th><th>Wrong links</th><th>True links recovered</th><th>All proposals</th></tr></thead>
+<tbody id="link-results"></tbody>
+</table></div>
+<p class="muted">These counts use the original solver, 95th-percentile distance normalization and fixed 0.70 assignment cutoff. Each scorer has a fixed distance transform, and its final proposal count follows that rule. Every endpoint is a supplied human annotation.</p>
+
+<details id="all-configurations"><summary>Inspect all 45 configurations</summary>
+<p class="muted">Four FPR95 cells are “n/a — tied scores”. Sorting by FPR95 places these rows last. AP, whole-pair accuracy and actual identity-link counts remain unchanged. See the cutoff audit above for the retained original scalars.</p>
+<div class="controls">
+<label>Find a method<input id="search" type="search" placeholder="SAM, rotation, perspective or blend"></label>
+<label>Order results<select id="sort"><option value="AP">Average precision</option><option value="FPR95">Lower false-positive rate</option><option value="IPAA100">Fully correct view pairs</option></select></label>
+</div>
+<p class="muted" id="row-count"></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Method</th><th>AP ↑</th><th>FPR95 ↓</th><th>IPAA100 ↑</th><th>Correct links</th><th>Wrong links</th></tr></thead>
+<tbody id="all-results"></tbody>
+</table></div>
+</details>
+<div class="note positive"><p>Part One shows that combining foreground correspondence with the pretrained ViT matcher improves our fixed-sample results. These winners were selected after comparing the 45 configurations on this sample. Generalization to other scenes, time-separated observations and trucks remains to be measured.</p></div>
+<details><summary>Evaluation scope and evidence</summary>
+<ul>
+<li>The new benchmark has 100 complete scenes and 3,600 camera-view pairs. All variations used the same human boxes and candidate population.</li>
+<li>The ASNet and ViT reference scores reproduced the preceding sample runs exactly.</li>
+<li>The original author metric code and native Linux matching solver ran in a pinned Python 3.7 environment.</li>
+<li>All score arrays were frozen before the sweep’s metric evaluation. Models received no additional training.</li>
+<li>New distance transforms received no per-method threshold fitting. Final assignments therefore also reflect score calibration.</li>
+<li>The scene examples show human labels and serve as illustrations. They are not a gallery selected to claim model success.</li>
+<li>The full official test contains 1,861 scenes and 66,996 view pairs. Published full-test figures are context for this sampled study.</li>
+</ul>
+</details>
+<footer>
+<p><a href="../results/sample100/step2/results.json">Frozen author results, including original tie-sensitive scalars</a> · <a href="../results/sample100/step2/plan.json">Variation plan</a> · <a href="provenance.json">Figure and example provenance</a> · <a href="../results/sample100/step2/report.html">Original sweep report, before the FPR95 tie audit</a></p>
+<p>Next: Part Two · image processing and object detection (to be published after review).</p>
+</footer>
+</section>
+</main>
+<script type="application/json" id="part-one-data">%%DATA%%</script>
+<script>
+const data=JSON.parse(document.getElementById('part-one-data').textContent);
+const get=id=>document.getElementById(id);
+const pct=value=>Number.isFinite(value)?(100*value).toFixed(2)+'%':'n/a';
+const fmt=value=>value.toLocaleString('en-US');
+const safe=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const label=value=>value.replaceAll(' reference','').replace(' / ',' + ');
+const fprCell=row=>row.FPR95_status==='tied_cutoff'
+ ? '<span title="The 95%-recall cutoff falls inside a large tied-score block; the original author-code scalar is retained in the audit.">n/a — tied scores</span>'
+ : '<span'+(row.FPR95_status==='minor_cutoff_tie'?' title="Two candidates tie at the cutoff. The possible difference is one negative and does not change the displayed two-decimal percentage."':'')+'>'+pct(row.FPR95)+'</span>';
+const compareFpr=(a,b)=>Number.isFinite(b.FPR95)-Number.isFinite(a.FPR95)
+ || (Number.isFinite(a.FPR95)&&Number.isFinite(b.FPR95)?a.FPR95-b.FPR95:0) || b.AP-a.AP;
+const chosen=[...data.top_three_own_variants,'vit_reference','asnet_reference'];
+get('top-results').innerHTML=chosen.map(name=>{
+ const row=data.methods[name];
+ return '<tr'+(name.endsWith('_reference')?' class="reference-row"':'')+'><td class="wide-label">'+safe(label(row.label))+'</td><td>'+pct(row.AP)+'</td><td>'+fprCell(row)+'</td><td>'+pct(row.IPAA100)+'</td></tr>';
+}).join('');
+get('link-results').innerHTML=['vit_reference',data.top_three_own_variants[0]].map(name=>{
+ const row=data.methods[name],counts=row.author_assignment;
+ return '<tr><td class="wide-label">'+safe(label(row.label))+'</td><td>'+fmt(counts.correct)+'</td><td>'+fmt(counts.wrong)+'</td><td>'+pct(counts.recall)+'</td><td>'+fmt(counts.proposals)+'</td></tr>';
+}).join('');
+const changes=[
+ ['DINOv2 + SAM foreground','dino_tight_1x','dino_sam'],
+ ['Masked DINOv2 + camera geometry','dino_sam','dino_sam_geometry_gate'],
+ ['Rectifying the same surface patch','dino_sam_geometry_unwarped','dino_sam_geometry_warped'],
+ ['RoMa + SAM foreground','roma_box','roma_mask'],
+ ['ViT + RoMa/SAM 75/25 fusion','vit_reference','blend_roma_vit_reference_dense_first']
+];
+get('changes-body').innerHTML=changes.map(([name,control,modified])=>'<tr><td class="wide-label">'+safe(name)+'</td><td>'+pct(data.methods[control].AP)+'</td><td>'+pct(data.methods[modified].AP)+'</td></tr>').join('');
+function render(){
+ const query=get('search').value.toLowerCase().trim(),metric=get('sort').value;
+ const rows=Object.values(data.methods).filter(row=>!query||row.label.toLowerCase().includes(query)||row.method.toLowerCase().includes(query)).sort((a,b)=>metric==='FPR95'?compareFpr(a,b):b[metric]-a[metric]);
+ get('row-count').textContent=rows.length+' configurations shown';
+ get('all-results').innerHTML=rows.map(row=>'<tr data-method="'+safe(row.method)+'"><td class="wide-label">'+safe(label(row.label))+'</td><td>'+pct(row.AP)+'</td><td>'+fprCell(row)+'</td><td>'+pct(row.IPAA100)+'</td><td>'+fmt(row.author_assignment.correct)+'</td><td>'+fmt(row.author_assignment.wrong)+'</td></tr>').join('');
+}
+get('show-labels').addEventListener('change',event=>document.body.classList.toggle('hide-labels',!event.target.checked));
+get('search').addEventListener('input',render);get('sort').addEventListener('change',render);render();
+</script>
+</body>
+</html>

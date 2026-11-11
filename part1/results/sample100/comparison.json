@@ -1,0 +1,619 @@
+{
+  "training": false,
+  "selection": {
+    "seed": "messytable-official-protocol-sample100-2026-11-11-v1",
+    "selection": "SHA256 order within difficulty, admit a scene only from an unused setup.",
+    "selection_did_not_use_predictions": true,
+    "training": false,
+    "full_split_scenes": 1861,
+    "sample_scenes": 100,
+    "sample_setups": 100,
+    "images": 900,
+    "image_pairs": 3600,
+    "camera_pairs_per_scene": 36,
+    "annotated_appearances": 21706,
+    "candidate_object_pairs": 2484124,
+    "positive_object_pairs": 78335,
+    "negative_object_pairs": 2405789,
+    "difficulty_counts": {
+      "easy": 30,
+      "medium": 50,
+      "hard": 20
+    },
+    "source_sha256": {
+      "test.json": "7d892c889363e9ba16e9e40bdb1bb484fe03d8f47bba85cea09ad4e847a3a37a",
+      "test_easy.json": "37fd70f3918da57e2b2da430c5d6431d91e6dae16c8037fee8f131d27d78e37d",
+      "test_medium.json": "de0eab32563107fe525a1d6f130fe32d72ed6b5f3daf36ce5a0ff53d4d70d522",
+      "test_hard.json": "a624dfe5c87c5ac5b83b737751b8ede31532e217ba1a3b6bcf1b4a7e9b2ea433"
+    },
+    "scenes": [
+      {
+        "scene": "20190921-00003-02",
+        "setup": "20190921-00003",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190923-00015-06",
+        "setup": "20190923-00015",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20190924-00019-01",
+        "setup": "20190924-00019",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190924-00020-09",
+        "setup": "20190924-00020",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190924-00021-09",
+        "setup": "20190924-00021",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190924-00032-02",
+        "setup": "20190924-00032",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190925-00038-10",
+        "setup": "20190925-00038",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190925-00042-06",
+        "setup": "20190925-00042",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190925-00045-07",
+        "setup": "20190925-00045",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190925-00051-07",
+        "setup": "20190925-00051",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190926-00056-03",
+        "setup": "20190926-00056",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190926-00057-01",
+        "setup": "20190926-00057",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190926-00067-02",
+        "setup": "20190926-00067",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190927-00077-04",
+        "setup": "20190927-00077",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190928-00082-02",
+        "setup": "20190928-00082",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190928-00092-02",
+        "setup": "20190928-00092",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190929-00104-04",
+        "setup": "20190929-00104",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20190930-00125-06",
+        "setup": "20190930-00125",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191001-00128-09",
+        "setup": "20191001-00128",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191001-00133-07",
+        "setup": "20191001-00133",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191002-00146-06",
+        "setup": "20191002-00146",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191002-00148-10",
+        "setup": "20191002-00148",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191002-00157-04",
+        "setup": "20191002-00157",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191002-00159-09",
+        "setup": "20191002-00159",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191003-00163-01",
+        "setup": "20191003-00163",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191003-00171-02",
+        "setup": "20191003-00171",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191004-00180-03",
+        "setup": "20191004-00180",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191004-00183-04",
+        "setup": "20191004-00183",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191004-00185-01",
+        "setup": "20191004-00185",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191005-00193-04",
+        "setup": "20191005-00193",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191005-00197-04",
+        "setup": "20191005-00197",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191005-00199-01",
+        "setup": "20191005-00199",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191005-00200-04",
+        "setup": "20191005-00200",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191005-00202-04",
+        "setup": "20191005-00202",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191006-00213-04",
+        "setup": "20191006-00213",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191006-00214-01",
+        "setup": "20191006-00214",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191006-00217-08",
+        "setup": "20191006-00217",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191007-00221-09",
+        "setup": "20191007-00221",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191007-00223-01",
+        "setup": "20191007-00223",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191007-00226-09",
+        "setup": "20191007-00226",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191007-00230-02",
+        "setup": "20191007-00230",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191008-00242-09",
+        "setup": "20191008-00242",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191009-00250-06",
+        "setup": "20191009-00250",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191009-00251-03",
+        "setup": "20191009-00251",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191009-00261-01",
+        "setup": "20191009-00261",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191010-00264-04",
+        "setup": "20191010-00264",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191010-00268-08",
+        "setup": "20191010-00268",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191010-00272-03",
+        "setup": "20191010-00272",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191011-00279-01",
+        "setup": "20191011-00279",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191011-00284-03",
+        "setup": "20191011-00284",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191011-00289-05",
+        "setup": "20191011-00289",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191012-00294-05",
+        "setup": "20191012-00294",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191012-00303-09",
+        "setup": "20191012-00303",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191014-00311-07",
+        "setup": "20191014-00311",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191016-00337-07",
+        "setup": "20191016-00337",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191016-00339-10",
+        "setup": "20191016-00339",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191016-00342-01",
+        "setup": "20191016-00342",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191016-00345-02",
+        "setup": "20191016-00345",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191017-00349-03",
+        "setup": "20191017-00349",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191017-00353-01",
+        "setup": "20191017-00353",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191018-00364-08",
+        "setup": "20191018-00364",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191018-00366-02",
+        "setup": "20191018-00366",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191018-00372-03",
+        "setup": "20191018-00372",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191018-00373-01",
+        "setup": "20191018-00373",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191106-00563-02",
+        "setup": "20191106-00563",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191121-00765-10",
+        "setup": "20191121-00765",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191121-00767-05",
+        "setup": "20191121-00767",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191121-00773-07",
+        "setup": "20191121-00773",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191126-00818-02",
+        "setup": "20191126-00818",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191126-00821-02",
+        "setup": "20191126-00821",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191126-00822-07",
+        "setup": "20191126-00822",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191127-00830-01",
+        "setup": "20191127-00830",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191127-00839-01",
+        "setup": "20191127-00839",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191203-00895-07",
+        "setup": "20191203-00895",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191203-00896-06",
+        "setup": "20191203-00896",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191204-00906-08",
+        "setup": "20191204-00906",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191204-00912-09",
+        "setup": "20191204-00912",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191205-00921-03",
+        "setup": "20191205-00921",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191205-00923-05",
+        "setup": "20191205-00923",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191206-00932-04",
+        "setup": "20191206-00932",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191206-00934-01",
+        "setup": "20191206-00934",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191207-00961-08",
+        "setup": "20191207-00961",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191208-00964-09",
+        "setup": "20191208-00964",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191208-00966-01",
+        "setup": "20191208-00966",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191209-00982-04",
+        "setup": "20191209-00982",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191209-00987-08",
+        "setup": "20191209-00987",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191209-00992-09",
+        "setup": "20191209-00992",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191210-00999-08",
+        "setup": "20191210-00999",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191210-01005-03",
+        "setup": "20191210-01005",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191211-01022-06",
+        "setup": "20191211-01022",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191212-01030-10",
+        "setup": "20191212-01030",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191212-01031-04",
+        "setup": "20191212-01031",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191212-01032-03",
+        "setup": "20191212-01032",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191213-01037-09",
+        "setup": "20191213-01037",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191213-01042-02",
+        "setup": "20191213-01042",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191213-01050-02",
+        "setup": "20191213-01050",
+        "difficulty": "hard"
+      },
+      {
+        "scene": "20191214-01052-04",
+        "setup": "20191214-01052",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191214-01058-01",
+        "setup": "20191214-01058",
+        "difficulty": "easy"
+      },
+      {
+        "scene": "20191214-01064-10",
+        "setup": "20191214-01064",
+        "difficulty": "medium"
+      },
+      {
+        "scene": "20191216-01068-09",
+        "setup": "20191216-01068",
+        "difficulty": "hard"
+      }
+    ],
+    "interpretation": "An exploratory difficulty-stratified sample across100 setups from the official test split. This checks the official evaluation on a manageable sample. Full-split published numbers remain unverified."
+  },
+  "models": {
+    "asnet": {
+      "name": "ASNet ResNet-18, original released checkpoint",
+      "published_full_test": {
+        "name": "ASNet ResNet-18, original released checkpoint",
+        "AP": 0.524,
+        "FPR95": 0.209,
+        "IPAA100": 0.17,
+        "source": "https://arxiv.org/html/2007.14878",
+        "table": "Table1 ASNet, no epipolar soft constraint"
+      },
+      "sample": {
+        "AP": 0.506080406419682,
+        "FPR95": 0.22500518540902797,
+        "IPAA100": 0.1688888888888889
+      },
+      "sample_minus_published_percentage_points": {
+        "AP": -1.7919593580318027,
+        "FPR95": 1.6005185409027982,
+        "IPAA100": -0.11111111111111183
+      },
+      "inference_cpu_mps_and_batch_checks": {
+        "passed": true,
+        "scene": "20190921-00003-02",
+        "features": {
+          "center": {
+            "cpu_mps_max_abs_delta": 6.604194641113281e-05,
+            "batch_size_max_abs_delta": 9.5367431640625e-07
+          },
+          "surrnd": {
+            "cpu_mps_max_abs_delta": 1.8835067749023438e-05,
+            "batch_size_max_abs_delta": 2.384185791015625e-07
+          }
+        }
+      },
+      "elapsed_feature_extraction_seconds": 18.63476079236716,
+      "elapsed_distance_seconds": 20.160059874877334,
+      "elapsed_native_metric_seconds": 11.616326565854251,
+      "metrics_sha256": "83171dcae3b395bc130e506ad36dfacf522fdd4b15c781c530de9e73ec373cae"
+    },
+    "vit": {
+      "name": "ViT-P3DE* Tiny, released TripletNet_cam_pos checkpoint",
+      "published_full_test": {
+        "name": "ViT-P3DE* Tiny, released TripletNet_cam_pos checkpoint",
+        "AP": 0.828,
+        "FPR95": 0.049,
+        "IPAA100": 0.435,
+        "source": "https://ijcai.org/proceedings/2023/149",
+        "table": "Table2 ViT-P3DE* ViT-T, no separate epipolar soft constraint"
+      },
+      "sample": {
+        "AP": 0.8128831361551115,
+        "FPR95": 0.05464319605750961,
+        "IPAA100": 0.40305555555555556
+      },
+      "sample_minus_published_percentage_points": {
+        "AP": -1.5116863844888417,
+        "FPR95": 0.5643196057509612,
+        "IPAA100": -3.194444444444444
+      },
+      "inference_cpu_mps_and_batch_checks": {
+        "passed": true,
+        "scene": "20190921-00003-02",
+        "features": {
+          "feat": {
+            "cpu_mps_max_abs_delta": 3.159046173095703e-06,
+            "batch_size_max_abs_delta": 0.0
+          }
+        }
+      },
+      "elapsed_feature_extraction_seconds": 9.32358624972403,
+      "elapsed_distance_seconds": 5.504888666793704,
+      "elapsed_native_metric_seconds": 12.086060822941363,
+      "metrics_sha256": "95a078833df32c08a597007dae3c588578a8cc8b0f8870d1ac229da87d838c5f"
+    }
+  },
+  "metric_environment": {
+    "docker_image_id": "sha256:3fca2c0bf24de55ae2f9560ad2095c942b5410fd40cddf55d9f956c8106573d4",
+    "architecture": "linux/amd64",
+    "native_author_KMSolver": true,
+    "native_author_metric_functions": true
+  },
+  "feature_environment": "Modern PyTorch and torchvision on MPS, unmodified upstream crop/dataset functions and released model definitions. CPU/MPS and scene-batch-size checks passed. Per-model plans record exact versions.",
+  "full_published_test_verification": "Pending. Only the fixed 100-scene sample was run to completion.",
+  "interpretation": "Sample reproduces the ranking and approximate magnitude of the published model results. Population and test-distance95th-percentile normalization differ from the full test split.",
+  "scope_after_user_steering": "User requested a subset. Full-split jobs were not started. Initial12-scene throughput pilot is outside this sample comparison."
+}

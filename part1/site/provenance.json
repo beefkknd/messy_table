@@ -1,0 +1,153 @@
+{
+  "source_results_sha256": "398b79d7312f50b965b7f738e7dbd825597887414e22d1113bed664839eaf349",
+  "selection_sha256": "35fc135826c641d68134336e361b88f924450486f43455a4c58b93388eb19189",
+  "scenes": 100,
+  "view_pairs": 3600,
+  "human_boxes": true,
+  "new_inference": false,
+  "example_annotations": "Human identity labels, chosen after scoring to explain the task.",
+  "examples": [
+    {
+      "scene": "20190921-00003-02",
+      "cameras": [
+        2,
+        8
+      ],
+      "items": [
+        {
+          "id": "1",
+          "name": "Mug 1",
+          "color": "#b85300"
+        },
+        {
+          "id": "2",
+          "name": "Mug 2",
+          "color": "#007989"
+        }
+      ],
+      "views": [
+        {
+          "camera": 2,
+          "source": "data/messytable-full/MessyTable/images/20190921-00003-02-02.jpg",
+          "sha256": "a60a777903ef71920c38e5620276f316c5367a9fcc2baafa78f0c08b87ca61ed"
+        },
+        {
+          "camera": 8,
+          "source": "data/messytable-full/MessyTable/images/20190921-00003-02-08.jpg",
+          "sha256": "e675e0d701162361d04104185ba4a8dccf24290945e0d1c4cb5df8784359ca8a"
+        }
+      ]
+    },
+    {
+      "scene": "20190923-00015-06",
+      "cameras": [
+        1,
+        7
+      ],
+      "items": [
+        {
+          "id": "5",
+          "name": "Banana 5",
+          "color": "#b85300"
+        },
+        {
+          "id": "24",
+          "name": "Banana 24",
+          "color": "#007989"
+        }
+      ],
+      "views": [
+        {
+          "camera": 1,
+          "source": "data/messytable-full/MessyTable/images/20190923-00015-06-01.jpg",
+          "sha256": "d99e6f30870b38a508bd458ffdf4900118916e0deeee7ff265ade20e917bcffb"
+        },
+        {
+          "camera": 7,
+          "source": "data/messytable-full/MessyTable/images/20190923-00015-06-07.jpg",
+          "sha256": "74f638cbf1a3f7344bf5fcbf3101e7b3325bbabbd9f9fdd86830f3021011fb49"
+        }
+      ]
+    },
+    {
+      "scene": "20190924-00032-02",
+      "cameras": [
+        1,
+        7
+      ],
+      "items": [
+        {
+          "id": "13",
+          "name": "Bag 13",
+          "color": "#b85300"
+        },
+        {
+          "id": "6",
+          "name": "Bag 6",
+          "color": "#007989"
+        },
+        {
+          "id": "11",
+          "name": "Bottle 11 \u00b7 only annotated in camera 1",
+          "color": "#8744a4"
+        }
+      ],
+      "views": [
+        {
+          "camera": 1,
+          "source": "data/messytable-full/MessyTable/images/20190924-00032-02-01.jpg",
+          "sha256": "31746e6c4b15fb5b5d3199542d740cee75077c5df5b801f99962b8f46345643c"
+        },
+        {
+          "camera": 7,
+          "source": "data/messytable-full/MessyTable/images/20190924-00032-02-07.jpg",
+          "sha256": "120cb76a6892d5dfb3ee823fb37257922570f53f45ad2ba42001c6a9cb0648da"
+        }
+      ]
+    }
+  ],
+  "build_script_sha256": "42c55ff2f753a62128d81cf17de2995781dda0eafaa8fb2c4f87ef6b7a5c4769",
+  "scatter_helper_sha256": "15d26e4baae46aad9d7bb7afea799717183a809e520269935f7392f1fa01b926",
+  "template_sha256": "0153eadc46de68986e70234b975424e8cc4bf480091aa8f1ee6e602bc6d8f610",
+  "paths_module_sha256": "b5aac33a7af758c3ee378496ba6ac0aa2e205bf0b6c872c67a5044289748a2cd",
+  "external_inputs_sha256": "f2fa57164038332dff067646c2828978a8c35e79b14225c683f5359519878073",
+  "flow_story": {
+    "scene": "20190921-00003-02",
+    "cameras": [
+      2,
+      8
+    ],
+    "module_sha256": "a5d3842cdc92b367225607bfb2900966fa4aa84efcc79c78cd1b7cc260aa6ff7",
+    "native_links_sha256": "fd8aef1d670bfcc6cd70252933a596432d3ff34e4cf7a3eee57d4a4a1307f552",
+    "native_links_script_sha256": "cca3822f0f47955458e5a1f26bde96537addc143814e9893fc1eef69f8d6020e",
+    "chosen_after_scoring": true
+  },
+  "fpr95_audit_sha256": "0eb37462b9ac455f429dc960cf86f8ec852b1f46f239e0956c5f9721f0458790",
+  "fpr95_omitted_from_chart": [
+    "roma_box",
+    "roma_mask",
+    "roma_box_mean",
+    "roma_mask_mean"
+  ],
+  "assets_sha256": {
+    "20190923-00015-06-07.jpg": "74f638cbf1a3f7344bf5fcbf3101e7b3325bbabbd9f9fdd86830f3021011fb49",
+    "flow-2b-fingerprints.png": "0d7ecfd607b0cd1c9ac990432e946e365dd1a65c53f085cbc64efa0ffdcce66e",
+    "20190921-00003-02-02.jpg": "a60a777903ef71920c38e5620276f316c5367a9fcc2baafa78f0c08b87ca61ed",
+    "matching-comparison.png": "3509b4282cd5e12b4c1afd20341f33c66b0e6ef9a3ddcf6726c9875a18f2aeab",
+    "20190923-00015-06-01.jpg": "d99e6f30870b38a508bd458ffdf4900118916e0deeee7ff265ade20e917bcffb",
+    "20190924-00032-02-01.jpg": "31746e6c4b15fb5b5d3199542d740cee75077c5df5b801f99962b8f46345643c",
+    "matching-comparison.svg": "af6eeee6b50a6a8ded88bcf538e7f986d44c2bff7be7f7a64f580e2de0ca8530",
+    "20190924-00032-02-07.jpg": "120cb76a6892d5dfb3ee823fb37257922570f53f45ad2ba42001c6a9cb0648da",
+    "flow-1-photos.jpg": "16997401db4a4c16553f80285652e345334019baa849dfef825075bf6ed1e60a",
+    "matching-comparison.json": "28771a1f08668a077ec47ce4084e2adc88cdd7fc68880413cd21cab614ee2093",
+    "reference-ap.svg": "8f99a8a59139ae5671d9d0079b827afb565706ca94680530df0fc4217c15a3f1",
+    "flow-2a-cutouts.png": "eed1baed2ff73d1934f5922737a088f025f37cb99656f3888f2500ba475bac5d",
+    "correct-and-wrong.svg": "2ad4d8d40e419865580a1a2e4da9c19ec999ac4d001b7c03879efa068802e826",
+    "correct-and-wrong.json": "9a48805d68d23c9a29a47e981a2784cfbc2226945c6318a88bcbc805717ff9eb",
+    "20190921-00003-02-08.jpg": "e675e0d701162361d04104185ba4a8dccf24290945e0d1c4cb5df8784359ca8a",
+    "correct-and-wrong.png": "908f5539c5dc3453fc781d61cb5d7647de1c76ee615facecb49f7ad11d5229bc",
+    "flow-4-pairs.jpg": "f25914701b50d744b8ee703249ac38f0051d892ca432782c5216268ec5caa439",
+    "reference-ap.png": "b5ced95806f34ae7011916f885937f5fc24c6d5aced5a9781688175a0a5baffc"
+  },
+  "html_sha256": "518e67e543ba9d58f73cbf878cb0d19c0d4a95269be9acff93b19b66fa5acdf7"
+}

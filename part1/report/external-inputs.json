@@ -1,0 +1,57 @@
+[
+  {
+    "path": "data/messytable-full/MessyTable/labels/test.json",
+    "sha256": "7d892c889363e9ba16e9e40bdb1bb484fe03d8f47bba85cea09ad4e847a3a37a",
+    "bytes": 224244622
+  },
+  {
+    "path": "evaluation/messytable-official-reproduction/sample100/step2/scores/roma_mask.npy",
+    "sha256": "dcfe89910c2967c122dc5f794ebe3000b5e6b9ce634772dbf08f10d0cb47bebb",
+    "bytes": 19873120
+  },
+  {
+    "path": "evaluation/messytable-official-reproduction/sample100/step2/scores/vit_reference.npy",
+    "sha256": "015b7750b8a01d0960c073ed8fdff39c16d24c708928813ed66266d01fdd439b",
+    "bytes": 19873120
+  },
+  {
+    "path": "evaluation/messytable-official-reproduction/sample100/step2/scores/blend_roma_vit_reference_dense_first.npy",
+    "sha256": "d64895b130f35391be52115fe136c659ef372cdbb25e1de545cc4da2010c1110",
+    "bytes": 19873120
+  },
+  {
+    "path": "evaluation/messytable-official-reproduction/sample100/vit/gt_inst.npy",
+    "sha256": "7d8386b4d6e2798c0f7cf61a4bc6adf32e582b74671f13b34bba897782971eca",
+    "bytes": 19873120
+  },
+  {
+    "path": "data/messytable-full/MessyTable/images/20190921-00003-02-02.jpg",
+    "sha256": "a60a777903ef71920c38e5620276f316c5367a9fcc2baafa78f0c08b87ca61ed",
+    "bytes": 315433
+  },
+  {
+    "path": "data/messytable-full/MessyTable/images/20190921-00003-02-08.jpg",
+    "sha256": "e675e0d701162361d04104185ba4a8dccf24290945e0d1c4cb5df8784359ca8a",
+    "bytes": 277677
+  },
+  {
+    "path": "data/messytable-full/MessyTable/images/20190923-00015-06-01.jpg",
+    "sha256": "d99e6f30870b38a508bd458ffdf4900118916e0deeee7ff265ade20e917bcffb",
+    "bytes": 368942
+  },
+  {
+    "path": "data/messytable-full/MessyTable/images/20190923-00015-06-07.jpg",
+    "sha256": "74f638cbf1a3f7344bf5fcbf3101e7b3325bbabbd9f9fdd86830f3021011fb49",
+    "bytes": 356885
+  },
+  {
+    "path": "data/messytable-full/MessyTable/images/20190924-00032-02-01.jpg",
+    "sha256": "31746e6c4b15fb5b5d3199542d740cee75077c5df5b801f99962b8f46345643c",
+    "bytes": 396004
+  },
+  {
+    "path": "data/messytable-full/MessyTable/images/20190924-00032-02-07.jpg",
+    "sha256": "120cb76a6892d5dfb3ee823fb37257922570f53f45ad2ba42001c6a9cb0648da",
+    "bytes": 448463
+  }
+]

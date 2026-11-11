@@ -1,0 +1,6 @@
+# Report build (part1/report/build.py). Python 3.11+ (uses hashlib.file_digest).
+# Versions the published site was built with:
+matplotlib==3.11.2
+numpy==2.5.4
+scipy==1.18.1
+pillow==13.0.0

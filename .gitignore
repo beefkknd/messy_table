@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Large inputs stay outside git (see part1/report/external-inputs.json)
+*.npy
+*.pt
+*.pth
+*.safetensors

@@ -1,0 +1,24 @@
+MessyTable matching benchmark
+Established November 11, 2026
+
+selection.json defines the preserved scene membership and official source hashes.
+The same 100 scenes from 100 camera setups are used for all baseline and Step 2 runs.
+Each scene retains nine camera views and all 36 unordered view pairs.
+
+100 scenes
+900 photos
+3,600 view pairs
+21,706 annotated object appearances
+2,484,124 candidate object pairs
+78,335 true object pairs
+30 easy scenes, 50 medium scenes, 20 hard scenes
+
+The source photos remain under data/messytable-full/MessyTable/images/.
+The manifest is the stable input list. New experiments must verify its SHA256
+recorded in their plans and preserve the camera and annotation order.
+
+asnet/ and vit/ contain the official-protocol reference runs.
+step2/ contains the fixed Step 2 variation sweep and its selected top three.
+
+Model selection on this benchmark exposes its results to development.
+This benchmark remains the comparison set for subsequent experiments.

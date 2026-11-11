@@ -1,0 +1,435 @@
+{
+  "title": "Actual identity assignments \u00b7 78,335 true links / 3,600 view pairs",
+  "common_target": 78335,
+  "ratio_axes": {
+    "x": "100 * good / target",
+    "y": "100 * good / (good + bad)"
+  },
+  "count_axes": {
+    "x": "Wrong identity links",
+    "y": "Correct identity links"
+  },
+  "highlighted": [
+    {
+      "label": "ViT-P3DE Tiny",
+      "good": 70365,
+      "bad": 8066,
+      "target": 78335,
+      "color": "#42679a",
+      "recall_percent": 89.82574838833216,
+      "precision_percent": 89.71580115005547
+    },
+    {
+      "label": "RoMa+SAM / ViT \u00b7 75/25",
+      "good": 74159,
+      "bad": 6147,
+      "target": 78335,
+      "color": "#107d71",
+      "recall_percent": 94.66904959468947,
+      "precision_percent": 92.34552835404577
+    }
+  ],
+  "background": [
+    {
+      "label": "DINOv2 tight 1x",
+      "good": 35642,
+      "bad": 40863,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.49945745835195,
+      "precision_percent": 46.58780471864584
+    },
+    {
+      "label": "DINOv2 context 125",
+      "good": 32475,
+      "bad": 43878,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 41.45656475394141,
+      "precision_percent": 42.53270991316648
+    },
+    {
+      "label": "DINOv2 context 150",
+      "good": 29984,
+      "bad": 46289,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 38.27663241207634,
+      "precision_percent": 39.31142081732723
+    },
+    {
+      "label": "DINOv2 context 200",
+      "good": 25702,
+      "bad": 50335,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 32.810365736899215,
+      "precision_percent": 33.80196483291029
+    },
+    {
+      "label": "DINOv2 four-crop mean",
+      "good": 39320,
+      "bad": 36212,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 50.19467670900619,
+      "precision_percent": 52.057406132500134
+    },
+    {
+      "label": "DINOv2 four-crop maximum",
+      "good": 33354,
+      "bad": 44926,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 42.57866853896726,
+      "precision_percent": 42.608584568216656
+    },
+    {
+      "label": "DINOv2 two-crop support",
+      "good": 35570,
+      "bad": 41314,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.40754452032935,
+      "precision_percent": 46.26450236720254
+    },
+    {
+      "label": "DINOv2 grayscale",
+      "good": 33905,
+      "bad": 41376,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 43.28205782855684,
+      "precision_percent": 45.03792457592221
+    },
+    {
+      "label": "DINOv2 Canny edges",
+      "good": 17900,
+      "bad": 60337,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 22.8505776472841,
+      "precision_percent": 22.879200378337615
+    },
+    {
+      "label": "DINOv2 GrabCut foreground",
+      "good": 35601,
+      "bad": 40053,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.44711814642242,
+      "precision_percent": 47.057657228963436
+    },
+    {
+      "label": "DINOv2 SAM foreground",
+      "good": 38683,
+      "bad": 39179,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 49.381502521222956,
+      "precision_percent": 49.6814877603966
+    },
+    {
+      "label": "DINOv2 tight_1x fixed90\u00b0",
+      "good": 33551,
+      "bad": 41341,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 42.830152549945744,
+      "precision_percent": 44.79917748224109
+    },
+    {
+      "label": "DINOv2 tight_1x fixed180\u00b0",
+      "good": 32831,
+      "bad": 41478,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 41.91102316971979,
+      "precision_percent": 44.181727650755626
+    },
+    {
+      "label": "DINOv2 tight_1x fixed270\u00b0",
+      "good": 33375,
+      "bad": 41655,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 42.605476479223846,
+      "precision_percent": 44.48220711715314
+    },
+    {
+      "label": "DINOv2 tight_1x best quarter-turn per candidate",
+      "good": 36763,
+      "bad": 40827,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 46.930490840620415,
+      "precision_percent": 47.381105812604716
+    },
+    {
+      "label": "DINOv2 tight_1x shared-view rotation by appearance",
+      "good": 35914,
+      "bad": 40568,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.846684113103976,
+      "precision_percent": 46.95745404147381
+    },
+    {
+      "label": "DINOv2 tight_1x shared-view rotation by anchor",
+      "good": 35749,
+      "bad": 40710,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.636050296802196,
+      "precision_percent": 46.7557776062988
+    },
+    {
+      "label": "DINOv2 sam fixed90\u00b0",
+      "good": 36963,
+      "bad": 40415,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 47.18580455734984,
+      "precision_percent": 47.76939181679547
+    },
+    {
+      "label": "DINOv2 sam fixed180\u00b0",
+      "good": 36307,
+      "bad": 40708,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 46.34837556647731,
+      "precision_percent": 47.14276439654613
+    },
+    {
+      "label": "DINOv2 sam fixed270\u00b0",
+      "good": 36967,
+      "bad": 40372,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 47.190910831684434,
+      "precision_percent": 47.79865268493257
+    },
+    {
+      "label": "DINOv2 sam best quarter-turn per candidate",
+      "good": 38983,
+      "bad": 39715,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 49.7644730963171,
+      "precision_percent": 49.5349310020585
+    },
+    {
+      "label": "DINOv2 sam shared-view rotation by appearance",
+      "good": 39344,
+      "bad": 38596,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 50.22531435501372,
+      "precision_percent": 50.47985629971773
+    },
+    {
+      "label": "DINOv2 sam shared-view rotation by anchor",
+      "good": 38978,
+      "bad": 38862,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 49.75809025339886,
+      "precision_percent": 50.07451181911613
+    },
+    {
+      "label": "DINOv2 anchor context",
+      "good": 35941,
+      "bad": 39700,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.88115146486245,
+      "precision_percent": 47.515236445842866
+    },
+    {
+      "label": "DINOv2 anchors, reject only",
+      "good": 35841,
+      "bad": 40673,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 45.75349460649773,
+      "precision_percent": 46.842407925347
+    },
+    {
+      "label": "DINOv2 soft camera geometry",
+      "good": 48834,
+      "bad": 27925,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 62.33995021382524,
+      "precision_percent": 63.619901249364894
+    },
+    {
+      "label": "DINOv2 tight 1x + camera geometry",
+      "good": 41252,
+      "bad": 40227,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 52.661007212612496,
+      "precision_percent": 50.62899642852759
+    },
+    {
+      "label": "DINOv2 SAM foreground + camera geometry",
+      "good": 46619,
+      "bad": 34825,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 59.512350801046786,
+      "precision_percent": 57.24055792937479
+    },
+    {
+      "label": "DINOv2 four-crop mean + camera geometry",
+      "good": 43520,
+      "bad": 37975,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 55.55626476032425,
+      "precision_percent": 53.40204920547273
+    },
+    {
+      "label": "DINOv2 SAM + geometry + native surface control",
+      "good": 46556,
+      "bad": 34888,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 59.43192698027701,
+      "precision_percent": 57.16320416482491
+    },
+    {
+      "label": "DINOv2 SAM + geometry + rectified surface",
+      "good": 46575,
+      "bad": 34869,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 59.45618178336631,
+      "precision_percent": 57.186533077943125
+    },
+    {
+      "label": "RoMa box coverage",
+      "good": 29346,
+      "bad": 686,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 37.46218165570945,
+      "precision_percent": 97.71576984549813
+    },
+    {
+      "label": "RoMa + SAM foreground",
+      "good": 37035,
+      "bad": 408,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 47.277717495372436,
+      "precision_percent": 98.91034372245814
+    },
+    {
+      "label": "RoMa box coverage, symmetric mean",
+      "good": 36388,
+      "bad": 1105,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 46.451777621752726,
+      "precision_percent": 97.05278318619476
+    },
+    {
+      "label": "RoMa + SAM, symmetric mean",
+      "good": 44030,
+      "bad": 546,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 56.2073147379843,
+      "precision_percent": 98.7751256281407
+    },
+    {
+      "label": "ASNet reference",
+      "good": 55635,
+      "bad": 24215,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 71.02189315120955,
+      "precision_percent": 69.67438948027552
+    },
+    {
+      "label": "RoMa + SAM / DINOv2 four-crop mean (50/50)",
+      "good": 68654,
+      "bad": 10625,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 87.64153954171188,
+      "precision_percent": 86.59796415191917
+    },
+    {
+      "label": "RoMa + SAM / DINOv2 four-crop mean (75/25)",
+      "good": 69774,
+      "bad": 6102,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 89.0712963553967,
+      "precision_percent": 91.9579313616954
+    },
+    {
+      "label": "RoMa + SAM / DINOv2 SAM foreground (50/50)",
+      "good": 69699,
+      "bad": 11429,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 88.97555371162316,
+      "precision_percent": 85.91238536633468
+    },
+    {
+      "label": "RoMa + SAM / DINOv2 SAM foreground (75/25)",
+      "good": 70329,
+      "bad": 8174,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 89.77979191932087,
+      "precision_percent": 89.587659070354
+    },
+    {
+      "label": "RoMa + SAM / ASNet reference (50/50)",
+      "good": 71942,
+      "bad": 9368,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 91.83889704474373,
+      "precision_percent": 88.47866191120403
+    },
+    {
+      "label": "RoMa + SAM / ASNet reference (75/25)",
+      "good": 72158,
+      "bad": 7563,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 92.11463585881151,
+      "precision_percent": 90.51316466175788
+    },
+    {
+      "label": "RoMa + SAM / ViT-P3DE Tiny reference (50/50)",
+      "good": 74056,
+      "bad": 7319,
+      "target": 78335,
+      "color": "#bdcbd0",
+      "recall_percent": 94.53756303057382,
+      "precision_percent": 91.00583717357911
+    }
+  ],
+  "observed_frontier": [
+    [
+      47.277717495372436,
+      98.91034372245814
+    ],
+    [
+      56.2073147379843,
+      98.7751256281407
+    ],
+    [
+      94.66904959468947,
+      92.34552835404577
+    ]
+  ]
+}
