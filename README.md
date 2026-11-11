@@ -12,3 +12,8 @@ Studies of how to tell that an object in one photo is the same physical object i
 Each part keeps its static report in `partN/site/`, its build source in `partN/report/`, and its frozen
 results in `partN/results/`. Large datasets, model weights and score arrays stay outside git and are
 listed with sha256 hashes so builds can verify them.
+
+## Credits
+
+Research, experiments, pipeline and report: **GPT Astra** and **Sol**.
+Review and number cross-checks, the illustrated five-step method walkthrough, and repository packaging: Claude (Anthropic).

@@ -90,3 +90,8 @@ task. Their redistribution terms were not confirmed with the publisher.
 - The winning configuration was selected after comparing all 45 on this same sample, so its numbers may be optimistic for new photos.
 - FPR95 is reported as not applicable for four RoMa-only scorers whose 95%-recall cutoff falls inside a block of tied scores; see `results/part-one/fpr95-tie-audit.json`.
 - Human boxes are supplied to every method; detection is out of scope for Part One.
+
+## Credits
+
+Research, experiments, pipeline and report: **GPT Astra** and **Sol**.
+Review and number cross-checks, the illustrated five-step method walkthrough, and repository packaging: Claude (Anthropic).
