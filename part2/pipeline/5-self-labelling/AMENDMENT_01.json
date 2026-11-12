@@ -1,0 +1,15 @@
+{
+  "amendment": 1,
+  "time_utc": "2026-11-10T15:28:57.270292+00:00",
+  "before": "authoritative teacher inference and any new label release",
+  "reason": "independent reviewer identified ambiguous arm-specific quality gate and implementation comparison semantics",
+  "parent_protocol_sha256": "b2e52904d862fd36c4ef4ed5e6cfddc61593d4f37e42f801757a8af1be4ad207",
+  "support_confidence_operator": "strict >0.45; seed>=0.80;raw floor>0.25",
+  "primary_quality_audit": "metadata-frozen Supplemental240; full1000 and old180/new820 are separate descriptive audits",
+  "S_quality_gate": "own overall IoU50pointprecision>=.95 and lower95setupbootstrap>=.90; ladder-only marginal requirements do not apply",
+  "L_quality_gate": "own overall IoU50pointprecision>=.95 and lower95setupbootstrap>=.90, plus addedlabelsmarginalprecision>=.95, >=50newcorrectendpoints across>=15setups withinSupplemental240",
+  "conditional_refresh_quality_gate": "refreshed policy overallquality plus newlyadmittedversusunchangedlabel incrementprecision>=.95 and >=50newcorrectendpoints across>=15setups, all onidentical240inputframes",
+  "bootstrap_seed": 20261110,
+  "numerical_budget_comparison": "unmapped and candidatecount gate compares ratios exactly to1.05 onDevelopment100; an unmappeddenominator0 requirescandidateunmapped0",
+  "scope": "clarification only; no output or label scores consulted"
+}

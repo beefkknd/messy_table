@@ -1,0 +1,464 @@
+{
+  "rule": "Every first-party script/config whose output Part Two uses; identity-matching (Part Three) code excluded.",
+  "files": [
+    {
+      "repo_path": "part2/pipeline/0-data/acquire.py",
+      "original_path": "data/messytable-full/scripts/acquire.py",
+      "sha256": "e20ad074b14bf96a388642d5571e65f51643c5a6a8b1b4d700c367996f8b1afe",
+      "bytes": 5977,
+      "stage": "0-data"
+    },
+    {
+      "repo_path": "part2/pipeline/0-data/audit_dataset.py",
+      "original_path": "data/messytable-full/scripts/audit_dataset.py",
+      "sha256": "4362928f12ba65f46ed4b0e994e022a220c46044da16748ff79337d60cc2f0d8",
+      "bytes": 4522,
+      "stage": "0-data"
+    },
+    {
+      "repo_path": "part2/pipeline/0-data/prepare.py",
+      "original_path": "research/self-learning-program/data/prepare.py",
+      "sha256": "6946abb3afad9818e42280d6495d5ec8d9d74fc468ef96d06cb89f2dbdc79ae9",
+      "bytes": 23962,
+      "stage": "0-data"
+    },
+    {
+      "repo_path": "part2/pipeline/0-data/reveal_development.py",
+      "original_path": "research/self-learning-program/data/reveal_development.py",
+      "sha256": "c62649c3c7632e3636d1e492789e1c636fd18fda5ea20d1042d8cefa056a2a8f",
+      "bytes": 3281,
+      "stage": "0-data"
+    },
+    {
+      "repo_path": "part2/pipeline/0-data/export_original100.py",
+      "original_path": "research/self-learning-program/data/export_original100.py",
+      "sha256": "5718b4b23cdfa3ac20fbd23658bfff913aa7f2262b77a7806ab062d10bafc0e2",
+      "bytes": 4393,
+      "stage": "0-data"
+    },
+    {
+      "repo_path": "part2/pipeline/0-data/supervised-frames.json",
+      "original_path": "research/self-learning-program/data/yolo/supervised-frames.json",
+      "sha256": "0ea60fb0e2cdfb94eb3e93c406b0b1d728c7a254cf6a36ea58a3bd145bb8838d",
+      "bytes": 93120,
+      "stage": "0-data"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/train_detector.py",
+      "original_path": "research/self-learning-program/engineering/train_detector.py",
+      "sha256": "fd7708d8ab5180098cb78b5fc47b15f1751e1f504367e0fc5874134aabc5dad0",
+      "bytes": 15329,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/partial_loss.py",
+      "original_path": "research/self-learning-program/engineering/partial_loss.py",
+      "sha256": "0a42df0a8d6f86f42c73408d319c7560ea7ec3b6a2752774b44e7b2ff327d9c9",
+      "bytes": 1020,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/common.py",
+      "original_path": "research/self-learning-program/engineering/common.py",
+      "sha256": "056be200832a4e357a3d1bcd35980273fc8e12b27b3234a3a03986f5111ae07d",
+      "bytes": 1501,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/run_round2.sh",
+      "original_path": "research/self-learning-program/engineering/run_round2.sh",
+      "sha256": "1a6456edefda65135ee82a0b6ce470aca2be325a3cc8303e93d84bd2e69d88f7",
+      "bytes": 3960,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/requirements.lock.txt",
+      "original_path": "research/self-learning-program/engineering/requirements.lock.txt",
+      "sha256": "dfcc12e3776b003b8fcd68b58b6e1f5c01b80193645d1b70674a0d1b49d532bc",
+      "bytes": 848,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/verify_round2_training.py",
+      "original_path": "research/self-learning-program/engineering/verify_round2_training.py",
+      "sha256": "dd3e8bb79b85edd629ca65a28167ca76f1e775a0070f1bdd70860d86ad68a888",
+      "bytes": 4506,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/1-train-150/check_loss.py",
+      "original_path": "research/self-learning-program/engineering/check_loss.py",
+      "sha256": "c58c5b2007f195856a84223b6c63a402be14c9d4c997ce455c368fff64d8462d",
+      "bytes": 3358,
+      "stage": "1-train-150"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/run.py",
+      "original_path": "evaluation/messytable-detection-full-test/run.py",
+      "sha256": "46a06c2711f3666212fee4c5a0e3ddb22c5adf122faf5058e630dd3851ab56e1",
+      "bytes": 22201,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/verify_results.py",
+      "original_path": "evaluation/messytable-detection-full-test/verify_results.py",
+      "sha256": "5a121b6b297e7539cb44a5772a4b3a57bdbd67d972b9fb53ffcbb492fcc699bd",
+      "bytes": 4369,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/finish.py",
+      "original_path": "evaluation/messytable-detection-full-test/finish.py",
+      "sha256": "3b981d071cf7e527b4b4ad93fad10a5782a0f0373f21b34bdea58afd84804b12",
+      "bytes": 1152,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/run_full_scene.py",
+      "original_path": "evaluation/run_full_scene.py",
+      "sha256": "ae110e3c94af5e1876519f6fb67f3d343dd982605072cb58330995d2f7fd126d",
+      "bytes": 5750,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/predict_detector.py",
+      "original_path": "research/self-learning-program/engineering/predict_detector.py",
+      "sha256": "d4b1e1e193ce84274c32cf73d1cd8bc901fa3f19d9e0a2ec37dabf4786645eff",
+      "bytes": 4425,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/score_detector.py",
+      "original_path": "research/self-learning-program/engineering/score_detector.py",
+      "sha256": "2f923897a140f900bdb52f3faff2533e89bc4416dd562063a8d8ff4e8fa5d230",
+      "bytes": 8514,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/build_teacher.py",
+      "original_path": "research/self-learning-program/engineering/build_teacher.py",
+      "sha256": "7b568bccbed254914c84eb79168cae4552a0d4fdc4d0ada72fe1573caefcd8aa",
+      "bytes": 10564,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/score_round2.py",
+      "original_path": "research/self-learning-program/engineering/score_round2.py",
+      "sha256": "86fa37a0ba6fbefb7e3156e877c13e20371d06cfd40e311daeff98361fa90c12",
+      "bytes": 6263,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/summarize_round2.py",
+      "original_path": "research/self-learning-program/data/summarize_round2.py",
+      "sha256": "e8265d72f87f8a17171a66b9cfe6bb5fcf4de88a7af262621b3556536677d0c1",
+      "bytes": 9989,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/tile_detector.py",
+      "original_path": "research/self-learning-program/step0-tiles/engineering/tile_detector.py",
+      "sha256": "1be62bd3535da274c73dfee5d51fe65ab229ae12e9ff7666d686001c23a3d8f9",
+      "bytes": 14196,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/common.py",
+      "original_path": "research/self-learning-program/step0-tiles/engineering/common.py",
+      "sha256": "1305eb014fd332e097770d122a42ef2e0385af72663599539372455e38656ebb",
+      "bytes": 1601,
+      "stage": "2-full-test-A-D",
+      "note": "This is the \"common\" module full-test run.py imports (step0-tiles is first on sys.path), not engineering/common.py."
+    },
+    {
+      "repo_path": "part2/pipeline/2-full-test-A-D/score_tiles.py",
+      "original_path": "research/self-learning-program/step0-tiles/data/score_tiles.py",
+      "sha256": "1a752c254538d3159fb5ac47b2e9b8e1ee888afb0b08cd072f9dc7855a53af4d",
+      "bytes": 13515,
+      "stage": "2-full-test-A-D"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/prepare.py",
+      "original_path": "research/detector-small-object-round/prepare.py",
+      "sha256": "487a67c9212c2a51f42d13b9ece1e51b7ed6eaa0cb08e67e1696c6076d2047f0",
+      "bytes": 6403,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/common_round.py",
+      "original_path": "research/detector-small-object-round/common_round.py",
+      "sha256": "45871bfb2b4d9f21f07a578acd71959d8f45eaff3321e99b7797f1c2745ae7f3",
+      "bytes": 1596,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/train.py",
+      "original_path": "research/detector-small-object-round/train.py",
+      "sha256": "d9c65e7334c5e9dd86cd9f9de7486c3444d1ff4e5fe2d8e53a0a5ea91cd1c963",
+      "bytes": 5065,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/tile_policy.py",
+      "original_path": "research/detector-small-object-round/tile_policy.py",
+      "sha256": "73cbfa03d38608e1b7fbab75c5d58ea65b90a2c0212106addb12d962e8094e5b",
+      "bytes": 4768,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/evaluate.py",
+      "original_path": "research/detector-small-object-round/evaluate.py",
+      "sha256": "af5e1331123fcb76935b5fccefb761cb8f0f8de38ad0a999055b9b23107e68e2",
+      "bytes": 18134,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/run_round.py",
+      "original_path": "research/detector-small-object-round/run_round.py",
+      "sha256": "8c4288dc8c8645f3b315f20e20f99cbe531983245143e885d3cd140bd0f27133",
+      "bytes": 2158,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/run_control_followup.py",
+      "original_path": "research/detector-small-object-round/run_control_followup.py",
+      "sha256": "268273b2cb2ec3fbcd8515e5cb780246fac0a88e7780206df26eaea5dc646de5",
+      "bytes": 1285,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/finish.py",
+      "original_path": "research/detector-small-object-round/finish.py",
+      "sha256": "8aded4d643da4a1d6668f8fc3ff38b8743a724507b3ba7b8f0e87a34bddf0b14",
+      "bytes": 849,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/audit_results.py",
+      "original_path": "research/detector-small-object-round/audit_results.py",
+      "sha256": "217439c5d25337c96b91b81e3ee7e576f1f82f16630d31de49ffeb53917f6907",
+      "bytes": 6480,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/protocol.json",
+      "original_path": "research/detector-small-object-round/protocol.json",
+      "sha256": "f06e2849be1e91f979ed1bb4d2e94a4ae91e4cd798df691b939e6a23b7c31ef1",
+      "bytes": 5164,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/protocol-amendments.json",
+      "original_path": "research/detector-small-object-round/protocol-amendments.json",
+      "sha256": "18bb24ee6f4ebc0de1e6596bb0d5393ebd8720d7cedb1fc0442e33219797e291",
+      "bytes": 4545,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/3-train-600-E-F/train600.json",
+      "original_path": "research/detector-small-object-round/train600.json",
+      "sha256": "dbf2de0a8475a9d805ad592be0be3f784022dffd1b910f4a7ea1ec2c38406a9e",
+      "bytes": 1694053,
+      "stage": "3-train-600-E-F"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/common_new.py",
+      "original_path": "research/detector-scale-and-integration/common_new.py",
+      "sha256": "4a54f765e14bb570d5257832ecfaf7a2f29a42ad0adb4b420b97e9dfbc6dfa06",
+      "bytes": 1739,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/prepare.py",
+      "original_path": "research/detector-scale-and-integration/prepare.py",
+      "sha256": "f3f5ab8047f0baf6d05c629ef5a17c8d2652366ade5a5a8932536e0f367adbe9",
+      "bytes": 6209,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/train2400.py",
+      "original_path": "research/detector-scale-and-integration/train2400.py",
+      "sha256": "0b3587b61302eeb1cf67014bd64388db057618e0bd45dab9edaf556068f8a4d9",
+      "bytes": 5135,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/detect.py",
+      "original_path": "research/detector-scale-and-integration/detect.py",
+      "sha256": "4178689393b2b71b3f9052bfa930a4dffd98a14e1d2a7989db76068c95fda40c",
+      "bytes": 4683,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/run.py",
+      "original_path": "research/detector-scale-and-integration/run.py",
+      "sha256": "f7f42492d566160352f9521c98e92149dd01fe329cefe97c24decd6adf9a8647",
+      "bytes": 532,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/score_step1.py",
+      "original_path": "research/detector-scale-and-integration/score_step1.py",
+      "sha256": "952ab8925e294edfcc9a33d524ba02a6f1e7b738672832937c013e2b33d6a197",
+      "bytes": 1902,
+      "stage": "4-train-2400-G-H",
+      "note": "Normally launched by post_detect.py (Part Three launcher, not archived); runs alone."
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/step2_inputs.py",
+      "original_path": "research/detector-scale-and-integration/step2_inputs.py",
+      "sha256": "a583a1f3254d7398caa515743d7e79b3ba19faba7a100b32f2f8b754c6f3f862",
+      "bytes": 1221,
+      "stage": "4-train-2400-G-H",
+      "note": "Mixed by name only: exports the merged detector boxes on the 900 Part One photos (step2/boxes.json). Part Two uses them for the Section 2 example. No matching."
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/finish.py",
+      "original_path": "research/detector-scale-and-integration/finish.py",
+      "sha256": "a9fea823785c152a4470dcd60e76d8debfeb9971444675aa4eb30f48c3173fec",
+      "bytes": 5640,
+      "stage": "4-train-2400-G-H",
+      "note": "Mixed: writes audit.json, which Part Two build.py requires to say \"passed\". It also checks Step 2 (Part Three) artefacts, which are not published."
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/protocol.json",
+      "original_path": "research/detector-scale-and-integration/protocol.json",
+      "sha256": "e9c9e8f67b61c993a21a8ead00a011a687cd0124b40fdf734944d196b129658e",
+      "bytes": 8542,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/4-train-2400-G-H/train2400.json",
+      "original_path": "research/detector-scale-and-integration/train2400.json",
+      "sha256": "46b6293cf4b47ce8e6631cc9bf5df1a3fbc6e544cb4a5a5f9354d6a26e23786a",
+      "bytes": 6710714,
+      "stage": "4-train-2400-G-H"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/PROTOCOL.json",
+      "original_path": "research/self-learning-program/stronger-teacher/PROTOCOL.json",
+      "sha256": "b2e52904d862fd36c4ef4ed5e6cfddc61593d4f37e42f801757a8af1be4ad207",
+      "bytes": 6059,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/AMENDMENT_01.json",
+      "original_path": "research/self-learning-program/stronger-teacher/AMENDMENT_01.json",
+      "sha256": "06991db157d52ca404481484078a9f6194f395882dd2d26c0f206fd12f420437",
+      "bytes": 1376,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/freeze_cohorts.py",
+      "original_path": "research/self-learning-program/stronger-teacher/data/freeze_cohorts.py",
+      "sha256": "37fc21098bf10d49b53a6b5f101163878b5d1bfed2074b2a3fd8ce953483cfd4",
+      "bytes": 10334,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/audit_teacher.py",
+      "original_path": "research/self-learning-program/stronger-teacher/data/audit_teacher.py",
+      "sha256": "9838374b51415c0f4209d1f56a2007067ea0719811368754604074c7e3f9d1f4",
+      "bytes": 20604,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/score_study.py",
+      "original_path": "research/self-learning-program/stronger-teacher/data/score_study.py",
+      "sha256": "61bc71813975acb2fd7bacd3b7239ed07b7219fef165d352c47266aee97275ab",
+      "bytes": 14061,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/audit_pseudo180_diagnostics.py",
+      "original_path": "research/self-learning-program/data/audit_pseudo180_diagnostics.py",
+      "sha256": "75c15a8212105adc1682842e98a8d7b9fb07d2443cf8955773aa8c5b5d17540a",
+      "bytes": 9295,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/build_stronger_teacher.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/build_stronger_teacher.py",
+      "sha256": "fd9d4c53ee8bacf240c4419d95e3bc85171fbeb6d53057f8e1aebde24f4dc0e7",
+      "bytes": 11503,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/continue_training.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/continue_training.py",
+      "sha256": "968aab25cb22bbbfa72b6ea63203460bcd7f76b2f479664221a939b0ca9e990c",
+      "bytes": 14343,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/run_followup_arm.sh",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/run_followup_arm.sh",
+      "sha256": "ffa77c815b5e2b1e8fba009c49fa593abbf9d763a3129cc8223549b7bd467927",
+      "bytes": 1247,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/run_prediction.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/run_prediction.py",
+      "sha256": "38afd7b2d176cf8fafd4ad725dacbb66bc559ea36a29cc240e0df5cd82f4a28a",
+      "bytes": 264,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/common.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/common.py",
+      "sha256": "1305eb014fd332e097770d122a42ef2e0385af72663599539372455e38656ebb",
+      "bytes": 1601,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/run_scoring.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/run_scoring.py",
+      "sha256": "4bcfa34a29d418d41ed8a040f36be15634f38d30d74e7765d1a3b531c55e35dd",
+      "bytes": 274,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/score_followup.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/score_followup.py",
+      "sha256": "0e1b8342521eb14b4c957520146e2ba7a9d086e21db4896429c1dc041b72c1bb",
+      "bytes": 9400,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/5-self-labelling/qualify_refresh.py",
+      "original_path": "research/self-learning-program/stronger-teacher/engineering/qualify_refresh.py",
+      "sha256": "a60810f5652ba2aa56598e4662b49e641fd62d21af6284533d1b38b0c1532b33",
+      "bytes": 3471,
+      "stage": "5-self-labelling"
+    },
+    {
+      "repo_path": "part2/pipeline/6-report-audit/audit_metrics.py",
+      "original_path": "evaluation/messytable-part-two/audit_metrics.py",
+      "sha256": "2c5b119d62c0fd242f7466a9f2d2522892bde9dc9b7d54b01ec1e26e2c50453b",
+      "bytes": 18808,
+      "stage": "6-report-audit"
+    },
+    {
+      "repo_path": "part2/pipeline/6-report-audit/verify_report.mjs",
+      "original_path": "evaluation/messytable-part-two/verify_report.mjs",
+      "sha256": "1537464cf82c38b2a26d01ec6ae8aa971959321ed82d45e08696902b782de169",
+      "bytes": 5787,
+      "stage": "6-report-audit"
+    }
+  ],
+  "excluded_part_three": [
+    "research/detector-scale-and-integration/step2_views.py",
+    "research/detector-scale-and-integration/step2_dense.py",
+    "research/detector-scale-and-integration/evaluation_maps.py",
+    "research/detector-scale-and-integration/score_step2_native.py",
+    "research/detector-scale-and-integration/fullframe_control_inputs.py",
+    "research/detector-scale-and-integration/fullframe_control_native.py",
+    "research/detector-scale-and-integration/fullframe_control_followup.py",
+    "research/detector-scale-and-integration/wait_and_integrate.py",
+    "research/detector-scale-and-integration/post_detect.py",
+    "research/detector-scale-and-integration/build_report.py",
+    "research/detector-scale-and-integration/detect_development.py"
+  ],
+  "not_included": "Model weights, MessyTable images/labels, prediction folders and virtual environments."
+}

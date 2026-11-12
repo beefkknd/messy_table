@@ -1,0 +1,112 @@
+{
+  "created_unix": 1794443670.922723,
+  "scope": "YOLO Step 0/1 only; no teacher/student or identity matching",
+  "hard_cap_seconds": 21600,
+  "selection": "Calibration30 only tunes rules and thresholds; Development100 chooses among frozen arms once; full official test evaluated once after final freeze",
+  "exposure_warning": "Calibration and development are historical exposed validation cohorts; full official test is also previously exposed, not a fresh holdout.",
+  "success_rule": {
+    "both_view_gain_pp": 3,
+    "unmapped_cap": "Historical G on the same cohort",
+    "reference": "Best feasible preexisting base/raw/G arm under G unmapped cap"
+  },
+  "training": {
+    "arms": [
+      "frames600",
+      "sliced600"
+    ],
+    "photos": 600,
+    "additional_updates": 3000,
+    "batch": 4,
+    "imgsz": 1024,
+    "start": "Existing A300; fresh optimizer identically in both arms",
+    "seed": 20261111,
+    "backbone": "unfrozen except fixed DFL projection",
+    "optimizer": "AdamW, weight decay .0005, gradient clip 10",
+    "peak_lr": 0.0001,
+    "warmup_updates": 100,
+    "final_lr": 1e-06,
+    "schedule": "linear warmup from .1*peak, then cosine decay",
+    "loss": "stock end-to-end mixture .8 one2many + .2 one2one",
+    "sliced600": "same image schedule; two full frames and two fixed 768px crops per batch, alternating slots; all intersecting GT clipped and retained; no pseudo labels",
+    "checkpoint_selection": "final update only; no early selection on development"
+  },
+  "inference": {
+    "resolution": 768,
+    "head": "one2many",
+    "nms_iou": 0.7,
+    "max_det": 300,
+    "full_floor": 0.001,
+    "tile_floor": 0.25,
+    "dtype": "float32",
+    "rect": true,
+    "tile_size": 768,
+    "tile_stride": 576,
+    "merge_iou": 0.55,
+    "note": "All old/new arms use the same 768 inference resolution; 1024 is training only; native tile pixels unchanged."
+  },
+  "threshold_grid": [
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8
+  ],
+  "new_tile_grid": {
+    "small_cutoff": [
+      0.4,
+      0.55,
+      0.7
+    ],
+    "large_cutoff": [
+      0.65,
+      0.8
+    ],
+    "support": [
+      "none",
+      "low_confidence"
+    ],
+    "clearance": [
+      4,
+      12
+    ],
+    "fragment_ios_max": [
+      0.85,
+      1.01
+    ]
+  },
+  "tile_policy": "Preserve full-frame prefix; filter before merging. Reject artificial-edge cuts. Small/large means predicted native short side <96/\u226596. Nonedge other-tile support IoU\u2265.55 and confidence\u2265.4 when required below .8; correlated evidence only. Seam containment rejects IoS\u2265limit before normal IoU .55 dedup.",
+  "scoring": "Frozen class-agnostic maximum eligible IoU-sum assignment at IoU\u2265.50; micro recall/precision; U=predictions\u2212localized; both-view endpoint coverage, not identity accuracy. Native short-side size strata. Setup bootstrap 20,000 draws; one seed exploratory.",
+  "starting_checkpoint_sha256": "3f278134b873b122f6ccc75216f3156dc8be72e882bd1f3da06c2f9a129e2ac3",
+  "train_manifest_sha256": "dbf2de0a8475a9d805ad592be0be3f784022dffd1b910f4a7ea1ec2c38406a9e",
+  "native_train_sha256": "0203fb68c57490aef41ddfa833c302dfe10faa40a4689360bf5283e75a4c2660",
+  "historical_full_test_results_sha256": "c9ab69db1b77a44edbe447c58238b3a519b5a5fc18c0ae5205b3b2b5cedba8d0",
+  "part_one_sha256": {
+    "evaluation/messytable-part-one/build.py": "f778ea32fd4d60de9343a2cd2daabf9bd31094034cb867cccd1415563e2920fd",
+    "evaluation/messytable-part-one/provenance.json": "6c0961d542d7ccf5bdfd60b5b133723841bfb0a7360fa2aaf24ec11eb7bae7c8",
+    "evaluation/messytable-part-one/flow_native_links.py": "cca3822f0f47955458e5a1f26bde96537addc143814e9893fc1eef69f8d6020e",
+    "evaluation/messytable-part-one/flow_story.py": "2343a60bdc0cae84bf2a32f026fe2d56f7ca393b901773b2bd1c28e60dbd3ee6",
+    "evaluation/messytable-part-one/flow-native-links.json": "fd8aef1d670bfcc6cd70252933a596432d3ff34e4cf7a3eee57d4a4a1307f552",
+    "evaluation/messytable-part-one/fpr95-audit.log": "3bcfcc151df8c7ddd259b38e831801c942eea552ed42f7185e3a9e1b992bb911",
+    "evaluation/messytable-part-one/fpr95-tie-audit.json": "0eb37462b9ac455f429dc960cf86f8ec852b1f46f239e0956c5f9721f0458790",
+    "evaluation/messytable-part-one/template.html": "d8628ccc88ab45ad793c154acebf2cba06ad929e1aee661291958fc2e6c66a50",
+    "evaluation/messytable-part-one/report.html": "ff3d93f9f02b7eb583f3f65f09f85774bbab755f2d1362f63122ecc3701e9681",
+    "evaluation/messytable-part-one/audit_fpr95.py": "d507b2d7535433df9a7dc22aa68a84b3303f2ce052dbaa8ec9c6b39e2b345c39"
+  },
+  "code_sha256": {
+    "common_round.py": "8d9590f30d7fbb300877d9e7fbbbddf85f71c6bd7437e14003c3347bde1ae96b",
+    "prepare.py": "487a67c9212c2a51f42d13b9ece1e51b7ed6eaa0cb08e67e1696c6076d2047f0",
+    "tile_policy.py": "73cbfa03d38608e1b7fbab75c5d58ea65b90a2c0212106addb12d962e8094e5b",
+    "train.py": "167ee5b37c6ce75ca089205e2e19bc95def1205d4e97cddf84ae62ff821e5b99",
+    "evaluate.py": "48255cd308836e4554510d36fb3e67281791be40063eb8dcef5a1991fccc4423",
+    "run_round.py": "d172e42844d9061dac99982dcf7eb38a054720a45d23ad02cde7479a75969a1e"
+  }
+}

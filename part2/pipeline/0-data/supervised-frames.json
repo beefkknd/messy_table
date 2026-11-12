@@ -1,0 +1,2105 @@
+{
+  "version": 1,
+  "frames": [
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191125-00810-10-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191125-00810-10-07.txt",
+      "setup": "20191125-00810",
+      "scene": "20191125-00810-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "381fc75c62a04f1bb447940223094f0daeb823f8c1a02bd48b23e536962ab39a",
+      "boxes": 45
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191125-00810-10-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191125-00810-10-01.txt",
+      "setup": "20191125-00810",
+      "scene": "20191125-00810-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a46360de7b791018f961a20a0a39fc5372acf90434de1b143161a0cd059c527a",
+      "boxes": 48
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191125-00810-10-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191125-00810-10-05.txt",
+      "setup": "20191125-00810",
+      "scene": "20191125-00810-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "f630427d18f3ee8e33761ab5d3b0442aa2da8aeb47db8b2662112f958c4ef07f",
+      "boxes": 44
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00758-08-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00758-08-02.txt",
+      "setup": "20191120-00758",
+      "scene": "20191120-00758-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "6cfd28e9ba400a2c4c89273fc77c7b8c484daecbd2a630357e557ec7d61d8ea6",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00758-08-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00758-08-01.txt",
+      "setup": "20191120-00758",
+      "scene": "20191120-00758-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0dec97b89e53d0efb578068ea1d11e8160bb1aa4c8da0e5540c2dd4a1f6c3218",
+      "boxes": 28
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00758-08-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00758-08-05.txt",
+      "setup": "20191120-00758",
+      "scene": "20191120-00758-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "f8c92e084320a827ce17c65ff0fd4cb53f1f64624b2dfd56b20b8b3510c790e7",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191017-00354-04-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191017-00354-04-04.txt",
+      "setup": "20191017-00354",
+      "scene": "20191017-00354-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "8ac6877c6a7daa5876a09b562d88dc2d49b8116a30c121285760051b637ae844",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191017-00354-04-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191017-00354-04-09.txt",
+      "setup": "20191017-00354",
+      "scene": "20191017-00354-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "89a426c752e43315bb9791d7f882d5875f3d46e1423dddc3586207d0e490cae4",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191017-00354-04-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191017-00354-04-02.txt",
+      "setup": "20191017-00354",
+      "scene": "20191017-00354-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "b06c507730c0b55b2ffa954ef277f3f002deda0306f89acf0f8dedf8560f0b19",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191012-00300-08-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191012-00300-08-01.txt",
+      "setup": "20191012-00300",
+      "scene": "20191012-00300-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "236cd4bd3a35515aec4b2353bc4c839d0389a0d1354e2827e7accee31522aaee",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191012-00300-08-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191012-00300-08-03.txt",
+      "setup": "20191012-00300",
+      "scene": "20191012-00300-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "2f8594b730256f340426adbc2c2576ebfe13855156a5da7bc089171c31a85f7e",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191012-00300-08-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191012-00300-08-05.txt",
+      "setup": "20191012-00300",
+      "scene": "20191012-00300-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9cd0d5c90444da01855a169b7a83317b22f9fff24b9a345a8d3af2eb244a1cb3",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00752-05-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00752-05-09.txt",
+      "setup": "20191120-00752",
+      "scene": "20191120-00752-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "dc3232f46ae6b4956ceb4ff1d0a882fe579892bd97a4453c33a4eb15b98f3dba",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00752-05-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00752-05-01.txt",
+      "setup": "20191120-00752",
+      "scene": "20191120-00752-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "b4fc61a32cee3b55fd3f49420be39a0cc98a97ef40829d96d8799d90c83f768e",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00752-05-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00752-05-05.txt",
+      "setup": "20191120-00752",
+      "scene": "20191120-00752-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "37c24ba8f60e98c046e5d5a6dce5202d447013bb9c1b09311c6a6b29fed1c841",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00201-03-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00201-03-03.txt",
+      "setup": "20191005-00201",
+      "scene": "20191005-00201-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0c6c79c82ce39ee9e6933a9be88bc229a156b6cb1f2c16a88252adb8077ea226",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00201-03-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00201-03-06.txt",
+      "setup": "20191005-00201",
+      "scene": "20191005-00201-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "82869048ff096079f0184388487c525170dcb951a9347568cb43e9850a39dd75",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00201-03-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00201-03-09.txt",
+      "setup": "20191005-00201",
+      "scene": "20191005-00201-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "199d96fafd7a055ceaaabc1df387c149b06b025ebcd5218bcd3c2a828becf4f7",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00942-03-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00942-03-07.txt",
+      "setup": "20191206-00942",
+      "scene": "20191206-00942-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "dcb593099781907f9418b796f7a5e9795d977868088758868a71bc887f2c0ff0",
+      "boxes": 35
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00942-03-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00942-03-08.txt",
+      "setup": "20191206-00942",
+      "scene": "20191206-00942-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "5a704adaa31fe1a2f0445110d5554442585c9be52106718ad62a98a07394fc16",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00942-03-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00942-03-04.txt",
+      "setup": "20191206-00942",
+      "scene": "20191206-00942-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "4a926bbc2d18aa40996c4c8b096ccd06d09401823437d29eb43cd856eefca4be",
+      "boxes": 36
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00937-05-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00937-05-05.txt",
+      "setup": "20191206-00937",
+      "scene": "20191206-00937-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a7a54f9e98dfbfc304f405055cbe684a8631cf9fae9b9261ba5dd9c9d75a8e9c",
+      "boxes": 48
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00937-05-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00937-05-03.txt",
+      "setup": "20191206-00937",
+      "scene": "20191206-00937-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "37a8015e68977279d65b369c8ecd622566ca3e6ce602719f022fb7a538327cee",
+      "boxes": 51
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00937-05-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00937-05-08.txt",
+      "setup": "20191206-00937",
+      "scene": "20191206-00937-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "080aeb9b498c6060bf9f0b33dc2e642c3d7cc4419d91df8f0585e0454b267e10",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191218-01087-01-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191218-01087-01-02.txt",
+      "setup": "20191218-01087",
+      "scene": "20191218-01087-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "163a7e8912590b87a3db9f44410610999670ff512b90a30020ce883e9fa48de4",
+      "boxes": 28
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191218-01087-01-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191218-01087-01-05.txt",
+      "setup": "20191218-01087",
+      "scene": "20191218-01087-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "3cbffcb5f84daf34e1d6deec16a4eb52cc56f02e09a0f95022cee27b269e5fc8",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191218-01087-01-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191218-01087-01-07.txt",
+      "setup": "20191218-01087",
+      "scene": "20191218-01087-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "68b498f029d2eda49feb4f3cad8f6b427e8636b4e4c4bed6bc95924efce2d832",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191210-00995-10-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191210-00995-10-03.txt",
+      "setup": "20191210-00995",
+      "scene": "20191210-00995-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "26b1fbdafa4da812a94aeed7a059feac6e00537d0efa5b64a98579053001ff53",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191210-00995-10-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191210-00995-10-01.txt",
+      "setup": "20191210-00995",
+      "scene": "20191210-00995-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "2b26b5f69200e5dae937bd31d0010cc65941fef7d2a4e57a2f624d4aea1db1a0",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191210-00995-10-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191210-00995-10-07.txt",
+      "setup": "20191210-00995",
+      "scene": "20191210-00995-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0b49b719b613841dd5e076614bd52c63d7968afbbc24b64a5d8ee2602ad27d6f",
+      "boxes": 14
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00305-07-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00305-07-01.txt",
+      "setup": "20191014-00305",
+      "scene": "20191014-00305-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "375728f77916d46a42f89050c21cdb1d45be4571c45459a30014390e96f71dc5",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00305-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00305-07-09.txt",
+      "setup": "20191014-00305",
+      "scene": "20191014-00305-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "bb9f58d1612c3c7e4487497b646a11d28474b8c9f746beaa42338e1a2f2e2c2c",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00305-07-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00305-07-05.txt",
+      "setup": "20191014-00305",
+      "scene": "20191014-00305-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "601446aad085f83db878fde304e9d5344a502cc524dddc722ed7cceb3c723864",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190924-00033-03-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190924-00033-03-04.txt",
+      "setup": "20190924-00033",
+      "scene": "20190924-00033-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "26c3573913ddd89445fb4e5f270742fceaad0433b1fd0492a9e40120664a85e8",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190924-00033-03-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190924-00033-03-06.txt",
+      "setup": "20190924-00033",
+      "scene": "20190924-00033-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0b7055b0ae3a3d9664249009f600d1d341c1c573bbd97babd47e928d132be61f",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190924-00033-03-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190924-00033-03-09.txt",
+      "setup": "20190924-00033",
+      "scene": "20190924-00033-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "ecd4a194c074a49ebff9cedc34d81c5e06a1645a676671827d4b0eac673810ba",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191209-00985-06-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191209-00985-06-09.txt",
+      "setup": "20191209-00985",
+      "scene": "20191209-00985-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9cb27edf48a7daa1b7ce61a0c83797acef00701240f1d00935313d64ee407e75",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191209-00985-06-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191209-00985-06-01.txt",
+      "setup": "20191209-00985",
+      "scene": "20191209-00985-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "20106e00f1cbe89026a578eeae3da2bce156e26f70ddfdb13a8e1ce26fd9c4f2",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191209-00985-06-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191209-00985-06-07.txt",
+      "setup": "20191209-00985",
+      "scene": "20191209-00985-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "77534803ed21efbf4c9ff836d212aa871bac177f2cbac603a159fb890e60b460",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00308-08-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00308-08-04.txt",
+      "setup": "20191014-00308",
+      "scene": "20191014-00308-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "8ddb1a8facb9861882a77610b71cea3d4cea0865a7f6441f0252aa2febc5905d",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00308-08-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00308-08-07.txt",
+      "setup": "20191014-00308",
+      "scene": "20191014-00308-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "34cd412147f6b708327c4b0eb27b76448e2353183a3786f221b707c92299e6e1",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00308-08-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00308-08-02.txt",
+      "setup": "20191014-00308",
+      "scene": "20191014-00308-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "2c687f456195b309cc4a786a466fc410542aaf36367d4b05750f4d26c8f5bbce",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190925-00053-06-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190925-00053-06-06.txt",
+      "setup": "20190925-00053",
+      "scene": "20190925-00053-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "6bd62b37f50a119ba954b9a527a14b49ad27839388910fa34e1fe0c31c0d0962",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190925-00053-06-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190925-00053-06-02.txt",
+      "setup": "20190925-00053",
+      "scene": "20190925-00053-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "49491f9c5e97d5f8187785b199123893e99e49dfb2f59aca35cbf7be09dc9488",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190925-00053-06-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190925-00053-06-08.txt",
+      "setup": "20190925-00053",
+      "scene": "20190925-00053-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9ad151c31f5be039b263683ef3ccb69cec05c2f5f7fb5c20c071e3ea674a5e15",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191209-00991-10-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191209-00991-10-01.txt",
+      "setup": "20191209-00991",
+      "scene": "20191209-00991-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "d91aab5545a5c4f90d8cb38651ae0b16ed263c125ada5574cfe6c136c545e041",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191209-00991-10-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191209-00991-10-03.txt",
+      "setup": "20191209-00991",
+      "scene": "20191209-00991-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9da304bf176fe510e9efb58b7dcbc2fc6de98b9330e4b055e81ecb4c328b9db9",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191209-00991-10-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191209-00991-10-07.txt",
+      "setup": "20191209-00991",
+      "scene": "20191209-00991-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "43ce084f775a6e718961fef002a0d0af953013589de81de16d86664e52d38230",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191203-00898-04-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191203-00898-04-07.txt",
+      "setup": "20191203-00898",
+      "scene": "20191203-00898-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "1ea36cf2e4b74c9e6ea8254a48e1b8d3acfd79b62a3f4eec0524e0dbfbdcf59e",
+      "boxes": 50
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191203-00898-04-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191203-00898-04-08.txt",
+      "setup": "20191203-00898",
+      "scene": "20191203-00898-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a8dcb7e23fcb812d50389d493e16c5e909ed0a84c164297b4396c6b7b96b4fc6",
+      "boxes": 42
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191203-00898-04-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191203-00898-04-02.txt",
+      "setup": "20191203-00898",
+      "scene": "20191203-00898-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "fb5f8b0a054adcfe550df0d4a30ff37cdbb09bb77063d4336669dd168dda0178",
+      "boxes": 47
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191211-01015-05-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191211-01015-05-02.txt",
+      "setup": "20191211-01015",
+      "scene": "20191211-01015-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "25b8215ba68c2540d752a9e05dcababad8b88ea85a00ecca3c1bf1705a82ca57",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191211-01015-05-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191211-01015-05-07.txt",
+      "setup": "20191211-01015",
+      "scene": "20191211-01015-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "ed5d0b25aedc9d622735f7dc23a486f0fd868a36ddd5ba5a390e5cab318f5b0b",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191211-01015-05-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191211-01015-05-04.txt",
+      "setup": "20191211-01015",
+      "scene": "20191211-01015-05",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "ce642ca7aae963caa51a9355a73abbecc9cb66ac51ce2b123e91592b95214140",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00203-03-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00203-03-07.txt",
+      "setup": "20191005-00203",
+      "scene": "20191005-00203-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "213dad5031680c51fb8f1d106e0c5459d704f29882115fd6fa283c7491db6d4e",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00203-03-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00203-03-06.txt",
+      "setup": "20191005-00203",
+      "scene": "20191005-00203-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "474409a94ad71b1642d6d653ea0a26f5313455da17d8e20432a925578e1f70f2",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00203-03-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00203-03-02.txt",
+      "setup": "20191005-00203",
+      "scene": "20191005-00203-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "08d7afaebbc0c9bc4bf7b48b74b8800568ea573e1b87d0000adcf8eaeab3447f",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191211-01014-04-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191211-01014-04-09.txt",
+      "setup": "20191211-01014",
+      "scene": "20191211-01014-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "722efae05871d22882bb129187efba8d47235900a0d9b46d856d4c10f82ce3b8",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191211-01014-04-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191211-01014-04-03.txt",
+      "setup": "20191211-01014",
+      "scene": "20191211-01014-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a87a87563375e3cb185f5120105d075e48490dc9549bde2ebc5ec071cd51246c",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191211-01014-04-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191211-01014-04-07.txt",
+      "setup": "20191211-01014",
+      "scene": "20191211-01014-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "e789afd05cf4aaab1bec8e5eb5e52c8b66474a58dca44dc37ac3ba4a3c1825fa",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01025-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01025-07-09.txt",
+      "setup": "20191212-01025",
+      "scene": "20191212-01025-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "eb4482c2fe073bce28e303f719b11e902dcc136c5d5be93e01a6f163ba9bd3c3",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01025-07-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01025-07-06.txt",
+      "setup": "20191212-01025",
+      "scene": "20191212-01025-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "3e70629472877e77dbd255c7ed97e065d8928fd83682cc3f9eec45974993a6d7",
+      "boxes": 28
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01025-07-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01025-07-03.txt",
+      "setup": "20191212-01025",
+      "scene": "20191212-01025-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "d990f47cf0c25ee0018ef19c4c965657af5bf55266d0ab037fac3bc379ca2db6",
+      "boxes": 18
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191001-00139-09-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191001-00139-09-09.txt",
+      "setup": "20191001-00139",
+      "scene": "20191001-00139-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "10b0958d0ffa5d2cbf6111069cc91bc32488d0b1366e76aeca688656c4232892",
+      "boxes": 14
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191001-00139-09-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191001-00139-09-08.txt",
+      "setup": "20191001-00139",
+      "scene": "20191001-00139-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "426c908febbaa78231ecb727c90d49e8b97b70719ba9f0b2255bcefce5d231ec",
+      "boxes": 14
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191001-00139-09-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191001-00139-09-05.txt",
+      "setup": "20191001-00139",
+      "scene": "20191001-00139-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "e9f927f553d31a49df943130f6584a0399d5e4a54a3df547c86a0ff76c198036",
+      "boxes": 13
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00756-04-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00756-04-09.txt",
+      "setup": "20191120-00756",
+      "scene": "20191120-00756-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "db9e48f6b1b23de45bff89c6135d4217637e5f0d44b54a801d992e624f3bdbdf",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00756-04-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00756-04-01.txt",
+      "setup": "20191120-00756",
+      "scene": "20191120-00756-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "33d918bbbaf9302cde8070f70191a62623553df73843d1390b85d07b347d4f8f",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191120-00756-04-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191120-00756-04-05.txt",
+      "setup": "20191120-00756",
+      "scene": "20191120-00756-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "54f35dbb4d41c36f980baaab5fb65dd219740b560410eead8be49fbf0fa51f80",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190923-00016-01-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190923-00016-01-04.txt",
+      "setup": "20190923-00016",
+      "scene": "20190923-00016-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "55a58dbb9bac1900624dfc236fa71f36f8a3eefd7aa60fbf819a4bc7dfe36d72",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190923-00016-01-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190923-00016-01-07.txt",
+      "setup": "20190923-00016",
+      "scene": "20190923-00016-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "bd13de4770dd384b40d3d819db2388f418a19cf2328dbe331ae9bc25e09b1f27",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190923-00016-01-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190923-00016-01-02.txt",
+      "setup": "20190923-00016",
+      "scene": "20190923-00016-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "f6c29f950b8c50d3aa4f6d03c66bf211f0a2bd654773cae2a4822fdd649c43e0",
+      "boxes": 29
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191003-00175-07-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191003-00175-07-07.txt",
+      "setup": "20191003-00175",
+      "scene": "20191003-00175-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "3b98377c60d55d23afc312cd2fcb555145300b9b55d4fed79b6c427d8e3b08a1",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191003-00175-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191003-00175-07-09.txt",
+      "setup": "20191003-00175",
+      "scene": "20191003-00175-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "73648d4e5ee452b3c9aa3744d2fc732118dbf4993f16641c8e6b1454c092374f",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191003-00175-07-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191003-00175-07-05.txt",
+      "setup": "20191003-00175",
+      "scene": "20191003-00175-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "30c2acec1cdc0cabdc2395dda3c9ca968419ddaee6f9d81b8c8e052aea9b4838",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191127-00828-06-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191127-00828-06-07.txt",
+      "setup": "20191127-00828",
+      "scene": "20191127-00828-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "31441f527146a80815e67a76bdf13bc061c3384e03d465a54feb2588fcc714cf",
+      "boxes": 39
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191127-00828-06-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191127-00828-06-09.txt",
+      "setup": "20191127-00828",
+      "scene": "20191127-00828-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9746657f6185e74237ea315320b8f1cf87e3fe20654132df502a9f2022c75853",
+      "boxes": 38
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191127-00828-06-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191127-00828-06-05.txt",
+      "setup": "20191127-00828",
+      "scene": "20191127-00828-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "7a7164f5885534d9d30073748f0a78c52c147513b99aa2c43023631e8090856e",
+      "boxes": 33
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00309-09-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00309-09-03.txt",
+      "setup": "20191014-00309",
+      "scene": "20191014-00309-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "c211511260a8508a444b3085a0550434013babc5b727ed24ee60ea61a870c119",
+      "boxes": 28
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00309-09-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00309-09-08.txt",
+      "setup": "20191014-00309",
+      "scene": "20191014-00309-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "3c82cd15bc241d31510d57fb184c458739ee1ea6f0104ed1b53bb197831a0746",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00309-09-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00309-09-05.txt",
+      "setup": "20191014-00309",
+      "scene": "20191014-00309-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "51e3e96e7b2ef893558f484e9e311d66b6225c4635482f6c610a778e048e6ac8",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191001-00130-06-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191001-00130-06-03.txt",
+      "setup": "20191001-00130",
+      "scene": "20191001-00130-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "1962e2f9c32d94980824a9be559a23523162e54286216e288b0e6a30a3a06e22",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191001-00130-06-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191001-00130-06-02.txt",
+      "setup": "20191001-00130",
+      "scene": "20191001-00130-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "fec496c10699e8303040fade1dd083acc4d8a9f3dc0a84c6d0d07fd549921907",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191001-00130-06-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191001-00130-06-05.txt",
+      "setup": "20191001-00130",
+      "scene": "20191001-00130-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "48fe30ac4ade0217206d6efd6e106399b95bcd67150e405007b7fb88e908fa78",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191203-00894-04-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191203-00894-04-04.txt",
+      "setup": "20191203-00894",
+      "scene": "20191203-00894-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "099bdf3db5dcebb6631f8adb556838e0845460e63d08c9cd4017e47f6aea4c02",
+      "boxes": 41
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191203-00894-04-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191203-00894-04-09.txt",
+      "setup": "20191203-00894",
+      "scene": "20191203-00894-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "11311759b993b13260ec3bf62cf46bb5e56fda0bc960bd3cd1230cb749afe1d3",
+      "boxes": 36
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191203-00894-04-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191203-00894-04-07.txt",
+      "setup": "20191203-00894",
+      "scene": "20191203-00894-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "bcf8e7349967f990c27708cb86b5c7dacd55bc4ac4c12e0468c91d37e11f2a29",
+      "boxes": 31
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190923-00006-08-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190923-00006-08-04.txt",
+      "setup": "20190923-00006",
+      "scene": "20190923-00006-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0b599653f0292ca8f5b6cca1016b0e5d4c4db76a92d23b7fe2c350f5fb2bf5c6",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190923-00006-08-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190923-00006-08-06.txt",
+      "setup": "20190923-00006",
+      "scene": "20190923-00006-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "6de97c58bbdb34b0b054ce60a2f3d76214ff6bea3166e51a2e11f36d662f99ac",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190923-00006-08-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190923-00006-08-09.txt",
+      "setup": "20190923-00006",
+      "scene": "20190923-00006-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "794efed3a7f14c04571ccd914a3433474868ffdab4c2062851afa2c802e1e16e",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190925-00049-03-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190925-00049-03-07.txt",
+      "setup": "20190925-00049",
+      "scene": "20190925-00049-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "4a2a26591f9ad467cf02a705c75d34f1edcfdd684999976d93bb2471f790bd31",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190925-00049-03-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190925-00049-03-09.txt",
+      "setup": "20190925-00049",
+      "scene": "20190925-00049-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "97376594499f5ea9a4621d6bafece903e94d9971648adf4fdab2782628f3e54f",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190925-00049-03-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190925-00049-03-04.txt",
+      "setup": "20190925-00049",
+      "scene": "20190925-00049-03",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "7fb52a9dd762c868befc86ace6c550b6a0d889b029a9c21b4b26752dad1bce4f",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01027-09-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01027-09-09.txt",
+      "setup": "20191212-01027",
+      "scene": "20191212-01027-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "779a2f6020ce7bdfd6145b8db7a99fe4e0c6f62a3d2f6fab89a5ce91fed5be2b",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01027-09-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01027-09-01.txt",
+      "setup": "20191212-01027",
+      "scene": "20191212-01027-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "d19394f5993fe6086471b22a8f24c0ece8f8320d0081e29b79db61a8dd91294e",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01027-09-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01027-09-07.txt",
+      "setup": "20191212-01027",
+      "scene": "20191212-01027-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "243cda5dd61ff894835577cfd4e455470f1c9468d374749e9697f76971e542de",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190927-00069-10-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190927-00069-10-03.txt",
+      "setup": "20190927-00069",
+      "scene": "20190927-00069-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "c8bbd1f3aa8b94b54915da462e6325500a52775b6e9fad77f0f9923264d75f98",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190927-00069-10-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190927-00069-10-09.txt",
+      "setup": "20190927-00069",
+      "scene": "20190927-00069-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "2a9f6f366aa41e94ddad61957e2244f6eeaa8db15a13d588937686fdd4d2a636",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190927-00069-10-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190927-00069-10-06.txt",
+      "setup": "20190927-00069",
+      "scene": "20190927-00069-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "127c5e09d1808b272dd510a0b36e98708523c3172a802b115e15e5ca98554c46",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191127-00835-08-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191127-00835-08-08.txt",
+      "setup": "20191127-00835",
+      "scene": "20191127-00835-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "540c5b4892e3eeb3c77d7d238315d1d47c829f8c474353277d3e5a7b39145a28",
+      "boxes": 38
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191127-00835-08-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191127-00835-08-01.txt",
+      "setup": "20191127-00835",
+      "scene": "20191127-00835-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "f09fd61375e496d8e3191af817ffb7631f07d8fa0a2de5ef76afd9eb31353c34",
+      "boxes": 50
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191127-00835-08-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191127-00835-08-05.txt",
+      "setup": "20191127-00835",
+      "scene": "20191127-00835-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "45b1635d0d09af3fc6ba4c31fa3c39e4c1b847ca124da13c8294e719b6595ccb",
+      "boxes": 45
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190929-00102-01-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190929-00102-01-01.txt",
+      "setup": "20190929-00102",
+      "scene": "20190929-00102-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "77eda6b47556dd7e24fe7ca9dd514a810e323e05bc7d74f75171cc953c2fe1b4",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190929-00102-01-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190929-00102-01-05.txt",
+      "setup": "20190929-00102",
+      "scene": "20190929-00102-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "6703527f0031d4a1632292000ca5edbdc33c938cbbc19fa2d99a71b80543f70b",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20190929-00102-01-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20190929-00102-01-09.txt",
+      "setup": "20190929-00102",
+      "scene": "20190929-00102-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "bd442d77cad023360978b32a843c647f93833b2f000f79e2761371af80a2e820",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191008-00238-10-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191008-00238-10-05.txt",
+      "setup": "20191008-00238",
+      "scene": "20191008-00238-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "b272f6e5988274800a195ee3d02e7f678c39e7959c073f7f1aa75a53192c1b4c",
+      "boxes": 29
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191008-00238-10-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191008-00238-10-03.txt",
+      "setup": "20191008-00238",
+      "scene": "20191008-00238-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "029dfed814ed3b71ced8093575c55c19dfe0238cd92c98f934e385009e697dda",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191008-00238-10-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191008-00238-10-09.txt",
+      "setup": "20191008-00238",
+      "scene": "20191008-00238-10",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0aedb6e7072ed902ab796f4084f735753eb7a1484754af1797e5f3a2c6ccdece",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00322-08-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00322-08-08.txt",
+      "setup": "20191014-00322",
+      "scene": "20191014-00322-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "2f3d3ae7516aa33268c3ede94e4cce54f81a0a5f3fac92901787490487945cfa",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00322-08-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00322-08-07.txt",
+      "setup": "20191014-00322",
+      "scene": "20191014-00322-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "74fd26db372c1b97280d5f821230d185e4fcda50e86b80413ccbe32bcaa65d0c",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191014-00322-08-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191014-00322-08-02.txt",
+      "setup": "20191014-00322",
+      "scene": "20191014-00322-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "198e6d283d7e07d0823cf016e5d10299007dbb00459558bc12e87cc97522f6d6",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191004-00190-07-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191004-00190-07-01.txt",
+      "setup": "20191004-00190",
+      "scene": "20191004-00190-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "c86374375e72ad4df4424ee3815d7198f1634dd9da32924df7586f338cf119a5",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191004-00190-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191004-00190-07-09.txt",
+      "setup": "20191004-00190",
+      "scene": "20191004-00190-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "828111ccfae5c9902e66b535aec94d6fb54df53917048dec90de4bac706b2eb9",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191004-00190-07-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191004-00190-07-05.txt",
+      "setup": "20191004-00190",
+      "scene": "20191004-00190-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "ec95c653d1081cef2908cfca63990e84991f7f79b221bf5bcba1e9f1579c58db",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01034-07-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01034-07-07.txt",
+      "setup": "20191212-01034",
+      "scene": "20191212-01034-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "4ba62062795293a01ef380c4d03f0076d95f45ff38520783642bd6d0266ebd9a",
+      "boxes": 32
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01034-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01034-07-09.txt",
+      "setup": "20191212-01034",
+      "scene": "20191212-01034-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "24292d3766109f145450d492219de745f22803e795164b15c10feca43822ea2d",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191212-01034-07-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191212-01034-07-04.txt",
+      "setup": "20191212-01034",
+      "scene": "20191212-01034-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "b5159533b741af641185b59b69c0948f7e66621e9d59ff7a3f9e2e28da01325c",
+      "boxes": 32
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191126-00826-01-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191126-00826-01-01.txt",
+      "setup": "20191126-00826",
+      "scene": "20191126-00826-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "8dd018742d4c9b8f8c78824610fa7a5a1b1f3107967997ffeb905cd93683346e",
+      "boxes": 45
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191126-00826-01-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191126-00826-01-04.txt",
+      "setup": "20191126-00826",
+      "scene": "20191126-00826-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "8a2bdcd678c95724b812191912a186c50d2a8dbf82125e3aa05225b265f09948",
+      "boxes": 43
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191126-00826-01-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191126-00826-01-02.txt",
+      "setup": "20191126-00826",
+      "scene": "20191126-00826-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a1e69623d9848fe8532e05b16151021dcccac2cf1d4090ee6ac4b1e8d780cb25",
+      "boxes": 40
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191213-01045-02-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191213-01045-02-04.txt",
+      "setup": "20191213-01045",
+      "scene": "20191213-01045-02",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9ba118bc13820fcc25c72556b21e6c49a65f82c323edc1d49f1ebc0d9858d161",
+      "boxes": 48
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191213-01045-02-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191213-01045-02-02.txt",
+      "setup": "20191213-01045",
+      "scene": "20191213-01045-02",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9166930c92cc605e3597f8a6f82adaf1210110da7cafc9e1c6a34f7ae8e8db60",
+      "boxes": 45
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191213-01045-02-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191213-01045-02-07.txt",
+      "setup": "20191213-01045",
+      "scene": "20191213-01045-02",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "cffc7c9bcad01b1b81da6c98ace079835908306c788ef13be4ba4b71cbfcad32",
+      "boxes": 40
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191009-00257-08-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191009-00257-08-08.txt",
+      "setup": "20191009-00257",
+      "scene": "20191009-00257-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "56ddf424975047805fb4a3dd4fa95e580def02e5d01499dd6b024b791703d74a",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191009-00257-08-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191009-00257-08-02.txt",
+      "setup": "20191009-00257",
+      "scene": "20191009-00257-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "391cdc6468bfba2deaf9d0aa20f8ffa14d0457f3aa68f00e7f9ecf67719de433",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191009-00257-08-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191009-00257-08-05.txt",
+      "setup": "20191009-00257",
+      "scene": "20191009-00257-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "c622fa0f78e8d83f772448cc852504a8df11b77d6412b226b07321fbf6e3d465",
+      "boxes": 12
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191011-00277-06-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191011-00277-06-09.txt",
+      "setup": "20191011-00277",
+      "scene": "20191011-00277-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9c5687c7ac82cda02d3d8676b6a6cacb8346b89bf553bee7366398a10f6b9b9f",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191011-00277-06-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191011-00277-06-08.txt",
+      "setup": "20191011-00277",
+      "scene": "20191011-00277-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a823420b2a1ec3f8fdd862e595e06105e89c235812b6cb155af560d83cc75fdc",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191011-00277-06-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191011-00277-06-05.txt",
+      "setup": "20191011-00277",
+      "scene": "20191011-00277-06",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "cecbe1193235a40a724d461799f5e95a79517d6f5a2a39af1d63f3ffd65e91bb",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00944-07-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00944-07-01.txt",
+      "setup": "20191206-00944",
+      "scene": "20191206-00944-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "fafb006858797e8df9de7af4651a3c655b411f6a4a71a6016113ec7244a4f4cf",
+      "boxes": 34
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00944-07-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00944-07-02.txt",
+      "setup": "20191206-00944",
+      "scene": "20191206-00944-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "f4ef3ca1208e9ceac92fc10fbbc4233bdef5efdb89000984357728de7cbf2e65",
+      "boxes": 31
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191206-00944-07-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191206-00944-07-07.txt",
+      "setup": "20191206-00944",
+      "scene": "20191206-00944-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "0536bc1f4f209216ae82cbd09a92c7bc90547bbec9c9bacc10a44ed9af5435be",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191016-00336-08-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191016-00336-08-05.txt",
+      "setup": "20191016-00336",
+      "scene": "20191016-00336-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "b8af974b9b03547f59b295fb85d1165624fd767e562860e993004dcbd6ca082d",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191016-00336-08-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191016-00336-08-09.txt",
+      "setup": "20191016-00336",
+      "scene": "20191016-00336-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "489ec7f7fc74f9e859cc90af999d88d1cf5480cf0f84757cefbd98bc12e84d2e",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191016-00336-08-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191016-00336-08-03.txt",
+      "setup": "20191016-00336",
+      "scene": "20191016-00336-08",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a4685595fa68ddfe8c3765d11d47155dd144957b8e14b8c8a639703c27ee2d6a",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191210-01008-09-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191210-01008-09-06.txt",
+      "setup": "20191210-01008",
+      "scene": "20191210-01008-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "d43143d36be3dcfd64b42be1f4c6f4f9ea5a80b7b03784899a66281acc8f0b21",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191210-01008-09-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191210-01008-09-05.txt",
+      "setup": "20191210-01008",
+      "scene": "20191210-01008-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "e7c38d01f4a46bd4aad385942024def064237d29d3da2fb69e58573c333723f1",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191210-01008-09-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191210-01008-09-09.txt",
+      "setup": "20191210-01008",
+      "scene": "20191210-01008-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "ad21823ba674496a438f5e3fa417ee2eeb84c8525784d70c9fb95ba728dceaf8",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191207-00955-01-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191207-00955-01-09.txt",
+      "setup": "20191207-00955",
+      "scene": "20191207-00955-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "2213378907fb4075b36272834f90f0c99198e45880caf2ce5e8162a8ce4aaab7",
+      "boxes": 11
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191207-00955-01-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191207-00955-01-02.txt",
+      "setup": "20191207-00955",
+      "scene": "20191207-00955-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "244ded5b6425e7e790ca41e5e4225efa62e2d0fbd1b88720b01003e4511f85b0",
+      "boxes": 8
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191207-00955-01-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191207-00955-01-05.txt",
+      "setup": "20191207-00955",
+      "scene": "20191207-00955-01",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "a21a0fe10b51e43b4d279b749901520567e0c67d42a666dffb9ec50be6008bee",
+      "boxes": 9
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191214-01057-09-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191214-01057-09-04.txt",
+      "setup": "20191214-01057",
+      "scene": "20191214-01057-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "972147cb33a25d803725835f6855fa2fed9579ecb72488870a601a63e76dfce5",
+      "boxes": 18
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191214-01057-09-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191214-01057-09-09.txt",
+      "setup": "20191214-01057",
+      "scene": "20191214-01057-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "e86b39a897a2c5a4c05f46dacf4db780b755ae3102d876cdd918cfed68093fbe",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191214-01057-09-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191214-01057-09-07.txt",
+      "setup": "20191214-01057",
+      "scene": "20191214-01057-09",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "7d6ddfbeb864182cd64ebd350e280da14cea707de46193f47dcafdd88126ea4c",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00192-04-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00192-04-05.txt",
+      "setup": "20191005-00192",
+      "scene": "20191005-00192-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "9467be832eabb7ac7aed7ec396701977e72319f6cf79329bfdcb3fa7ebf3eed8",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00192-04-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00192-04-04.txt",
+      "setup": "20191005-00192",
+      "scene": "20191005-00192-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "8caa190cf97ab2863d556ca4d5430299c3437d2dbec468143a6b70959a33e5c6",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191005-00192-04-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191005-00192-04-09.txt",
+      "setup": "20191005-00192",
+      "scene": "20191005-00192-04",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "ded6929ac5eb725904e4c8e651b582732eb834ffd9dddbdded454158524beae0",
+      "boxes": 21
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191018-00371-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191018-00371-07-09.txt",
+      "setup": "20191018-00371",
+      "scene": "20191018-00371-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "5390dc04ebcea5e71e634504082da22bee22e605f64058ac3198dcf630314c8d",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191018-00371-07-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191018-00371-07-03.txt",
+      "setup": "20191018-00371",
+      "scene": "20191018-00371-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "051d94a82f082067d1ebfb3cfdc272d03cc5b3cc7a074032b2895d716d65f055",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/train/20191018-00371-07-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/train/20191018-00371-07-05.txt",
+      "setup": "20191018-00371",
+      "scene": "20191018-00371-07",
+      "scope": "complete_frame",
+      "partition": "train",
+      "image_sha256": "f46d1e2882c6c91c6b08ae30da4d7174105d39c3c8d261413508e9907bf5bcdd",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191214-01065-04-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191214-01065-04-03.txt",
+      "setup": "20191214-01065",
+      "scene": "20191214-01065-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "da71246fd9742d1077deb34dba19a395602c23de3811d4225594eb9c182d1dfe",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191214-01065-04-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191214-01065-04-04.txt",
+      "setup": "20191214-01065",
+      "scene": "20191214-01065-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "9368d0fc269ac2ab2c1e229a4c6fe5e71ced388f5bcc8e05d6fda9845cb00087",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191127-00836-06-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191127-00836-06-09.txt",
+      "setup": "20191127-00836",
+      "scene": "20191127-00836-06",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "607e9f7d800c7081ae75c8b3ff9601a76e3bc24f0b400c16959b39bcbddd3a6e",
+      "boxes": 46
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191127-00836-06-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191127-00836-06-01.txt",
+      "setup": "20191127-00836",
+      "scene": "20191127-00836-06",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "aeaa48834902944a35cb8db6c90da49d1671f647bb05e0cb107ebfdf2d5fcbb6",
+      "boxes": 50
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191208-00969-07-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191208-00969-07-07.txt",
+      "setup": "20191208-00969",
+      "scene": "20191208-00969-07",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "4902811a8c668ff085d1f17f5414a839c9f6608a55e44f05912e36a536f40690",
+      "boxes": 13
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191208-00969-07-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191208-00969-07-04.txt",
+      "setup": "20191208-00969",
+      "scene": "20191208-00969-07",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "d2ea16b3a280ffb9406f04b4745fc97222ecb3c8f814a0b991aa76dc62803545",
+      "boxes": 10
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190928-00084-01-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190928-00084-01-03.txt",
+      "setup": "20190928-00084",
+      "scene": "20190928-00084-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "51975d3d7486c6f8d8d5074fd1fd80cd990ecbeee2a492cbf40772a46fdd1a02",
+      "boxes": 14
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190928-00084-01-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190928-00084-01-02.txt",
+      "setup": "20190928-00084",
+      "scene": "20190928-00084-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "c0a59dc8864917c9eee14745ba740577e844294ee0c8ed3748247b91418c612a",
+      "boxes": 14
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191209-00981-04-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191209-00981-04-02.txt",
+      "setup": "20191209-00981",
+      "scene": "20191209-00981-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "eeac588c5982b2564cfa789a202e4cb74548e9f60e18209396d55ab31520a36a",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191209-00981-04-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191209-00981-04-04.txt",
+      "setup": "20191209-00981",
+      "scene": "20191209-00981-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "f5177173da8cc674e7bb14866521f6b980b611eb1a2743777bba59214b3deb6c",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191127-00831-03-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191127-00831-03-03.txt",
+      "setup": "20191127-00831",
+      "scene": "20191127-00831-03",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "3e209eea21151d5745da154ee7cc12681cbd4e5da99572fbc01039a5d006ab1c",
+      "boxes": 43
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191127-00831-03-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191127-00831-03-08.txt",
+      "setup": "20191127-00831",
+      "scene": "20191127-00831-03",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "08811be06574108b48cb10173b05896adeb48c82e3bcc8dee3487abbd4419df5",
+      "boxes": 41
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191209-00984-05-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191209-00984-05-04.txt",
+      "setup": "20191209-00984",
+      "scene": "20191209-00984-05",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "f340408812916e76412b171d5b8133e31b71b8597c67adfdb68dfc2daaa201c6",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191209-00984-05-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191209-00984-05-05.txt",
+      "setup": "20191209-00984",
+      "scene": "20191209-00984-05",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "58c26451a2f3868ff1b394d4ca7c8817d1832d1a070eee3ddf8cc9f0a394e29c",
+      "boxes": 20
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190926-00059-04-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190926-00059-04-06.txt",
+      "setup": "20190926-00059",
+      "scene": "20190926-00059-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "d7cb8e05dcffea031f457c352ff2c7ab3fe7205cdab14cd876338b13370ff235",
+      "boxes": 8
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190926-00059-04-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190926-00059-04-07.txt",
+      "setup": "20190926-00059",
+      "scene": "20190926-00059-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "354cbbde72113b9fb53e31c5b48d880442e81dec3a81a8604b85979d92fef387",
+      "boxes": 8
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190923-00012-03-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190923-00012-03-04.txt",
+      "setup": "20190923-00012",
+      "scene": "20190923-00012-03",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "a237b2dde033315a1b87b3fa87927a461f2c980650ce35245a35a97e5a0274ce",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190923-00012-03-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190923-00012-03-07.txt",
+      "setup": "20190923-00012",
+      "scene": "20190923-00012-03",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "bd80eba89de74489f1f8882bd5db2a298b18c4cd048a073d922edc04215a8a1d",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191125-00815-01-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191125-00815-01-02.txt",
+      "setup": "20191125-00815",
+      "scene": "20191125-00815-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "3e722219484a0aed6a5285ff7d2553fe9e546e1391ba9d9404528e80975c8d1e",
+      "boxes": 36
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191125-00815-01-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191125-00815-01-04.txt",
+      "setup": "20191125-00815",
+      "scene": "20191125-00815-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "b151d774250729b8eb02c2d5fb857dd7c21122440ad52e0e1b5277aade1e9aa4",
+      "boxes": 41
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191014-00318-07-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191014-00318-07-09.txt",
+      "setup": "20191014-00318",
+      "scene": "20191014-00318-07",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "c66daed7924b7509e6e004c4824e4c232728bb5da763fe5aef10150f47efb95b",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191014-00318-07-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191014-00318-07-02.txt",
+      "setup": "20191014-00318",
+      "scene": "20191014-00318-07",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "9cda5dd2aa59679513c7c501b494d6458f2ac7ced4d138d46d92dc5683b32503",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190926-00063-10-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190926-00063-10-06.txt",
+      "setup": "20190926-00063",
+      "scene": "20190926-00063-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "4ec453d04f756739c0edf98f387e36cb3854dcca03a5ac67f7ea61afac210539",
+      "boxes": 8
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190926-00063-10-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190926-00063-10-03.txt",
+      "setup": "20190926-00063",
+      "scene": "20190926-00063-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "0ab5e09e5c0a28b17962857ceb0ce664bfd31d9b1fd6ad4b81c5406c195f77ac",
+      "boxes": 8
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191210-01002-07-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191210-01002-07-05.txt",
+      "setup": "20191210-01002",
+      "scene": "20191210-01002-07",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "534a11cd06213a25dfb9c853cc09763b43513288c68bfbb2aa586530a6134565",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191210-01002-07-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191210-01002-07-04.txt",
+      "setup": "20191210-01002",
+      "scene": "20191210-01002-07",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "19cb2eab181788961d604af0bace385f48cc448fddf0d8594e433741f914fda3",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191207-00957-02-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191207-00957-02-02.txt",
+      "setup": "20191207-00957",
+      "scene": "20191207-00957-02",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "c17227ad18f329924ae192667c2f27627e1cbe578fa62ef446fb3e6dc0794438",
+      "boxes": 9
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191207-00957-02-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191207-00957-02-09.txt",
+      "setup": "20191207-00957",
+      "scene": "20191207-00957-02",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "5a050b3d416faf960675aa2eb8d4309ce5b2a96e066e55c3ccb05919a3e4e55b",
+      "boxes": 13
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191211-01016-08-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191211-01016-08-07.txt",
+      "setup": "20191211-01016",
+      "scene": "20191211-01016-08",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "bb1154f02945683303a2363765443b7803b72c1294937b90e9dfa0cef4cd1bcc",
+      "boxes": 27
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191211-01016-08-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191211-01016-08-02.txt",
+      "setup": "20191211-01016",
+      "scene": "20191211-01016-08",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "b564c4f34d6d97e4feb6fdac87f2779d1c9650368298cb03f03e5de02fe15e9b",
+      "boxes": 29
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191125-00814-09-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191125-00814-09-02.txt",
+      "setup": "20191125-00814",
+      "scene": "20191125-00814-09",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "923b532a3a5e81d5730698047df4daecebb924669676d2f35650da2b77e30e0d",
+      "boxes": 36
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191125-00814-09-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191125-00814-09-03.txt",
+      "setup": "20191125-00814",
+      "scene": "20191125-00814-09",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "7601ec069b01e3807d8146a969ec4dfde1e073eee75f0aee166fd5c62df06e9c",
+      "boxes": 38
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190923-00013-10-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190923-00013-10-02.txt",
+      "setup": "20190923-00013",
+      "scene": "20190923-00013-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "e51e014c380a74aa59a82854837f3c76d4f498b02edb8117e359e30895a0f8a7",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190923-00013-10-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190923-00013-10-09.txt",
+      "setup": "20190923-00013",
+      "scene": "20190923-00013-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "af59908b219201639c58ff3f5cebcc97fa66fe41bd88f615168dbb73527a6295",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190928-00089-03-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190928-00089-03-05.txt",
+      "setup": "20190928-00089",
+      "scene": "20190928-00089-03",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "2147c21b95968618b57fc4caa105dd4a24fc25e9c1ff8a30c3899b97f0b7d26d",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190928-00089-03-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190928-00089-03-08.txt",
+      "setup": "20190928-00089",
+      "scene": "20190928-00089-03",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "0275694103d850ea1b34d18d260759b02c6ecc3fb20fb48332992a9fd4fd8934",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191217-01079-01-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191217-01079-01-07.txt",
+      "setup": "20191217-01079",
+      "scene": "20191217-01079-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "b97e258e98843105ba223d104847115c1e1109468746307b69ca66b9a399c408",
+      "boxes": 25
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191217-01079-01-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191217-01079-01-01.txt",
+      "setup": "20191217-01079",
+      "scene": "20191217-01079-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "f84c4829fc9b87f88356570b861e6b4b69609a6bf89459218618379087ebc3de",
+      "boxes": 26
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191005-00205-06-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191005-00205-06-05.txt",
+      "setup": "20191005-00205",
+      "scene": "20191005-00205-06",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "bfce79b7683320f8a87e54f976cb2534eb3756603d7afad52131d6db49251ef7",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191005-00205-06-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191005-00205-06-01.txt",
+      "setup": "20191005-00205",
+      "scene": "20191005-00205-06",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "d9df2ef93ab816dda86b4a28a4a36a86e200b639a7091a4d91a23f09577e435c",
+      "boxes": 24
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191017-00347-04-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191017-00347-04-06.txt",
+      "setup": "20191017-00347",
+      "scene": "20191017-00347-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "c4e722394d2cc382d51ac3b3c437fd91227b742cbbd43790a8c07c0bcde10525",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191017-00347-04-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191017-00347-04-03.txt",
+      "setup": "20191017-00347",
+      "scene": "20191017-00347-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "1b5c934a26f93a012eebf60d2ea4cc51a0d0b4366976c45de8c7461340fbaffe",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191127-00829-01-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191127-00829-01-01.txt",
+      "setup": "20191127-00829",
+      "scene": "20191127-00829-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "a6be6c2c5376c553a890e90e786f4572bd3ec6516f4ecb6ee296e70c5a6c561b",
+      "boxes": 43
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191127-00829-01-03.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191127-00829-01-03.txt",
+      "setup": "20191127-00829",
+      "scene": "20191127-00829-01",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "e3ccd341480f44970ac1e772fd73d4ffe9f3bd732a328b13c3cdcd8fead7f185",
+      "boxes": 44
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190930-00119-08-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190930-00119-08-05.txt",
+      "setup": "20190930-00119",
+      "scene": "20190930-00119-08",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "095cf654896c811aae820993f2dd310bbd82c566b38ddc6e49b1ba383b7dbf74",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190930-00119-08-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190930-00119-08-06.txt",
+      "setup": "20190930-00119",
+      "scene": "20190930-00119-08",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "375314dfaa7314564171fc777330607e2159492f2a1fb4e9ce38e4fd4bb63d0d",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191002-00151-08-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191002-00151-08-04.txt",
+      "setup": "20191002-00151",
+      "scene": "20191002-00151-08",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "1d22f40e28eba44775df7c91ab9abbf8e04c238bd58efede034808951146d5ce",
+      "boxes": 14
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191002-00151-08-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191002-00151-08-07.txt",
+      "setup": "20191002-00151",
+      "scene": "20191002-00151-08",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "38fb13381ad34d7fb3472f22b2ea1da9932ae797435fb59f14b30176c9e31c76",
+      "boxes": 15
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190930-00115-09-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190930-00115-09-04.txt",
+      "setup": "20190930-00115",
+      "scene": "20190930-00115-09",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "7a289050e905f2c1e84a3bd3be6b5497ffc78b6e32699836397c9df5a42c7d59",
+      "boxes": 16
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190930-00115-09-01.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190930-00115-09-01.txt",
+      "setup": "20190930-00115",
+      "scene": "20190930-00115-09",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "e7d8b6bd739fc6e5ef4407824444030cf8c5f5024ece543ff9d236eda6324b2e",
+      "boxes": 17
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190929-00100-02-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190929-00100-02-05.txt",
+      "setup": "20190929-00100",
+      "scene": "20190929-00100-02",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "de30be0bb8f6e0110c66fde9d35d8d9acd44b9d665b17f35d2efa898a389b8c9",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20190929-00100-02-06.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20190929-00100-02-06.txt",
+      "setup": "20190929-00100",
+      "scene": "20190929-00100-02",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "a60c396cb86292bcc2cdf9fb6b5b58f96f7df4f33e750c49200502e8d3e4a3f9",
+      "boxes": 19
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191121-00769-10-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191121-00769-10-02.txt",
+      "setup": "20191121-00769",
+      "scene": "20191121-00769-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "7a5ca92297becd42988a7d66a679f082bec4ba6fc34aac63586aa297c439d73a",
+      "boxes": 44
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191121-00769-10-07.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191121-00769-10-07.txt",
+      "setup": "20191121-00769",
+      "scene": "20191121-00769-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "262e213e679f46ae00b8c76807b041b9f69f081fc7d16e8686147247778161b8",
+      "boxes": 45
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191017-00359-04-09.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191017-00359-04-09.txt",
+      "setup": "20191017-00359",
+      "scene": "20191017-00359-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "3b53d4143cb7c1c5b47d8b8830b85593516bddc8ff4de1a6b52ae9f2fcc1f507",
+      "boxes": 22
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191017-00359-04-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191017-00359-04-08.txt",
+      "setup": "20191017-00359",
+      "scene": "20191017-00359-04",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "1076fa2f8f53c55fa71334d5747a3124160f5be16e8ad6f22346c4d2ee698c12",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191018-00381-10-02.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191018-00381-10-02.txt",
+      "setup": "20191018-00381",
+      "scene": "20191018-00381-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "9db601eee7104c67e5dcb99a264a89b9c97f8e9154218b29ef9248ef365bd655",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191018-00381-10-04.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191018-00381-10-04.txt",
+      "setup": "20191018-00381",
+      "scene": "20191018-00381-10",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "6139792bb704261bba2ac6ba0930af789e428718cbbb95c6f953ac5cd486356e",
+      "boxes": 23
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191213-01046-05-08.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191213-01046-05-08.txt",
+      "setup": "20191213-01046",
+      "scene": "20191213-01046-05",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "6cc2bfc8cbbbfd59f22741bfaea28f2f9906f1a134a0c2d1448b6b4cce823d9c",
+      "boxes": 40
+    },
+    {
+      "image": "research/self-learning-program/data/yolo/images/val/20191213-01046-05-05.jpg",
+      "label": "research/self-learning-program/data/yolo/labels/val/20191213-01046-05-05.txt",
+      "setup": "20191213-01046",
+      "scene": "20191213-01046-05",
+      "scope": "complete_frame",
+      "partition": "val",
+      "image_sha256": "e360c83a49f3bf54a557ca08da66f42d42e9cd2b23317b9970ea851c16aac620",
+      "boxes": 39
+    }
+  ]
+}

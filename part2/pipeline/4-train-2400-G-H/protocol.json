@@ -1,0 +1,117 @@
+{
+  "created_unix": 1794454334.2584069,
+  "hard_cap_seconds": 21600,
+  "scope": "One 2400-photo supervised run; full-frame inference resolution; frozen Step 2 end-to-end comparison. No teacher/student.",
+  "training": {
+    "arms": [
+      "sliced2400"
+    ],
+    "photos": 2400,
+    "additional_updates": 3000,
+    "batch": 4,
+    "imgsz": 1024,
+    "start": "Same original A300 as sliced600; fresh optimizer",
+    "seed": 20261111,
+    "backbone": "unfrozen except fixed DFL projection",
+    "optimizer": "AdamW, weight decay .0005, gradient clip 10",
+    "peak_lr": 0.0001,
+    "warmup_updates": 100,
+    "final_lr": 1e-06,
+    "schedule": "linear warmup from .1*peak, then cosine decay",
+    "loss": "stock end-to-end mixture .8 one2many + .2 one2one",
+    "sliced600": "same image schedule; two full frames and two fixed 768px crops per batch, alternating slots; all intersecting GT clipped and retained; no pseudo labels",
+    "checkpoint_selection": "final update only; no early selection on development",
+    "comparison": "Fixed 3000 updates and 12000 original-photo exposures: 20 epochs for 600 vs 5 for 2400, not convergence-equated. Same seed, crop mixture, schedule and resolution."
+  },
+  "detector_arms": [
+    "old_G",
+    "600_768",
+    "600_1024",
+    "2400_768",
+    "2400_1024"
+  ],
+  "inference": {
+    "full_resolutions": [
+      768,
+      1024
+    ],
+    "tile_resolution": 768,
+    "tile_windows": "same six 768px native windows, stride576",
+    "cutoff": 0.25,
+    "head": "one2many",
+    "nms_iou": 0.7,
+    "merge_iou": 0.55,
+    "rule": "raw tiles; preserve full-frame prefix; reject artificial edge <=4px; confidence-sorted dedup",
+    "comparison": "Reuse exactly the same cached tile observations when changing full-frame resolution. No threshold calibration or tuning."
+  },
+  "step1_population": "Full official test:16749 photos/408937 GT/66996 view pairs/1486614 shared links. Also frozen Development100, descriptive only.",
+  "step2": {
+    "population": "Frozen Part One sample100 scenes/900 photos/3600 pairs/78335 true links. Original legacy blind-pair cohort is not scored.",
+    "arms": [
+      "human_oracle",
+      "old_G",
+      "600_768",
+      "600_1024",
+      "2400_768",
+      "2400_1024"
+    ],
+    "methods": [
+      "DINOv2 tight CLS cosine, Hungarian max positive margin, cutoff .70",
+      "RoMa+SAM/ViT-P3DE 75/25"
+    ],
+    "strong_score": "Freeze percentile transforms to the original human-box candidate reference distributions; never rerank each new detector population.",
+    "strong_assignment": "Exact author quantized KMSolver in pinned Docker. Original reference distance p95 and .70 KM threshold, unchanged.",
+    "oracle_replay": "Original human-box distance array must reproduce 74159 correct/6147 wrong before detector-arm scores accepted.",
+    "primary": "Correct identity links / all 78335 GT shared links, including undetected endpoints; precision, mapped wrong and unmapped links separately. No candidate-conditional AP presented as end-to-end recall.",
+    "score_freeze": "All matrices freeze before applying GT identity mapping for scoring. SAM prompts and crops use predicted coordinates only."
+  },
+  "selection": "All factorial and matching arms fixed now; no dev/test-based model or threshold selection. Final checkpoint only.",
+  "limits": [
+    "Native test and Part One sample are already exposed, not pristine holdouts.",
+    "One training seed.",
+    "Native train/val/test split is setup-disjoint, not guaranteed unseen physical products."
+  ],
+  "source_sha256": {
+    "research/detector-small-object-round/report.html": "dcc062cfcf3c978ec6d2b79b5bbfb819ecd2792e1842ae0f88ee82014fe9b688",
+    "evaluation/messytable-part-one/template.html": "d8628ccc88ab45ad793c154acebf2cba06ad929e1aee661291958fc2e6c66a50",
+    "research/detector-small-object-round/finish.py": "8aded4d643da4a1d6668f8fc3ff38b8743a724507b3ba7b8f0e87a34bddf0b14",
+    "evaluation/messytable-official-reproduction/sample100/selection.json": "35fc135826c641d68134336e361b88f924450486f43455a4c58b93388eb19189",
+    "research/detector-small-object-round/README.txt": "108b7fe7f30b5f1ffca86e5ed7a82f40ec52a071abe9d2f5e9bc13238ee6a2d9",
+    "research/self-learning-program/engineering/score_detector.py": "2f923897a140f900bdb52f3faff2533e89bc4416dd562063a8d8ff4e8fa5d230",
+    "research/detector-small-object-round/full-test-matched-controls.json": "95231f2fd5807ac7ed0743e009815de2d5665bd2875a3f381a627f5cc7e0480b",
+    "evaluation/messytable-part-one/flow_native_links.py": "cca3822f0f47955458e5a1f26bde96537addc143814e9893fc1eef69f8d6020e",
+    "evaluation/run_full_scene.py": "ae110e3c94af5e1876519f6fb67f3d343dd982605072cb58330995d2f7fd126d",
+    "evaluation/messytable-official-reproduction/variant_dense.py": "a908782d5da69fe7cadee6c52023e25300ebfe62767a7db4970ad66b9844c840",
+    "evaluation/messytable-official-reproduction/sample100/step2/scores/roma_mask.npy": "dcfe89910c2967c122dc5f794ebe3000b5e6b9ce634772dbf08f10d0cb47bebb",
+    "evaluation/messytable-official-reproduction/variant_views.py": "b02b79b16064a1c677d3ff03a79592c210bbe38992399b8ddc12d96d40bedc7b",
+    "research/detector-small-object-round/train600.json": "dbf2de0a8475a9d805ad592be0be3f784022dffd1b910f4a7ea1ec2c38406a9e",
+    "evaluation/messytable-part-one/audit_fpr95.py": "d507b2d7535433df9a7dc22aa68a84b3303f2ce052dbaa8ec9c6b39e2b345c39",
+    "research/detector-small-object-round/training/sliced600/checkpoint.pt": "fd39172728f22532fa6b027eaa5a8d57da64972c75b3887a3daf9f1ec158531e",
+    "research/detector-small-object-round/audit_results.py": "217439c5d25337c96b91b81e3ee7e576f1f82f16630d31de49ffeb53917f6907",
+    "evaluation/messytable-official-reproduction/sample100/vit/pair-index.json": "1b7ea322adb4e586da3cd16f93a330a6241b1851f3bce87480b5192f75240be8",
+    "research/detector-small-object-round/build_report.py": "6fab47bdd2f413fbb6823bbdcc089dd664e5d1c5b3cbe777f7ed218184d7b81f",
+    "evaluation/messytable-part-one/flow_story.py": "2343a60bdc0cae84bf2a32f026fe2d56f7ca393b901773b2bd1c28e60dbd3ee6",
+    "research/detector-small-object-round/evaluate.py": "af5e1331123fcb76935b5fccefb761cb8f0f8de38ad0a999055b9b23107e68e2",
+    "research/detector-small-object-round/prepare.py": "487a67c9212c2a51f42d13b9ece1e51b7ed6eaa0cb08e67e1696c6076d2047f0",
+    "research/detector-small-object-round/common_round.py": "45871bfb2b4d9f21f07a578acd71959d8f45eaff3321e99b7797f1c2745ae7f3",
+    "research/detector-small-object-round/train.py": "d9c65e7334c5e9dd86cd9f9de7486c3444d1ff4e5fe2d8e53a0a5ea91cd1c963",
+    "research/detector-small-object-round/run_round.py": "8c4288dc8c8645f3b315f20e20f99cbe531983245143e885d3cd140bd0f27133",
+    "evaluation/messytable-detection-full-test/images.json": "ba4ba0055f6a5a1e5e2f2c1b5cf3f369f7dd854e68d517ccb5315812eed2acf5",
+    "evaluation/messytable-part-one/build.py": "f778ea32fd4d60de9343a2cd2daabf9bd31094034cb867cccd1415563e2920fd",
+    "research/detector-small-object-round/run_control_followup.py": "268273b2cb2ec3fbcd8515e5cb780246fac0a88e7780206df26eaea5dc646de5",
+    "research/self-learning-program/engineering/round2/train/A/checkpoint.pt": "3f278134b873b122f6ccc75216f3156dc8be72e882bd1f3da06c2f9a129e2ac3",
+    "research/detector-small-object-round/tile_policy.py": "73cbfa03d38608e1b7fbab75c5d58ea65b90a2c0212106addb12d962e8094e5b",
+    "evaluation/messytable-part-one/report.html": "ff3d93f9f02b7eb583f3f65f09f85774bbab755f2d1362f63122ecc3701e9681",
+    "evaluation/messytable-official-reproduction/sample100/step2/scores/blend_roma_vit_reference_dense_first.npy": "d64895b130f35391be52115fe136c659ef372cdbb25e1de545cc4da2010c1110",
+    "evaluation/messytable-official-reproduction/sample100/vit/app_dist.npy": "015b7750b8a01d0960c073ed8fdff39c16d24c708928813ed66266d01fdd439b",
+    "research/self-learning-program/engineering/partial_loss.py": "0a42df0a8d6f86f42c73408d319c7560ea7ec3b6a2752774b44e7b2ff327d9c9",
+    "evaluation/messytable-official-reproduction/sample100/step2/metrics/blend_roma_vit_reference_dense_first.json": "4e85b6ec31409e49117f0cd653ba483580dcb2c9d6eb0348e67fbdcb700b52af"
+  },
+  "code_sha256": {
+    "common_new.py": "4a54f765e14bb570d5257832ecfaf7a2f29a42ad0adb4b420b97e9dfbc6dfa06",
+    "prepare.py": "f3f5ab8047f0baf6d05c629ef5a17c8d2652366ade5a5a8932536e0f367adbe9",
+    "train2400.py": "0b3587b61302eeb1cf67014bd64388db057618e0bd45dab9edaf556068f8a4d9",
+    "detect.py": "4178689393b2b71b3f9052bfa930a4dffd98a14e1d2a7989db76068c95fda40c",
+    "run.py": "f7f42492d566160352f9521c98e92149dd01fe329cefe97c24decd6adf9a8647"
+  }
+}

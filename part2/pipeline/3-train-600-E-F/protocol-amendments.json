@@ -1,0 +1,72 @@
+{
+  "amendments": [
+    {
+      "created_unix": 1794443749.933407,
+      "reason": "Initial training launch failed before any optimizer update because inference checkpoint loader changes loss args namespace to dict. Restore original trainer DEFAULT_CFG namespace. Add safe process-resume guards; no recipe/threshold/metric change. Original code preserved.",
+      "completed_optimizer_updates_before_fix": 0,
+      "code_sha256": {
+        "common_round.py": "856e90b92cb17eea3522728129ec47286492d370d459a3220713b673823b49cd",
+        "train.py": "d9c65e7334c5e9dd86cd9f9de7486c3444d1ff4e5fe2d8e53a0a5ea91cd1c963",
+        "run_round.py": "f8c35195ed436d0052645c41d523ba5f704f610325439fdd5ccdd92744f143b0"
+      }
+    },
+    {
+      "created_unix": 1794444081.4586592,
+      "reason": "Preregister additional fixed inference controls (base/raw/G all at full-frame confidence >.25), before either new model reaches calibration or development evaluation. Needed to isolate sliced training from calibrated policy/threshold differences. No change to primary selection, stop rule, training or test population. Original evaluate.py preserved.",
+      "matched_controls": [
+        {
+          "family": "base",
+          "full_threshold": 0.25
+        },
+        {
+          "family": "raw",
+          "full_threshold": 0.25
+        },
+        {
+          "family": "G",
+          "full_threshold": 0.25
+        }
+      ],
+      "code_sha256": {
+        "evaluate.py": "510b1a3f78c4d89a6959dabc5c480a31c1ef1515f98048dcb876556d028b7e0b"
+      }
+    },
+    {
+      "created_unix": 1794444587.6466,
+      "reason": "Before any new checkpoint validation, apply the same 14-value confidence calibration grid to the existing A300 detector and its six preexisting inference policies under the identical G error cap. Prevents asymmetric calibration advantage for new weights. Preserve original Stage 1 reference and results; use calibration-selected existing reference for final comparison. No development-driven threshold tuning. Historical full-test raw full-frame cache is truncated at .25, so a selected lower threshold requires an explicit same-checkpoint full-frame replay, reusing frozen old tiles, within the original time cap.",
+      "new_checkpoint_quality_evaluations_so_far": 0,
+      "code_sha256": {
+        "evaluate.py": "c3fd6bfe2067423f4ddd02307323f97093434aa32849a092bde4222322dda981"
+      }
+    },
+    {
+      "created_unix": 1794444627.1558511,
+      "reason": "Technical completion of calibrated-reference replay: preserve archived >.25 full-frame boxes and tile observations byte-for-byte; new inference supplies only previously unavailable .15-.25 full-frame suffix. Does not change calibration choices or settings. Example renderer reads the corresponding lower-floor validation cache.",
+      "code_sha256": {
+        "evaluate.py": "43c385d379d5f8195b39b5c7befe5bc596917ac5f1c65da5a0097a372ccd7b74"
+      }
+    },
+    {
+      "created_unix": 1794444888.141418,
+      "reason": "Add immutable input guard over historical raw/full/tile prediction caches, mapper/loss/scorer dependencies, validation truth and full-test manifest/labels. No metric or experiment settings changed; performed before any new model evaluation.",
+      "source_cache_freeze_sha256": "6d5873b17231fd188248c8fb29ca253ac515af3907e287c1a70d7a271d223a56",
+      "code_sha256": {
+        "common_round.py": "45871bfb2b4d9f21f07a578acd71959d8f45eaff3321e99b7797f1c2745ae7f3"
+      }
+    },
+    {
+      "created_unix": 1794446013.25646,
+      "reason": "Enforce the already approved development stop rule in the runner: if none of the three frozen approaches gains >=3pp within G error cap, exit intentionally with code 10 after saving decisions and skip new full-test inference/scoring. No selection or success criterion changed. Added before mixed model calibration and development comparison.",
+      "code_sha256": {
+        "evaluate.py": "af5e1331123fcb76935b5fccefb761cb8f0f8de38ad0a999055b9b23107e68e2"
+      }
+    },
+    {
+      "created_unix": 1794448969.350492,
+      "reason": "Make standalone future reruns reproduce the manually executed fair-reference calibration step, and prevent restarting the primary runner from bypassing an already failed development gate. Current primary execution is complete; selected secondary follow-up uses its own frozen wrapper. No training, inference, metric or selection changes.",
+      "code_sha256": {
+        "run_round.py": "8c4288dc8c8645f3b315f20e20f99cbe531983245143e885d3cd140bd0f27133"
+      }
+    }
+  ]
+}
