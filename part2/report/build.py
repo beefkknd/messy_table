@@ -14,6 +14,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 from PIL import Image
 
+import pipeline_example
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 LATEST = ROOT/'research/detector-scale-and-integration'
@@ -188,6 +190,8 @@ def main():
         assert row['coverage']==c['shared_localized_both']/1486614
     assert one['old_G']['counts']['localized']==rows[3]['counts']['localized']
     detection_chart(rows);coverage_chart(rows);example=photo_example()
+    labels=read(ROOT/'data/messytable-full/MessyTable/labels/test.json')['scenes']
+    pipeline=pipeline_example.build(ROOT,read,labels,HERE/'assets',SOURCES)
     detections=table([[r['letter']+' · '+r['name'],f"{r['counts']['localized']:,}",pct(r['recall']),
                        pct(r['precision']),f"{r['counts']['unmapped']:,}",pct(r['coverage'])] for r in rows],
                      ['Configuration','Found / 408,937','Recall','Precision','Unmapped boxes','Boxed in both views'], 'detection-results')
@@ -213,7 +217,7 @@ def main():
     content=(HERE/'template.html').read_text()
     for key,value in {'DETECTION_TABLE':detections,'SELF_LEARNING_TABLE':teachers,
                       'SMALL_TABLE':sizes,'EXTENT_TABLE':extent,
-                      'EXAMPLE_SCENE':html.escape(example['scene']),'EXAMPLE_CAMERA':html.escape(example['camera'])}.items():
+                      'PIPELINE_EXAMPLE':pipeline,'EXAMPLE_SCENE':html.escape(example['scene']),'EXAMPLE_CAMERA':html.escape(example['camera'])}.items():
         content=content.replace('%%'+key+'%%',value)
     assert '%%' not in content
     (HERE/'report.html').write_text(content)
@@ -230,8 +234,9 @@ def main():
                         'Prose dataset sizes, reported headline rates, training budget and teacher effects checked against sources',
                         'Detector-to-matcher results, charts and scoring dependencies excluded; reserved for Part Three',
                         'Self-learning table is sourced separately from calibrated Development100 results',
+                        'Section 2 pipeline figure: saved H predictions; rebuilt tile merge equals saved combined boxes',
                         'No test thresholds, model checkpoints, experiment results or Part One files changed']}
-    for path in [HERE/'build.py',HERE/'template.html']:
+    for path in [HERE/'build.py',HERE/'template.html',HERE/'pipeline_example.py']:
         evidence['source_sha256'][str(path.relative_to(ROOT))]=hashlib.sha256(path.read_bytes()).hexdigest()
     save(HERE/'evidence.json',evidence)
     print(json.dumps({'report':str(HERE/'report.html'),'status':'passed','presentation_only':True}))

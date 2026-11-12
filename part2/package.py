@@ -97,7 +97,7 @@ def main() -> None:
         shutil.rmtree(SITE)
     copies = [copy(source / 'assets' / name, SITE / 'assets' / name) for name in used]
     copies += [copy(source / name, SITE / name) for name in ('evidence.json', 'metric-audit.json')]
-    copies += [copy(source / name, REPORT / name) for name in ('build.py', 'template.html')]
+    copies += [copy(source / name, REPORT / name) for name in ('build.py', 'template.html', 'pipeline_example.py')]
     copies.append(copy(ws / FULL_TEST_REL, RESULTS / 'detection-full-test/results.json'))
     page = transform((source / 'report.html').read_text())
     (SITE / 'index.html').write_text(page)

@@ -1,7 +1,7 @@
 {
   "source_page": "evaluation/messytable-part-two/report.html",
-  "source_sha256": "3f41dc56d8934db30cdc3476ff1faeba118cb53e7586ed1bc95d4ba5eaf117fa",
-  "output_sha256": "e91815999ec6a44ae6b6711ebdf055dbb66ca9b0043d70f4658371fc26f8faf4",
+  "source_sha256": "e4b2b6306b982763dfd178118f25fea6806e50e7d239efa1bccad313c0a74d03",
+  "output_sha256": "fe188c55706c5c2cee209585d5ac4affd9002559a8356f746b175d03bacea6af",
   "link_rewrites": [
     {
       "from": "href=\"../messytable-part-one/report.html\"",
@@ -26,12 +26,28 @@
   "credit_added_to_footer": "Research, experiments and report: GPT Astra and Sol. Review and number cross-checks, and repository packaging: Claude (Anthropic).",
   "copied": [
     {
+      "to": "part2/site/assets/pipeline-1-photo.jpg",
+      "sha256": "cf1346035ba0fae2635f9b8a95f9d1e5154cf49167ff1c88d3f6af54e8a3e644"
+    },
+    {
+      "to": "part2/site/assets/pipeline-2-views.jpg",
+      "sha256": "fc64ba9ec348a59174581ac9043eeb0f12fd666ef66204817609e729c4746e36"
+    },
+    {
+      "to": "part2/site/assets/pipeline-3-candidates.jpg",
+      "sha256": "38fc161bc72903a804a105cdf4c560c704c5a95b7a1065a00cdfa9ede2cd0bda"
+    },
+    {
+      "to": "part2/site/assets/pipeline-4-combined.jpg",
+      "sha256": "1c4f6d228f349d3ca951d78dfb36790862bb7662cd18d7c9808b7fd6045baa06"
+    },
+    {
       "to": "part2/site/assets/study-coverage-map.png",
       "sha256": "288770e38399dce0fb6b060624577f93b83ba6ad9a3728044294966c2d0d06f3"
     },
     {
       "to": "part2/site/assets/study-coverage-map.svg",
-      "sha256": "d03c729c9b14afc46f6c9d379bcb032d6135b0f9e06165d45b4f1919721b6b70"
+      "sha256": "bd9ab6d7cd9b4275678edadbb4be35ecb117ccb8d636651ba915cfd19aecc660"
     },
     {
       "to": "part2/site/assets/study-detection-map.png",
@@ -39,7 +55,7 @@
     },
     {
       "to": "part2/site/assets/study-detection-map.svg",
-      "sha256": "edeaad21279215b4e6b6346244ec402626e7d44382bd99d63d9c7fa98d48cbd3"
+      "sha256": "6e627c6fe764084ff58ff2f105f3f626b59d23bc37b6350dd095ce0dd420b86c"
     },
     {
       "to": "part2/site/assets/study-same-photo.png",
@@ -47,11 +63,11 @@
     },
     {
       "to": "part2/site/assets/study-same-photo.svg",
-      "sha256": "c6615cda2ea0a65c3d1489e113e5bfba119ef268e8c9acc54dfb07e3ab15d835"
+      "sha256": "c5e222a4e0b102b40702afcdd4405f6375b5e22ac7a1086a81a7a8887b035183"
     },
     {
       "to": "part2/site/evidence.json",
-      "sha256": "445cdae7b8e79142933cf3d2a1c2b8ca199c38d7823ebbc5e40c63ee54f75467"
+      "sha256": "8777eec3ac0868135bdee6e00a2ceaa2a9c6e2d968ec01d6a11ad6899dd91002"
     },
     {
       "to": "part2/site/metric-audit.json",
@@ -59,11 +75,15 @@
     },
     {
       "to": "part2/report/build.py",
-      "sha256": "f005ca914a292c15d43570844b2750a15d4deea4e8fe3933e3812258d4a53361"
+      "sha256": "edc8ad71ff6ecc996981827e0691ad48a049fe83d323854337ed3b6b9d92d5a3"
     },
     {
       "to": "part2/report/template.html",
-      "sha256": "477362446e2c75fde1897e8836f803c3c2c1d635799a22f2b7e6a41964fb85c7"
+      "sha256": "0e3afa59df8f801d4dfd95feb9a3682ac2b26f10e1af466c9689b919293e7868"
+    },
+    {
+      "to": "part2/report/pipeline_example.py",
+      "sha256": "660b87b1f4f5790db3f3501d6f3bae881022c4a7e7615738b3f58312a3bdd35e"
     },
     {
       "to": "part2/results/detection-full-test/results.json",

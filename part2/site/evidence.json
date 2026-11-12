@@ -274,8 +274,12 @@
     "evaluation/messytable-part-two/assets/study-example-detections.json": "44ca1939adc201fdd22aaceecd1338defdbe0e4890027f268057aa5034d8a25b",
     "data/messytable-full/MessyTable/labels/test.json": "7d892c889363e9ba16e9e40bdb1bb484fe03d8f47bba85cea09ad4e847a3a37a",
     "data/messytable-full/MessyTable/images/20190921-00003-02-01.jpg": "e962af25d9d27df2eed472648360d20129ff39a85b3088ded628395071ae7203",
-    "evaluation/messytable-part-two/build.py": "f005ca914a292c15d43570844b2750a15d4deea4e8fe3933e3812258d4a53361",
-    "evaluation/messytable-part-two/template.html": "477362446e2c75fde1897e8836f803c3c2c1d635799a22f2b7e6a41964fb85c7"
+    "research/detector-scale-and-integration/predictions/2400/20191004-00180-03.json": "4bab2a60d2a5b54e058dd016ffdac20bd2d7c3494629c6f03b283de91bc5a642",
+    "research/detector-scale-and-integration/step2/boxes.json": "19d8ec72e64e91fcf3a91e27e745506dd33a72e6b90b2a44badb6629ae001d75",
+    "data/messytable-full/MessyTable/images/20191004-00180-03-07.jpg": "2319d6a122b2d5b4a6591f5d60c588b092ca7efafb0093bba379a8b4e27cf6bf",
+    "evaluation/messytable-part-two/build.py": "edc8ad71ff6ecc996981827e0691ad48a049fe83d323854337ed3b6b9d92d5a3",
+    "evaluation/messytable-part-two/template.html": "0e3afa59df8f801d4dfd95feb9a3682ac2b26f10e1af466c9689b919293e7868",
+    "evaluation/messytable-part-two/pipeline_example.py": "660b87b1f4f5790db3f3501d6f3bae881022c4a7e7615738b3f58312a3bdd35e"
   },
   "archive": "archive/2026-11-11/index.html",
   "checks": [
@@ -283,6 +287,7 @@
     "Prose dataset sizes, reported headline rates, training budget and teacher effects checked against sources",
     "Detector-to-matcher results, charts and scoring dependencies excluded; reserved for Part Three",
     "Self-learning table is sourced separately from calibrated Development100 results",
+    "Section 2 pipeline figure: saved H predictions; rebuilt tile merge equals saved combined boxes",
     "No test thresholds, model checkpoints, experiment results or Part One files changed"
   ]
 }
