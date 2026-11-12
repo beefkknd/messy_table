@@ -1,0 +1,1084 @@
+{
+  "scope": {
+    "scenes": 1861,
+    "setups": 188,
+    "photos": 16749,
+    "downloaded_photos": 50211,
+    "fraction_of_all_downloaded_photos": 0.33357232478938875,
+    "fraction_of_official_test": 1.0,
+    "ground_truth_appearances": 408937
+  },
+  "protocol_sha256": "3ebf88e1d0c92fa932e9b4fc965dc5913724f1e0058f1b3c643f169f7c26403d",
+  "prediction_freeze_sha256": "7bcb32128349beb8eb95b877e18397458e881f76f46643a6abf1cdf7f2146790",
+  "checkpoint_hashes": {
+    "vanilla": "401cea9ab23ad19246ff7744859816bc599f350e93c9dd30367b6f0a0745d0b7",
+    "fine_tuned": "3f278134b873b122f6ccc75216f3156dc8be72e882bd1f3da06c2f9a129e2ac3"
+  },
+  "arms": {
+    "vanilla": {
+      "counts": {
+        "images": 16749,
+        "scenes": 1861,
+        "ground_truth": 408937,
+        "detections": 191720,
+        "localized": 156280,
+        "unmapped": 35440,
+        "localized_at_iou75": 145232,
+        "unmapped_duplicate_or_assignment_conflict": 6093,
+        "group_box_candidates": 50623,
+        "ground_truth_medium": 220271,
+        "localized_medium": 98736,
+        "ground_truth_large": 26273,
+        "localized_large": 6710,
+        "ground_truth_small": 162393,
+        "localized_small": 50834,
+        "view_pairs": 66996,
+        "shared_objects": 1486614,
+        "shared_localized_both": 398909,
+        "zero_overlap_pairs": 1
+      },
+      "metrics": {
+        "detection_recall": 0.3821615554474161,
+        "detection_precision": 0.8151470895055289,
+        "detection_recall_iou75": 0.3551451690602709,
+        "both_view_coverage": 0.26833394546264194,
+        "unmapped_per_photo": 2.1159472207295957
+      }
+    },
+    "fine_tuned": {
+      "counts": {
+        "images": 16749,
+        "scenes": 1861,
+        "ground_truth": 408937,
+        "detections": 405787,
+        "localized": 345982,
+        "unmapped": 59805,
+        "localized_at_iou75": 314829,
+        "unmapped_duplicate_or_assignment_conflict": 21004,
+        "group_box_candidates": 66053,
+        "ground_truth_medium": 220271,
+        "localized_medium": 200914,
+        "ground_truth_large": 26273,
+        "localized_large": 24235,
+        "ground_truth_small": 162393,
+        "localized_small": 120833,
+        "view_pairs": 66996,
+        "shared_objects": 1486614,
+        "shared_localized_both": 1134412,
+        "zero_overlap_pairs": 1
+      },
+      "metrics": {
+        "detection_recall": 0.8460520813719473,
+        "detection_precision": 0.8526197241409902,
+        "detection_recall_iou75": 0.7698716428202877,
+        "both_view_coverage": 0.7630844321390757,
+        "unmapped_per_photo": 3.570660934981193
+      }
+    },
+    "fine_tuned_tiles": {
+      "counts": {
+        "images": 16749,
+        "scenes": 1861,
+        "ground_truth": 408937,
+        "detections": 549429,
+        "localized": 368359,
+        "unmapped": 181070,
+        "localized_at_iou75": 331652,
+        "unmapped_duplicate_or_assignment_conflict": 35441,
+        "group_box_candidates": 68599,
+        "ground_truth_medium": 220271,
+        "localized_medium": 205821,
+        "ground_truth_large": 26273,
+        "localized_large": 24304,
+        "ground_truth_small": 162393,
+        "localized_small": 138234,
+        "view_pairs": 66996,
+        "shared_objects": 1486614,
+        "shared_localized_both": 1249409,
+        "zero_overlap_pairs": 1
+      },
+      "metrics": {
+        "detection_recall": 0.9007720015552518,
+        "detection_precision": 0.6704396746440395,
+        "detection_recall_iou75": 0.811010008876673,
+        "both_view_coverage": 0.8404394146698471,
+        "unmapped_per_photo": 10.810794674308914
+      }
+    },
+    "fine_tuned_tiles_G": {
+      "counts": {
+        "images": 16749,
+        "scenes": 1861,
+        "ground_truth": 408937,
+        "detections": 432076,
+        "localized": 353732,
+        "unmapped": 78344,
+        "localized_at_iou75": 321673,
+        "unmapped_duplicate_or_assignment_conflict": 23258,
+        "group_box_candidates": 66353,
+        "ground_truth_medium": 220271,
+        "localized_medium": 201951,
+        "ground_truth_large": 26273,
+        "localized_large": 24237,
+        "ground_truth_small": 162393,
+        "localized_small": 127544,
+        "view_pairs": 66996,
+        "shared_objects": 1486614,
+        "shared_localized_both": 1174264,
+        "zero_overlap_pairs": 1
+      },
+      "metrics": {
+        "detection_recall": 0.8650036558198451,
+        "detection_precision": 0.8186800470287635,
+        "detection_recall_iou75": 0.7866077170811152,
+        "both_view_coverage": 0.7898916598390705,
+        "unmapped_per_photo": 4.677532987044002
+      }
+    }
+  },
+  "marginal_tile_diagnostics": {
+    "fine_tuned_tiles": {
+      "extras": 143642,
+      "newly_covered": 22377,
+      "previously_covered_lost": 0,
+      "extras_mapping_to_previously_uncovered": 21865
+    },
+    "fine_tuned_tiles_G": {
+      "extras": 26289,
+      "newly_covered": 7750,
+      "previously_covered_lost": 0,
+      "extras_mapping_to_previously_uncovered": 7646
+    }
+  },
+  "paired_setup_bootstrap": {
+    "fine_tuned_minus_vanilla": {
+      "detection_recall": {
+        "difference_percentage_points": 46.389052592453126,
+        "setup_bootstrap_ci95_percentage_points": [
+          44.745435623575815,
+          48.05983632138748
+        ]
+      },
+      "both_view_coverage": {
+        "difference_percentage_points": 49.47504866764338,
+        "setup_bootstrap_ci95_percentage_points": [
+          47.77936950602387,
+          51.212472952756436
+        ]
+      },
+      "detection_precision": {
+        "difference_percentage_points": 3.7472634635461244,
+        "setup_bootstrap_ci95_percentage_points": [
+          2.824260712078745,
+          4.740230997296792
+        ]
+      }
+    },
+    "fine_tuned_tiles_minus_fine_tuned": {
+      "detection_recall": {
+        "difference_percentage_points": 5.471992018330452,
+        "setup_bootstrap_ci95_percentage_points": [
+          5.0978996639460625,
+          5.849418563952925
+        ]
+      },
+      "both_view_coverage": {
+        "difference_percentage_points": 7.735498253077133,
+        "setup_bootstrap_ci95_percentage_points": [
+          7.289026367696967,
+          8.181129659904316
+        ]
+      },
+      "detection_precision": {
+        "difference_percentage_points": -18.218004949695064,
+        "setup_bootstrap_ci95_percentage_points": [
+          -18.845434418320274,
+          -17.599006795519315
+        ]
+      }
+    },
+    "fine_tuned_tiles_G_minus_fine_tuned": {
+      "detection_recall": {
+        "difference_percentage_points": 1.8951574447897745,
+        "setup_bootstrap_ci95_percentage_points": [
+          1.7420252734693238,
+          2.051322803320435
+        ]
+      },
+      "both_view_coverage": {
+        "difference_percentage_points": 2.6807227699994773,
+        "setup_bootstrap_ci95_percentage_points": [
+          2.4981449621958896,
+          2.8608259675405447
+        ]
+      },
+      "detection_precision": {
+        "difference_percentage_points": -3.3939677112226674,
+        "setup_bootstrap_ci95_percentage_points": [
+          -3.592604059433847,
+          -3.1993161338602096
+        ]
+      }
+    }
+  },
+  "strata": {
+    "vanilla": {
+      "difficulty": {
+        "easy": {
+          "ground_truth": 74219,
+          "detections": 38940,
+          "localized": 29629,
+          "unmapped": 9311,
+          "localized_at_iou75": 27637,
+          "unmapped_duplicate_or_assignment_conflict": 1237,
+          "group_box_candidates": 11541,
+          "ground_truth_medium": 45424,
+          "localized_medium": 19448,
+          "images": 5130,
+          "ground_truth_large": 5312,
+          "localized_large": 1001,
+          "ground_truth_small": 23483,
+          "localized_small": 9180
+        },
+        "medium": {
+          "ground_truth": 195463,
+          "detections": 96438,
+          "localized": 78239,
+          "unmapped": 18199,
+          "localized_at_iou75": 72747,
+          "unmapped_duplicate_or_assignment_conflict": 3209,
+          "group_box_candidates": 24374,
+          "ground_truth_medium": 105345,
+          "localized_medium": 49520,
+          "ground_truth_large": 13931,
+          "localized_large": 2941,
+          "ground_truth_small": 76187,
+          "localized_small": 25778,
+          "images": 8316
+        },
+        "hard": {
+          "ground_truth": 139255,
+          "detections": 56342,
+          "localized": 48412,
+          "unmapped": 7930,
+          "localized_at_iou75": 44848,
+          "unmapped_duplicate_or_assignment_conflict": 1647,
+          "group_box_candidates": 14708,
+          "ground_truth_medium": 69502,
+          "localized_medium": 29768,
+          "ground_truth_large": 7030,
+          "localized_large": 2768,
+          "ground_truth_small": 62723,
+          "localized_small": 15876,
+          "images": 3303
+        }
+      },
+      "camera": {
+        "1": {
+          "ground_truth": 48827,
+          "detections": 22786,
+          "localized": 19016,
+          "unmapped": 3770,
+          "localized_at_iou75": 17939,
+          "unmapped_duplicate_or_assignment_conflict": 771,
+          "group_box_candidates": 5328,
+          "ground_truth_medium": 23217,
+          "localized_medium": 9192,
+          "images": 1861,
+          "ground_truth_small": 23343,
+          "localized_small": 9446,
+          "ground_truth_large": 2267,
+          "localized_large": 378
+        },
+        "2": {
+          "ground_truth": 44368,
+          "detections": 20643,
+          "localized": 16643,
+          "unmapped": 4000,
+          "localized_at_iou75": 15348,
+          "unmapped_duplicate_or_assignment_conflict": 706,
+          "group_box_candidates": 6003,
+          "ground_truth_large": 3707,
+          "localized_large": 1174,
+          "ground_truth_medium": 24541,
+          "localized_medium": 11105,
+          "images": 1861,
+          "ground_truth_small": 16120,
+          "localized_small": 4364
+        },
+        "3": {
+          "ground_truth": 45730,
+          "detections": 22097,
+          "localized": 18245,
+          "unmapped": 3852,
+          "localized_at_iou75": 17113,
+          "unmapped_duplicate_or_assignment_conflict": 639,
+          "group_box_candidates": 5703,
+          "ground_truth_large": 3408,
+          "localized_large": 728,
+          "ground_truth_medium": 28739,
+          "localized_medium": 13334,
+          "images": 1861,
+          "ground_truth_small": 13583,
+          "localized_small": 4183
+        },
+        "4": {
+          "ground_truth": 43651,
+          "detections": 21277,
+          "localized": 17322,
+          "unmapped": 3955,
+          "localized_at_iou75": 16176,
+          "unmapped_duplicate_or_assignment_conflict": 649,
+          "group_box_candidates": 5644,
+          "ground_truth_large": 3930,
+          "localized_large": 1166,
+          "ground_truth_medium": 25968,
+          "localized_medium": 11998,
+          "images": 1861,
+          "ground_truth_small": 13753,
+          "localized_small": 4158
+        },
+        "5": {
+          "ground_truth": 45671,
+          "detections": 20442,
+          "localized": 16663,
+          "unmapped": 3779,
+          "localized_at_iou75": 15468,
+          "unmapped_duplicate_or_assignment_conflict": 632,
+          "group_box_candidates": 5234,
+          "ground_truth_large": 1940,
+          "localized_large": 389,
+          "ground_truth_medium": 22209,
+          "localized_medium": 9717,
+          "images": 1861,
+          "ground_truth_small": 21522,
+          "localized_small": 6557
+        },
+        "6": {
+          "ground_truth": 47220,
+          "detections": 22142,
+          "localized": 18219,
+          "unmapped": 3923,
+          "localized_at_iou75": 16783,
+          "unmapped_duplicate_or_assignment_conflict": 758,
+          "group_box_candidates": 5624,
+          "ground_truth_large": 3505,
+          "localized_large": 754,
+          "ground_truth_medium": 27644,
+          "localized_medium": 12823,
+          "images": 1861,
+          "ground_truth_small": 16071,
+          "localized_small": 4642
+        },
+        "7": {
+          "ground_truth": 43520,
+          "detections": 20987,
+          "localized": 17272,
+          "unmapped": 3715,
+          "localized_at_iou75": 16099,
+          "unmapped_duplicate_or_assignment_conflict": 662,
+          "group_box_candidates": 5675,
+          "ground_truth_large": 3821,
+          "localized_large": 1039,
+          "ground_truth_medium": 25564,
+          "localized_medium": 11942,
+          "images": 1861,
+          "ground_truth_small": 14135,
+          "localized_small": 4291
+        },
+        "8": {
+          "ground_truth": 43403,
+          "detections": 20567,
+          "localized": 16529,
+          "unmapped": 4038,
+          "localized_at_iou75": 15207,
+          "unmapped_duplicate_or_assignment_conflict": 625,
+          "group_box_candidates": 6080,
+          "ground_truth_large": 2624,
+          "localized_large": 865,
+          "ground_truth_medium": 23126,
+          "localized_medium": 10587,
+          "ground_truth_small": 17653,
+          "localized_small": 5077,
+          "images": 1861
+        },
+        "9": {
+          "ground_truth": 46547,
+          "detections": 20779,
+          "localized": 16371,
+          "unmapped": 4408,
+          "localized_at_iou75": 15099,
+          "unmapped_duplicate_or_assignment_conflict": 651,
+          "group_box_candidates": 5332,
+          "ground_truth_medium": 19263,
+          "localized_medium": 8038,
+          "ground_truth_small": 26213,
+          "localized_small": 8116,
+          "images": 1861,
+          "ground_truth_large": 1071,
+          "localized_large": 217
+        }
+      },
+      "short_side": {
+        "ge96": {
+          "ground_truth": 316153,
+          "localized": 135446
+        },
+        "32_to_lt96": {
+          "ground_truth": 83834,
+          "localized": 20571
+        },
+        "lt32": {
+          "ground_truth": 8950,
+          "localized": 263
+        }
+      }
+    },
+    "fine_tuned": {
+      "difficulty": {
+        "easy": {
+          "ground_truth": 74219,
+          "detections": 76732,
+          "localized": 66354,
+          "unmapped": 10378,
+          "localized_at_iou75": 61989,
+          "unmapped_duplicate_or_assignment_conflict": 3669,
+          "group_box_candidates": 9961,
+          "ground_truth_medium": 45424,
+          "localized_medium": 42004,
+          "images": 5130,
+          "ground_truth_large": 5312,
+          "localized_large": 5073,
+          "ground_truth_small": 23483,
+          "localized_small": 19277
+        },
+        "medium": {
+          "ground_truth": 195463,
+          "detections": 194142,
+          "localized": 165550,
+          "unmapped": 28592,
+          "localized_at_iou75": 150635,
+          "unmapped_duplicate_or_assignment_conflict": 10308,
+          "group_box_candidates": 32777,
+          "ground_truth_medium": 105345,
+          "localized_medium": 95744,
+          "ground_truth_large": 13931,
+          "localized_large": 12687,
+          "ground_truth_small": 76187,
+          "localized_small": 57119,
+          "images": 8316
+        },
+        "hard": {
+          "ground_truth": 139255,
+          "detections": 134913,
+          "localized": 114078,
+          "unmapped": 20835,
+          "localized_at_iou75": 102205,
+          "unmapped_duplicate_or_assignment_conflict": 7027,
+          "group_box_candidates": 23315,
+          "ground_truth_medium": 69502,
+          "localized_medium": 63166,
+          "ground_truth_large": 7030,
+          "localized_large": 6475,
+          "ground_truth_small": 62723,
+          "localized_small": 44437,
+          "images": 3303
+        }
+      },
+      "camera": {
+        "1": {
+          "ground_truth": 48827,
+          "detections": 48891,
+          "localized": 43637,
+          "unmapped": 5254,
+          "localized_at_iou75": 40775,
+          "unmapped_duplicate_or_assignment_conflict": 1939,
+          "group_box_candidates": 7181,
+          "ground_truth_medium": 23217,
+          "localized_medium": 21417,
+          "images": 1861,
+          "ground_truth_small": 23343,
+          "localized_small": 20062,
+          "ground_truth_large": 2267,
+          "localized_large": 2158
+        },
+        "2": {
+          "ground_truth": 44368,
+          "detections": 43998,
+          "localized": 36720,
+          "unmapped": 7278,
+          "localized_at_iou75": 33225,
+          "unmapped_duplicate_or_assignment_conflict": 2402,
+          "group_box_candidates": 7561,
+          "ground_truth_large": 3707,
+          "localized_large": 3389,
+          "ground_truth_medium": 24541,
+          "localized_medium": 22119,
+          "images": 1861,
+          "ground_truth_small": 16120,
+          "localized_small": 11212
+        },
+        "3": {
+          "ground_truth": 45730,
+          "detections": 46631,
+          "localized": 40190,
+          "unmapped": 6441,
+          "localized_at_iou75": 37148,
+          "unmapped_duplicate_or_assignment_conflict": 2312,
+          "group_box_candidates": 6792,
+          "ground_truth_large": 3408,
+          "localized_large": 3139,
+          "ground_truth_medium": 28739,
+          "localized_medium": 26515,
+          "images": 1861,
+          "ground_truth_small": 13583,
+          "localized_small": 10536
+        },
+        "4": {
+          "ground_truth": 43651,
+          "detections": 44116,
+          "localized": 37580,
+          "unmapped": 6536,
+          "localized_at_iou75": 34400,
+          "unmapped_duplicate_or_assignment_conflict": 2256,
+          "group_box_candidates": 6769,
+          "ground_truth_large": 3930,
+          "localized_large": 3611,
+          "ground_truth_medium": 25968,
+          "localized_medium": 23797,
+          "images": 1861,
+          "ground_truth_small": 13753,
+          "localized_small": 10172
+        },
+        "5": {
+          "ground_truth": 45671,
+          "detections": 44640,
+          "localized": 37459,
+          "unmapped": 7181,
+          "localized_at_iou75": 33560,
+          "unmapped_duplicate_or_assignment_conflict": 2687,
+          "group_box_candidates": 7641,
+          "ground_truth_large": 1940,
+          "localized_large": 1784,
+          "ground_truth_medium": 22209,
+          "localized_medium": 20190,
+          "images": 1861,
+          "ground_truth_small": 21522,
+          "localized_small": 15485
+        },
+        "6": {
+          "ground_truth": 47220,
+          "detections": 46519,
+          "localized": 40040,
+          "unmapped": 6479,
+          "localized_at_iou75": 36351,
+          "unmapped_duplicate_or_assignment_conflict": 2371,
+          "group_box_candidates": 7532,
+          "ground_truth_large": 3505,
+          "localized_large": 3226,
+          "ground_truth_medium": 27644,
+          "localized_medium": 25331,
+          "images": 1861,
+          "ground_truth_small": 16071,
+          "localized_small": 11483
+        },
+        "7": {
+          "ground_truth": 43520,
+          "detections": 43550,
+          "localized": 37121,
+          "unmapped": 6429,
+          "localized_at_iou75": 33992,
+          "unmapped_duplicate_or_assignment_conflict": 2169,
+          "group_box_candidates": 6920,
+          "ground_truth_large": 3821,
+          "localized_large": 3520,
+          "ground_truth_medium": 25564,
+          "localized_medium": 23383,
+          "images": 1861,
+          "ground_truth_small": 14135,
+          "localized_small": 10218
+        },
+        "8": {
+          "ground_truth": 43403,
+          "detections": 42485,
+          "localized": 35704,
+          "unmapped": 6781,
+          "localized_at_iou75": 32128,
+          "unmapped_duplicate_or_assignment_conflict": 2228,
+          "group_box_candidates": 7479,
+          "ground_truth_large": 2624,
+          "localized_large": 2413,
+          "ground_truth_medium": 23126,
+          "localized_medium": 20778,
+          "ground_truth_small": 17653,
+          "localized_small": 12513,
+          "images": 1861
+        },
+        "9": {
+          "ground_truth": 46547,
+          "detections": 44957,
+          "localized": 37531,
+          "unmapped": 7426,
+          "localized_at_iou75": 33250,
+          "unmapped_duplicate_or_assignment_conflict": 2640,
+          "group_box_candidates": 8178,
+          "ground_truth_medium": 19263,
+          "localized_medium": 17384,
+          "ground_truth_small": 26213,
+          "localized_small": 19152,
+          "images": 1861,
+          "ground_truth_large": 1071,
+          "localized_large": 995
+        }
+      },
+      "short_side": {
+        "ge96": {
+          "ground_truth": 316153,
+          "localized": 287868
+        },
+        "32_to_lt96": {
+          "ground_truth": 83834,
+          "localized": 56238
+        },
+        "lt32": {
+          "ground_truth": 8950,
+          "localized": 1876
+        }
+      }
+    },
+    "fine_tuned_tiles": {
+      "difficulty": {
+        "easy": {
+          "ground_truth": 74219,
+          "detections": 101383,
+          "localized": 68722,
+          "unmapped": 32661,
+          "localized_at_iou75": 63745,
+          "unmapped_duplicate_or_assignment_conflict": 6223,
+          "group_box_candidates": 10180,
+          "ground_truth_medium": 45424,
+          "localized_medium": 42774,
+          "images": 5130,
+          "ground_truth_large": 5312,
+          "localized_large": 5082,
+          "ground_truth_small": 23483,
+          "localized_small": 20866
+        },
+        "medium": {
+          "ground_truth": 195463,
+          "detections": 262007,
+          "localized": 175524,
+          "unmapped": 86483,
+          "localized_at_iou75": 158126,
+          "unmapped_duplicate_or_assignment_conflict": 17153,
+          "group_box_candidates": 33963,
+          "ground_truth_medium": 105345,
+          "localized_medium": 98098,
+          "ground_truth_large": 13931,
+          "localized_large": 12727,
+          "ground_truth_small": 76187,
+          "localized_small": 64699,
+          "images": 8316
+        },
+        "hard": {
+          "ground_truth": 139255,
+          "detections": 186039,
+          "localized": 124113,
+          "unmapped": 61926,
+          "localized_at_iou75": 109781,
+          "unmapped_duplicate_or_assignment_conflict": 12065,
+          "group_box_candidates": 24456,
+          "ground_truth_medium": 69502,
+          "localized_medium": 64949,
+          "ground_truth_large": 7030,
+          "localized_large": 6495,
+          "ground_truth_small": 62723,
+          "localized_small": 52669,
+          "images": 3303
+        }
+      },
+      "camera": {
+        "1": {
+          "ground_truth": 48827,
+          "detections": 63508,
+          "localized": 45443,
+          "unmapped": 18065,
+          "localized_at_iou75": 42083,
+          "unmapped_duplicate_or_assignment_conflict": 3734,
+          "group_box_candidates": 7488,
+          "ground_truth_medium": 23217,
+          "localized_medium": 21996,
+          "images": 1861,
+          "ground_truth_small": 23343,
+          "localized_small": 21283,
+          "ground_truth_large": 2267,
+          "localized_large": 2164
+        },
+        "2": {
+          "ground_truth": 44368,
+          "detections": 61861,
+          "localized": 39365,
+          "unmapped": 22496,
+          "localized_at_iou75": 35150,
+          "unmapped_duplicate_or_assignment_conflict": 4033,
+          "group_box_candidates": 7845,
+          "ground_truth_large": 3707,
+          "localized_large": 3397,
+          "ground_truth_medium": 24541,
+          "localized_medium": 22710,
+          "images": 1861,
+          "ground_truth_small": 16120,
+          "localized_small": 13258
+        },
+        "3": {
+          "ground_truth": 45730,
+          "detections": 64255,
+          "localized": 42063,
+          "unmapped": 22192,
+          "localized_at_iou75": 38529,
+          "unmapped_duplicate_or_assignment_conflict": 3992,
+          "group_box_candidates": 6996,
+          "ground_truth_large": 3408,
+          "localized_large": 3147,
+          "ground_truth_medium": 28739,
+          "localized_medium": 27087,
+          "images": 1861,
+          "ground_truth_small": 13583,
+          "localized_small": 11829
+        },
+        "4": {
+          "ground_truth": 43651,
+          "detections": 60196,
+          "localized": 39641,
+          "unmapped": 20555,
+          "localized_at_iou75": 35951,
+          "unmapped_duplicate_or_assignment_conflict": 3846,
+          "group_box_candidates": 6986,
+          "ground_truth_large": 3930,
+          "localized_large": 3622,
+          "ground_truth_medium": 25968,
+          "localized_medium": 24306,
+          "images": 1861,
+          "ground_truth_small": 13753,
+          "localized_small": 11713
+        },
+        "5": {
+          "ground_truth": 45671,
+          "detections": 58996,
+          "localized": 40486,
+          "unmapped": 18510,
+          "localized_at_iou75": 35907,
+          "unmapped_duplicate_or_assignment_conflict": 4205,
+          "group_box_candidates": 7952,
+          "ground_truth_large": 1940,
+          "localized_large": 1789,
+          "ground_truth_medium": 22209,
+          "localized_medium": 20606,
+          "images": 1861,
+          "ground_truth_small": 21522,
+          "localized_small": 18091
+        },
+        "6": {
+          "ground_truth": 47220,
+          "detections": 63751,
+          "localized": 42597,
+          "unmapped": 21154,
+          "localized_at_iou75": 38278,
+          "unmapped_duplicate_or_assignment_conflict": 4109,
+          "group_box_candidates": 7835,
+          "ground_truth_large": 3505,
+          "localized_large": 3234,
+          "ground_truth_medium": 27644,
+          "localized_medium": 25963,
+          "images": 1861,
+          "ground_truth_small": 16071,
+          "localized_small": 13400
+        },
+        "7": {
+          "ground_truth": 43520,
+          "detections": 59064,
+          "localized": 39140,
+          "unmapped": 19924,
+          "localized_at_iou75": 35472,
+          "unmapped_duplicate_or_assignment_conflict": 3669,
+          "group_box_candidates": 7115,
+          "ground_truth_large": 3821,
+          "localized_large": 3531,
+          "ground_truth_medium": 25564,
+          "localized_medium": 23898,
+          "images": 1861,
+          "ground_truth_small": 14135,
+          "localized_small": 11711
+        },
+        "8": {
+          "ground_truth": 43403,
+          "detections": 57633,
+          "localized": 38443,
+          "unmapped": 19190,
+          "localized_at_iou75": 34180,
+          "unmapped_duplicate_or_assignment_conflict": 3694,
+          "group_box_candidates": 7770,
+          "ground_truth_large": 2624,
+          "localized_large": 2422,
+          "ground_truth_medium": 23126,
+          "localized_medium": 21378,
+          "ground_truth_small": 17653,
+          "localized_small": 14643,
+          "images": 1861
+        },
+        "9": {
+          "ground_truth": 46547,
+          "detections": 60165,
+          "localized": 41181,
+          "unmapped": 18984,
+          "localized_at_iou75": 36102,
+          "unmapped_duplicate_or_assignment_conflict": 4159,
+          "group_box_candidates": 8612,
+          "ground_truth_medium": 19263,
+          "localized_medium": 17877,
+          "ground_truth_small": 26213,
+          "localized_small": 22306,
+          "images": 1861,
+          "ground_truth_large": 1071,
+          "localized_large": 998
+        }
+      },
+      "short_side": {
+        "ge96": {
+          "ground_truth": 316153,
+          "localized": 296158
+        },
+        "32_to_lt96": {
+          "ground_truth": 83834,
+          "localized": 68355
+        },
+        "lt32": {
+          "ground_truth": 8950,
+          "localized": 3846
+        }
+      }
+    },
+    "fine_tuned_tiles_G": {
+      "difficulty": {
+        "easy": {
+          "ground_truth": 74219,
+          "detections": 80561,
+          "localized": 67086,
+          "unmapped": 13475,
+          "localized_at_iou75": 62645,
+          "unmapped_duplicate_or_assignment_conflict": 3958,
+          "group_box_candidates": 9973,
+          "ground_truth_medium": 45424,
+          "localized_medium": 42145,
+          "images": 5130,
+          "ground_truth_large": 5312,
+          "localized_large": 5073,
+          "ground_truth_small": 23483,
+          "localized_small": 19868
+        },
+        "medium": {
+          "ground_truth": 195463,
+          "detections": 206374,
+          "localized": 168936,
+          "unmapped": 37438,
+          "localized_at_iou75": 153598,
+          "unmapped_duplicate_or_assignment_conflict": 11330,
+          "group_box_candidates": 32897,
+          "ground_truth_medium": 105345,
+          "localized_medium": 96243,
+          "ground_truth_large": 13931,
+          "localized_large": 12689,
+          "ground_truth_small": 76187,
+          "localized_small": 60004,
+          "images": 8316
+        },
+        "hard": {
+          "ground_truth": 139255,
+          "detections": 145141,
+          "localized": 117710,
+          "unmapped": 27431,
+          "localized_at_iou75": 105430,
+          "unmapped_duplicate_or_assignment_conflict": 7970,
+          "group_box_candidates": 23483,
+          "ground_truth_medium": 69502,
+          "localized_medium": 63563,
+          "ground_truth_large": 7030,
+          "localized_large": 6475,
+          "ground_truth_small": 62723,
+          "localized_small": 47672,
+          "images": 3303
+        }
+      },
+      "camera": {
+        "1": {
+          "ground_truth": 48827,
+          "detections": 51722,
+          "localized": 44286,
+          "unmapped": 7436,
+          "localized_at_iou75": 41342,
+          "unmapped_duplicate_or_assignment_conflict": 2247,
+          "group_box_candidates": 7190,
+          "ground_truth_medium": 23217,
+          "localized_medium": 21549,
+          "images": 1861,
+          "ground_truth_small": 23343,
+          "localized_small": 20578,
+          "ground_truth_large": 2267,
+          "localized_large": 2159
+        },
+        "2": {
+          "ground_truth": 44368,
+          "detections": 47254,
+          "localized": 37669,
+          "unmapped": 9585,
+          "localized_at_iou75": 34030,
+          "unmapped_duplicate_or_assignment_conflict": 2645,
+          "group_box_candidates": 7604,
+          "ground_truth_large": 3707,
+          "localized_large": 3389,
+          "ground_truth_medium": 24541,
+          "localized_medium": 22248,
+          "images": 1861,
+          "ground_truth_small": 16120,
+          "localized_small": 12032
+        },
+        "3": {
+          "ground_truth": 45730,
+          "detections": 49614,
+          "localized": 40809,
+          "unmapped": 8805,
+          "localized_at_iou75": 37664,
+          "unmapped_duplicate_or_assignment_conflict": 2531,
+          "group_box_candidates": 6802,
+          "ground_truth_large": 3408,
+          "localized_large": 3139,
+          "ground_truth_medium": 28739,
+          "localized_medium": 26638,
+          "images": 1861,
+          "ground_truth_small": 13583,
+          "localized_small": 11032
+        },
+        "4": {
+          "ground_truth": 43651,
+          "detections": 46807,
+          "localized": 38247,
+          "unmapped": 8560,
+          "localized_at_iou75": 34990,
+          "unmapped_duplicate_or_assignment_conflict": 2475,
+          "group_box_candidates": 6787,
+          "ground_truth_large": 3930,
+          "localized_large": 3611,
+          "ground_truth_medium": 25968,
+          "localized_medium": 23891,
+          "images": 1861,
+          "ground_truth_small": 13753,
+          "localized_small": 10745
+        },
+        "5": {
+          "ground_truth": 45671,
+          "detections": 47412,
+          "localized": 38500,
+          "unmapped": 8912,
+          "localized_at_iou75": 34501,
+          "unmapped_duplicate_or_assignment_conflict": 2934,
+          "group_box_candidates": 7678,
+          "ground_truth_large": 1940,
+          "localized_large": 1784,
+          "ground_truth_medium": 22209,
+          "localized_medium": 20268,
+          "images": 1861,
+          "ground_truth_small": 21522,
+          "localized_small": 16448
+        },
+        "6": {
+          "ground_truth": 47220,
+          "detections": 49694,
+          "localized": 40982,
+          "unmapped": 8712,
+          "localized_at_iou75": 37166,
+          "unmapped_duplicate_or_assignment_conflict": 2645,
+          "group_box_candidates": 7574,
+          "ground_truth_large": 3505,
+          "localized_large": 3226,
+          "ground_truth_medium": 27644,
+          "localized_medium": 25482,
+          "images": 1861,
+          "ground_truth_small": 16071,
+          "localized_small": 12274
+        },
+        "7": {
+          "ground_truth": 43520,
+          "detections": 46017,
+          "localized": 37703,
+          "unmapped": 8314,
+          "localized_at_iou75": 34509,
+          "unmapped_duplicate_or_assignment_conflict": 2366,
+          "group_box_candidates": 6939,
+          "ground_truth_large": 3821,
+          "localized_large": 3520,
+          "ground_truth_medium": 25564,
+          "localized_medium": 23478,
+          "images": 1861,
+          "ground_truth_small": 14135,
+          "localized_small": 10705
+        },
+        "8": {
+          "ground_truth": 43403,
+          "detections": 45269,
+          "localized": 36603,
+          "unmapped": 8666,
+          "localized_at_iou75": 32939,
+          "unmapped_duplicate_or_assignment_conflict": 2474,
+          "group_box_candidates": 7518,
+          "ground_truth_large": 2624,
+          "localized_large": 2413,
+          "ground_truth_medium": 23126,
+          "localized_medium": 20904,
+          "ground_truth_small": 17653,
+          "localized_small": 13286,
+          "images": 1861
+        },
+        "9": {
+          "ground_truth": 46547,
+          "detections": 48287,
+          "localized": 38933,
+          "unmapped": 9354,
+          "localized_at_iou75": 34532,
+          "unmapped_duplicate_or_assignment_conflict": 2941,
+          "group_box_candidates": 8261,
+          "ground_truth_medium": 19263,
+          "localized_medium": 17493,
+          "ground_truth_small": 26213,
+          "localized_small": 20444,
+          "images": 1861,
+          "ground_truth_large": 1071,
+          "localized_large": 996
+        }
+      },
+      "short_side": {
+        "ge96": {
+          "ground_truth": 316153,
+          "localized": 290483
+        },
+        "32_to_lt96": {
+          "ground_truth": 83834,
+          "localized": 61121
+        },
+        "lt32": {
+          "ground_truth": 8950,
+          "localized": 2128
+        }
+      }
+    }
+  },
+  "runtime": {
+    "note": "Prediction timings include per-batch MPS synchronization; source decoding and artifact writes are separate."
+  },
+  "limits": [
+    "Detection only; no new training or identity-matching inference.",
+    "Same physical products may recur in train and test setups.",
+    "Fixed threshold comparison does not equalize prediction or error budgets.",
+    "Full official test is exposed by this evaluation.",
+    "Bootstrap reflects resampled setups, not different training seeds."
+  ]
+}

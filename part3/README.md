@@ -1,3 +1,4 @@
-Part Three
+Part Three · From detected boxes to matched objects
 
-Reserved for the next stage of the study.
+In progress. Feeds the Part Two detector boxes into the Part One matcher and measures correct identities.
+Not yet published.

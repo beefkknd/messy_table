@@ -1,0 +1,73 @@
+{
+  "source_page": "evaluation/messytable-part-two/report.html",
+  "source_sha256": "3f41dc56d8934db30cdc3476ff1faeba118cb53e7586ed1bc95d4ba5eaf117fa",
+  "output_sha256": "e91815999ec6a44ae6b6711ebdf055dbb66ca9b0043d70f4658371fc26f8faf4",
+  "link_rewrites": [
+    {
+      "from": "href=\"../messytable-part-one/report.html\"",
+      "to": "href=\"../../part1/site/\""
+    },
+    {
+      "from": "href=\"../messytable-detection-full-test/results.json\"",
+      "to": "href=\"../results/detection-full-test/results.json\""
+    },
+    {
+      "from": "href=\"build.py\"",
+      "to": "href=\"../report/build.py\""
+    }
+  ],
+  "unlinked": [
+    "<li><a href=\"../../research/detector-scale-and-integration/report.html\">Detector evidence: 2,400 training photos and input resolution</a> \u00b7 <a href=\"../../research/detector-scale-and-integration/protocol.json\">frozen protocol</a> \u00b7 <a href=\"../../research/detector-scale-and-integration/audit.json\">completed audit</a> \u00b7 <a href=\"../../research/detector-scale-and-integration/README.txt\">reproduction details</a></li>",
+    "<li><a href=\"../../research/detector-small-object-round/report.html\">600-photo training and tile-filtering study</a></li>",
+    "<li><a href=\"../../research/self-learning-program/stronger-teacher/report.html\">Automatic-label training: control arms, label quality and stop decision</a></li>",
+    " \u00b7 <a href=\"archive/2026-11-11/index.html\">Archived previous Part Two</a>",
+    "<p><a href=\"../../research/self-learning-program/stronger-teacher/report.html\">Read the complete automatic-label experiment and its controls</a>.</p>\n"
+  ],
+  "credit_added_to_footer": "Research, experiments and report: GPT Astra and Sol. Review and number cross-checks, and repository packaging: Claude (Anthropic).",
+  "copied": [
+    {
+      "to": "part2/site/assets/study-coverage-map.png",
+      "sha256": "288770e38399dce0fb6b060624577f93b83ba6ad9a3728044294966c2d0d06f3"
+    },
+    {
+      "to": "part2/site/assets/study-coverage-map.svg",
+      "sha256": "d03c729c9b14afc46f6c9d379bcb032d6135b0f9e06165d45b4f1919721b6b70"
+    },
+    {
+      "to": "part2/site/assets/study-detection-map.png",
+      "sha256": "6aade277fa72375a127948ee26f560d81079ffb6788fa79c3be095fcc39e1da0"
+    },
+    {
+      "to": "part2/site/assets/study-detection-map.svg",
+      "sha256": "edeaad21279215b4e6b6346244ec402626e7d44382bd99d63d9c7fa98d48cbd3"
+    },
+    {
+      "to": "part2/site/assets/study-same-photo.png",
+      "sha256": "3a2b9293f9b0671fcf84abf8caf5dd01af1b92af17f9bd0c076c3ba5a0e41ada"
+    },
+    {
+      "to": "part2/site/assets/study-same-photo.svg",
+      "sha256": "c6615cda2ea0a65c3d1489e113e5bfba119ef268e8c9acc54dfb07e3ab15d835"
+    },
+    {
+      "to": "part2/site/evidence.json",
+      "sha256": "445cdae7b8e79142933cf3d2a1c2b8ca199c38d7823ebbc5e40c63ee54f75467"
+    },
+    {
+      "to": "part2/site/metric-audit.json",
+      "sha256": "aad569065d7efe3fd73cf46e83a4cbea36d72b9c20ad290b242f002fc26af783"
+    },
+    {
+      "to": "part2/report/build.py",
+      "sha256": "f005ca914a292c15d43570844b2750a15d4deea4e8fe3933e3812258d4a53361"
+    },
+    {
+      "to": "part2/report/template.html",
+      "sha256": "477362446e2c75fde1897e8836f803c3c2c1d635799a22f2b7e6a41964fb85c7"
+    },
+    {
+      "to": "part2/results/detection-full-test/results.json",
+      "sha256": "c9ab69db1b77a44edbe447c58238b3a519b5a5fc18c0ae5205b3b2b5cedba8d0"
+    }
+  ]
+}

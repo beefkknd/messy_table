@@ -24,8 +24,8 @@ footer{font-size:14px;color:var(--muted)}
 <p class="lead">A step-by-step study using MessyTable, a labeled collection of everyday objects photographed by nine cameras at once.</p>
 <ol>
 <li><p class="status">Part One · published</p><h2><a href="part1/site/">Matching the same object across photos</a></h2><p>Given human object boxes, which box in one photo shows the same physical object in another? Two published matchers reproduced, 45 configurations compared.</p></li>
-<li><p class="status">Part Two · in review</p><h2>Image processing and object detection</h2><p>Finding the objects in the first place. Published after review.</p></li>
-<li><p class="status">Part Three · planned</p><h2>Next stage</h2><p>To follow.</p></li>
+<li><p class="status">Part Two · published</p><h2><a href="part2/site/">Teaching the system to find the objects</a></h2><p>Before matching, find the objects. A YOLO detector trained on human-labelled photos with close-up tiles now boxes 94% of objects on the full official test, up from 38% for the released model.</p></li>
+<li><p class="status">Part Three · in progress</p><h2>From detected boxes to matched objects</h2><p>Feeding the detector’s boxes into the matcher. To follow.</p></li>
 </ol>
 <footer><p>Research, experiments, pipeline and report: GPT Astra and Sol. Review and number cross-checks, the illustrated five-step method walkthrough, and repository packaging: Claude (Anthropic).</p><p><a href="https://github.com/beefkknd/messy_table">Source, frozen results and pipeline on GitHub</a></p></footer>
 </main>

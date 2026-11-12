@@ -10,8 +10,8 @@ Studies of how to tell that an object in one photo is the same physical object i
 | Part | Topic | Status |
 |---|---|---|
 | [Part One](part1/) | Matching the same object across photos, given human object boxes | Published: **[read the report](https://beefkknd.github.io/messy_table/part1/site/)** |
-| [Part Two](part2/) | Image processing and object detection | Built; under review |
-| [Part Three](part3/) | Next stage | Planned |
+| [Part Two](part2/) | Teaching the system to find the objects (YOLO detection) | Published: **[read the report](https://beefkknd.github.io/messy_table/part2/site/)** |
+| [Part Three](part3/) | Feeding detected boxes into the matcher | In progress |
 
 Each part keeps its static report in `partN/site/`, its build source in `partN/report/`, and its frozen
 results in `partN/results/`. Large datasets, model weights and score arrays stay outside git and are
