@@ -1,4 +1,4 @@
-"""Section 2 figure: one real test photo through Step 0, Step 1 and the combine step.
+"""Section 2 flow photos: one real test photo through Step 0, Step 1 and the combine step.
 
 Draws four panels from saved results only: the best detector's (H: 2,400 labelled photos, 1024 px
 full frame + 768 px tiles) full-frame and tile predictions, the frozen tile windows and merge rule,
@@ -152,33 +152,32 @@ def _key(color: str, label: str) -> str:
     return f'<span class="key" style="--key:{color}"></span>{label}'
 
 
-def figure_html(facts: dict) -> str:
+def flow_parts(facts: dict) -> dict:
+    """HTML pieces for the Section 2 flow: one photo and one example note per block, plus a caption."""
     n = {k: f'{v:,}' for k, v in facts.items()}
     candidates = facts['full_boxes'] + facts['tile_boxes']
-    whole = _key('#ffffff', n['full_boxes'] + ' from the whole photo')
-    tiles = _key(TILE_COLORS[0], n['tile_boxes'] + ' from the tiles')
-    kept_whole = _key(TEAL, 'whole photo')
-    kept_tiles = _key(AMBER, n['tile_added'] + ' added by tiles')
-    miss = _key(RED, 'The miss')
-    steps = [
-        ('Original photo', f"One camera’s view. People labelled {n['labelled']} objects; those labels are used only to score."),
-        ('Step 0 · Prepare views', 'The whole photo plus six overlapping 768-pixel tiles, so small items get more pixels.'),
-        ('Step 1 · Find objects', f'{candidates} candidate boxes: {whole}, {tiles} (one colour per tile). Many are duplicates.'),
-        ('Combine boxes', f"{n['combined_boxes']} boxes kept: {kept_whole} and {kept_tiles}. Objects found rise from "
-                          f"{n['found_full']} to {n['found_combined']} of {n['labelled']}. {miss}: two bottles standing in "
-                          'line got one box between them.'),
+    notes = [
+        f"Example: one camera’s view; people labelled {n['labelled']} objects (used only to score).",
+        'Example: the whole photo plus these six overlapping 768-pixel tiles.',
+        f"Example: {candidates} candidate boxes, {_key('#ffffff', n['full_boxes'] + ' whole photo')}, "
+        f"{_key(TILE_COLORS[0], n['tile_boxes'] + ' tiles')} (one colour per tile). Many are duplicates.",
+        f"Example: {n['combined_boxes']} boxes, {_key(TEAL, 'whole photo')} {_key(AMBER, n['tile_added'] + ' from tiles')}; "
+        f"objects found {n['found_full']} → {n['found_combined']} of {n['labelled']}. "
+        f"{_key(RED, 'Missed')}: two bottles in line got one box.",
     ]
-    cells = ''.join(
-        f'<div class="pipeline-step"><a href="assets/{name}" target="_blank" rel="noopener">'
-        f'<img src="assets/{name}" alt="{html.escape(title)}: {html.escape(_plain(text))}" loading="lazy"></a>'
-        f'<p class="pipeline-label">{title}</p><p>{text}</p></div>'
-        for name, (title, text) in zip(PANELS, steps))
-    return (f'<figure class="pipeline-example"><div class="pipeline-grid">{cells}</div>'
-            f'<figcaption>A real test photo (scene {SCENE}, camera {CAM}) through the best detector in this report, H: '
-            '2,400 labelled photos, 1024-pixel full frame plus tiles. Boxes come from its saved predictions; the rebuilt '
-            'combine step reproduces the saved final boxes exactly. The photo was chosen to show where tiles help: among the '
-            '900 Part One sample photos where tiles add at least two found objects, it has the most typical amount of clutter. '
-            'In many easier photos the whole frame already finds everything and the tiles only add duplicates.</figcaption></figure>')
+    titles = ('Original photo', 'Step 0 · Prepare views', 'Step 1 · Find objects', 'Combine boxes')
+    parts = {}
+    for i, (name, title, note) in enumerate(zip(PANELS, titles, notes)):
+        parts[f'FLOW_IMG_{i}'] = (f'<a class="flow-photo" href="assets/{name}" target="_blank" rel="noopener">'
+                                  f'<img src="assets/{name}" alt="{html.escape(title)}: {html.escape(_plain(note))}" loading="lazy"></a>')
+        parts[f'FLOW_NOTE_{i}'] = f'<span class="flow-note">{note}</span>'
+    parts['PIPELINE_CAPTION'] = (
+        f'<p class="flow-caption">Example photo: scene {SCENE}, camera {CAM}, run through detector H (2,400 labelled photos, '
+        '1024-pixel full frame plus tiles). Boxes come from its saved predictions, and the rebuilt combine step reproduces the '
+        'saved final boxes exactly. The Step 1 and Combine photos are zoomed in. The photo was chosen to show where tiles help: among the 900 Part One '
+        'sample photos where tiles add at least two found objects, it has the most typical amount of clutter. In many easier '
+        'photos the whole frame already finds everything.</p>')
+    return parts
 
 
 def _plain(text: str) -> str:
@@ -190,4 +189,4 @@ def build(root: Path, read: Callable, labels: dict, assets: Path, sources: dict)
     photo = root / f'data/messytable-full/MessyTable/images/{SCENE}-0{CAM}.jpg'
     sources[str(photo.relative_to(root))] = hashlib.sha256(photo.read_bytes()).hexdigest()
     draw(ev, photo, assets)
-    return figure_html(ev['facts'])
+    return flow_parts(ev['facts'])

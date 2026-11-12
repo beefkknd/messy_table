@@ -1,7 +1,7 @@
 {
   "source_page": "evaluation/messytable-part-two/report.html",
-  "source_sha256": "e4b2b6306b982763dfd178118f25fea6806e50e7d239efa1bccad313c0a74d03",
-  "output_sha256": "fe188c55706c5c2cee209585d5ac4affd9002559a8356f746b175d03bacea6af",
+  "source_sha256": "331daab0f5320717c25d65d705f31e3d7a71ed76af76d16437584b181f6f019a",
+  "output_sha256": "9cd0f01d6f87a9bf3957f615f2126726b03a8ed35b1ee2c2a5fd07dcf4c62f7f",
   "link_rewrites": [
     {
       "from": "href=\"../messytable-part-one/report.html\"",
@@ -47,7 +47,7 @@
     },
     {
       "to": "part2/site/assets/study-coverage-map.svg",
-      "sha256": "bd9ab6d7cd9b4275678edadbb4be35ecb117ccb8d636651ba915cfd19aecc660"
+      "sha256": "109152eb1d7bdf38daaed49d718ce7ebf2bcb1c8ec851bcd2bfcb04131b89d67"
     },
     {
       "to": "part2/site/assets/study-detection-map.png",
@@ -55,7 +55,7 @@
     },
     {
       "to": "part2/site/assets/study-detection-map.svg",
-      "sha256": "6e627c6fe764084ff58ff2f105f3f626b59d23bc37b6350dd095ce0dd420b86c"
+      "sha256": "3a2afb70c59b4e851e83383a9912b21e47a19b9c106b4bf1b954de97c587d831"
     },
     {
       "to": "part2/site/assets/study-same-photo.png",
@@ -63,11 +63,11 @@
     },
     {
       "to": "part2/site/assets/study-same-photo.svg",
-      "sha256": "c5e222a4e0b102b40702afcdd4405f6375b5e22ac7a1086a81a7a8887b035183"
+      "sha256": "10e529b5af0b1e0fa34c5624ff7c1f3a798a8daea1368b9655371a1d1836582c"
     },
     {
       "to": "part2/site/evidence.json",
-      "sha256": "8777eec3ac0868135bdee6e00a2ceaa2a9c6e2d968ec01d6a11ad6899dd91002"
+      "sha256": "bd923925f49f485e76ccd8c0b8f4f21ded8d5315bee66b335828e5047dc8a38e"
     },
     {
       "to": "part2/site/metric-audit.json",
@@ -75,15 +75,15 @@
     },
     {
       "to": "part2/report/build.py",
-      "sha256": "edc8ad71ff6ecc996981827e0691ad48a049fe83d323854337ed3b6b9d92d5a3"
+      "sha256": "ba36634666ebbe832638c907482d0b3889ef6c7a9e28a347de1d33ed0e864c7b"
     },
     {
       "to": "part2/report/template.html",
-      "sha256": "0e3afa59df8f801d4dfd95feb9a3682ac2b26f10e1af466c9689b919293e7868"
+      "sha256": "7e5dd35afda92b8f6dbceb6a2b865a17c7d83554d14cc006e78c54016804e4dc"
     },
     {
       "to": "part2/report/pipeline_example.py",
-      "sha256": "660b87b1f4f5790db3f3501d6f3bae881022c4a7e7615738b3f58312a3bdd35e"
+      "sha256": "7a58768acb7be757cb802f2ce34cce8e1cd1037442f05438e0e728ecc76a8dc9"
     },
     {
       "to": "part2/results/detection-full-test/results.json",

@@ -217,7 +217,7 @@ def main():
     content=(HERE/'template.html').read_text()
     for key,value in {'DETECTION_TABLE':detections,'SELF_LEARNING_TABLE':teachers,
                       'SMALL_TABLE':sizes,'EXTENT_TABLE':extent,
-                      'PIPELINE_EXAMPLE':pipeline,'EXAMPLE_SCENE':html.escape(example['scene']),'EXAMPLE_CAMERA':html.escape(example['camera'])}.items():
+                      **pipeline,'EXAMPLE_SCENE':html.escape(example['scene']),'EXAMPLE_CAMERA':html.escape(example['camera'])}.items():
         content=content.replace('%%'+key+'%%',value)
     assert '%%' not in content
     (HERE/'report.html').write_text(content)
