@@ -1,7 +1,7 @@
 {
   "source_page": "evaluation/messytable-part-two/report.html",
-  "source_sha256": "331daab0f5320717c25d65d705f31e3d7a71ed76af76d16437584b181f6f019a",
-  "output_sha256": "9cd0f01d6f87a9bf3957f615f2126726b03a8ed35b1ee2c2a5fd07dcf4c62f7f",
+  "source_sha256": "af3c308e945bbfb2344d73ff4f7d281ca0c893a519d3d39a9f7bead6bff6e6bb",
+  "output_sha256": "e59efba73d0f3d2095fb21914799bd4f4b708daf8d9665f06a39cbf3750c326d",
   "link_rewrites": [
     {
       "from": "href=\"../messytable-part-one/report.html\"",
@@ -42,12 +42,16 @@
       "sha256": "1c4f6d228f349d3ca951d78dfb36790862bb7662cd18d7c9808b7fd6045baa06"
     },
     {
+      "to": "part2/site/assets/pipeline-preview.jpg",
+      "sha256": "d1e534f0a60fa65a3c1e0bfb1d26cef64d91bc44fb018c57009e75f00df17e3e"
+    },
+    {
       "to": "part2/site/assets/study-coverage-map.png",
       "sha256": "288770e38399dce0fb6b060624577f93b83ba6ad9a3728044294966c2d0d06f3"
     },
     {
       "to": "part2/site/assets/study-coverage-map.svg",
-      "sha256": "109152eb1d7bdf38daaed49d718ce7ebf2bcb1c8ec851bcd2bfcb04131b89d67"
+      "sha256": "db619f5e0f563c613eb570073ffbc6c381f4b5d50d251bb6af3c25447f970fe6"
     },
     {
       "to": "part2/site/assets/study-detection-map.png",
@@ -55,7 +59,7 @@
     },
     {
       "to": "part2/site/assets/study-detection-map.svg",
-      "sha256": "3a2afb70c59b4e851e83383a9912b21e47a19b9c106b4bf1b954de97c587d831"
+      "sha256": "3d9b816b329a54c6645180842fe47046f2323a6e2488ec9c5ae3425e41468030"
     },
     {
       "to": "part2/site/assets/study-same-photo.png",
@@ -63,11 +67,11 @@
     },
     {
       "to": "part2/site/assets/study-same-photo.svg",
-      "sha256": "10e529b5af0b1e0fa34c5624ff7c1f3a798a8daea1368b9655371a1d1836582c"
+      "sha256": "f3db122dad72a632affd065c28972a255b648cc56d07ecb6c0dcf8e0e87bfdec"
     },
     {
       "to": "part2/site/evidence.json",
-      "sha256": "bd923925f49f485e76ccd8c0b8f4f21ded8d5315bee66b335828e5047dc8a38e"
+      "sha256": "21a29c5be363ddda3a4b6c1bcbbaafc30177d89137c3c5386acbe156c339f0e8"
     },
     {
       "to": "part2/site/metric-audit.json",
@@ -75,15 +79,15 @@
     },
     {
       "to": "part2/report/build.py",
-      "sha256": "ba36634666ebbe832638c907482d0b3889ef6c7a9e28a347de1d33ed0e864c7b"
+      "sha256": "ef8e87313f460b9a17f64661ec4ff542cd348c6732947b17b9a4acbcaf06e232"
     },
     {
       "to": "part2/report/template.html",
-      "sha256": "7e5dd35afda92b8f6dbceb6a2b865a17c7d83554d14cc006e78c54016804e4dc"
+      "sha256": "58d37e7bc9276a99785ef46a93ff9dbb12ff1190796e96b1c9e7c6a444162573"
     },
     {
       "to": "part2/report/pipeline_example.py",
-      "sha256": "7a58768acb7be757cb802f2ce34cce8e1cd1037442f05438e0e728ecc76a8dc9"
+      "sha256": "03ee70c7d8a960a64e948d7485032788123b0a839405f6968f0dafd31dad1de3"
     },
     {
       "to": "part2/results/detection-full-test/results.json",

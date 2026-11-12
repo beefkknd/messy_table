@@ -92,7 +92,8 @@ def main() -> None:
     ws = workspace()
     source = ws / SOURCE_REL
     original = (source / 'report.html').read_text()
-    used = sorted(set(re.findall(r'(?:href|src)="assets/([^"#]+)"', original)))  # only assets the page references
+    used = sorted(set(re.findall(r'(?:href|src)="assets/([^"#]+)"', original))  # assets the page references,
+                  | set(re.findall(r'content="https://[^"]*/part2/site/assets/([^"#]+)"', original)))  # incl. og:image
     if SITE.exists():
         shutil.rmtree(SITE)
     copies = [copy(source / 'assets' / name, SITE / 'assets' / name) for name in used]

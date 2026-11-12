@@ -29,6 +29,7 @@ PANEL_W = 1200
 TEAL, AMBER, RED = '#107d71', '#d18a00', '#c0392b'
 TILE_COLORS = ['#42679a', '#107d71', '#b85300', '#8744a4', '#007989', '#a0522d']
 FULL = (0, 0, WIDTH, HEIGHT)
+PREVIEW = 'pipeline-preview.jpg'  # 1200x630 link-preview (og:image) combo of the four panels
 PANELS = ('pipeline-1-photo.jpg', 'pipeline-2-views.jpg', 'pipeline-3-candidates.jpg', 'pipeline-4-combined.jpg')
 
 
@@ -184,9 +185,32 @@ def _plain(text: str) -> str:
     return re.sub(r'<[^>]+>', '', text)
 
 
+def draw_preview(facts: dict, assets: Path) -> None:
+    """Combine the four saved panels into one 1200x630 social-preview image (2x2, labelled)."""
+    width, height, gap = 1200, 630, 10
+    cell_w, cell_h = (width - gap) // 2, (height - gap) // 2
+    labels = ['1 · Photo', '2 · Step 0: whole photo + 6 tiles',
+              f"3 · Step 1: {facts['full_boxes'] + facts['tile_boxes']} candidate boxes",
+              f"4 · Combined: {facts['found_combined']} of {facts['labelled']} objects found"]
+    bold = ImageFont.truetype(font_manager.findfont(font_manager.FontProperties(family='DejaVu Sans', weight='bold')), 22)
+    canvas = Image.new('RGB', (width, height), '#193039')
+    for i, (name, label) in enumerate(zip(PANELS, labels)):
+        panel = Image.open(assets / name).convert('RGB')
+        scale = max(cell_w / panel.width, cell_h / panel.height)
+        resized = panel.resize((round(panel.width * scale), round(panel.height * scale)), Image.LANCZOS)
+        left, top = (resized.width - cell_w) // 2, 0  # keep the top edge so the 'zoomed in' tag stays whole
+        tile = resized.crop((left, top, left + cell_w, top + cell_h))
+        draw = ImageDraw.Draw(tile, 'RGBA')
+        draw.rectangle([0, 0, bold.getbbox(label)[2] + 24, 40], fill=(25, 48, 57, 225))
+        draw.text((12, 8), label, font=bold, fill='white')
+        canvas.paste(tile, ((i % 2) * (cell_w + gap), (i // 2) * (cell_h + gap)))
+    canvas.save(assets / PREVIEW, quality=88, optimize=True)
+
+
 def build(root: Path, read: Callable, labels: dict, assets: Path, sources: dict) -> str:
     ev = evidence(root, read, labels)
     photo = root / f'data/messytable-full/MessyTable/images/{SCENE}-0{CAM}.jpg'
     sources[str(photo.relative_to(root))] = hashlib.sha256(photo.read_bytes()).hexdigest()
     draw(ev, photo, assets)
+    draw_preview(ev['facts'], assets)
     return flow_parts(ev['facts'])

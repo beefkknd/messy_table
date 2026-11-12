@@ -214,9 +214,13 @@ def main():
     extent=table([[r['letter'],f"{r['counts']['ground_truth']-r['counts']['localized']:,}",f"{r['counts']['detections']:,}",
                    pct(r['counts']['localized_at_iou75']/408937)] for r in rows],
                  ['Configuration','Missed human targets','Total predicted boxes','Recall at stricter overlap, IoU ≥ 0.75'],'extent-results')
+    by_letter={r['letter']:r for r in rows}
+    og_description=html.escape('Before objects can be matched across cameras, they have to be found. On the full '
+        f"MessyTable test, a YOLO detector trained on human-labelled photos with close-up tiles finds "
+        f"{100*by_letter['H']['recall']:.0f}% of objects, up from {100*by_letter['A']['recall']:.0f}% for the released model.", quote=True)
     content=(HERE/'template.html').read_text()
     for key,value in {'DETECTION_TABLE':detections,'SELF_LEARNING_TABLE':teachers,
-                      'SMALL_TABLE':sizes,'EXTENT_TABLE':extent,
+                      'SMALL_TABLE':sizes,'OG_DESCRIPTION':og_description,'EXTENT_TABLE':extent,
                       **pipeline,'EXAMPLE_SCENE':html.escape(example['scene']),'EXAMPLE_CAMERA':html.escape(example['camera'])}.items():
         content=content.replace('%%'+key+'%%',value)
     assert '%%' not in content

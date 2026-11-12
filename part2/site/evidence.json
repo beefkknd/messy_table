@@ -277,9 +277,9 @@
     "research/detector-scale-and-integration/predictions/2400/20191004-00180-03.json": "4bab2a60d2a5b54e058dd016ffdac20bd2d7c3494629c6f03b283de91bc5a642",
     "research/detector-scale-and-integration/step2/boxes.json": "19d8ec72e64e91fcf3a91e27e745506dd33a72e6b90b2a44badb6629ae001d75",
     "data/messytable-full/MessyTable/images/20191004-00180-03-07.jpg": "2319d6a122b2d5b4a6591f5d60c588b092ca7efafb0093bba379a8b4e27cf6bf",
-    "evaluation/messytable-part-two/build.py": "ba36634666ebbe832638c907482d0b3889ef6c7a9e28a347de1d33ed0e864c7b",
-    "evaluation/messytable-part-two/template.html": "7e5dd35afda92b8f6dbceb6a2b865a17c7d83554d14cc006e78c54016804e4dc",
-    "evaluation/messytable-part-two/pipeline_example.py": "7a58768acb7be757cb802f2ce34cce8e1cd1037442f05438e0e728ecc76a8dc9"
+    "evaluation/messytable-part-two/build.py": "ef8e87313f460b9a17f64661ec4ff542cd348c6732947b17b9a4acbcaf06e232",
+    "evaluation/messytable-part-two/template.html": "58d37e7bc9276a99785ef46a93ff9dbb12ff1190796e96b1c9e7c6a444162573",
+    "evaluation/messytable-part-two/pipeline_example.py": "03ee70c7d8a960a64e948d7485032788123b0a839405f6968f0dafd31dad1de3"
   },
   "archive": "archive/2026-11-11/index.html",
   "checks": [
